@@ -11841,7 +11841,7 @@ else if (payload == "BRANCH_PERSONNEL_RFC_EMPLOYEE") {
                 url:
                 config.APP_URL + "/send-concern?sender_psid=" + sender_psid,
                 webview_height_ratio: "compact",
-                // messenger_extensions: true
+                messenger_extensions: true
               }
             ]             
           }
@@ -11879,7 +11879,7 @@ else if (payload == "FLYERS") {
                 url:
                 config.APP_URL + "/send-concern?sender_psid=" + sender_psid,
                 webview_height_ratio: "compact",
-                // messenger_extensions: true
+                messenger_extensions: true
               }
             ]             
           }
@@ -11917,7 +11917,7 @@ else if (payload == "FRIENDS") {
                 url:
                 config.APP_URL + "/send-concern?sender_psid=" + sender_psid,
                 webview_height_ratio: "compact",
-                // messenger_extensions: true
+                messenger_extensions: true
               }
             ]             
           }
@@ -11955,7 +11955,7 @@ else if (payload == "INTERNET") {
                 url:
                 config.APP_URL + "/send-concern?sender_psid=" + sender_psid,
                 webview_height_ratio: "compact",
-                // messenger_extensions: true
+                messenger_extensions: true
               }
             ]             
           }
@@ -11993,7 +11993,7 @@ else if (payload == "LIC") {
                 url:
                 config.APP_URL + "/send-concern?sender_psid=" + sender_psid,
                 webview_height_ratio: "compact",
-                // messenger_extensions: true
+                messenger_extensions: true
               }
             ]             
           }
@@ -12031,7 +12031,7 @@ else if (payload == "MALL_BASED_BC_OS") {
                 url:
                 config.APP_URL + "/send-concern?sender_psid=" + sender_psid,
                 webview_height_ratio: "compact",
-                // messenger_extensions: true
+                messenger_extensions: true
               }
             ]             
           }
@@ -12069,7 +12069,7 @@ else if (payload == "MBO") {
                 url:
                 config.APP_URL + "/send-concern?sender_psid=" + sender_psid,
                 webview_height_ratio: "compact",
-                // messenger_extensions: true
+                messenger_extensions: true
               }
             ]             
           }
@@ -12107,7 +12107,7 @@ else if (payload == "NEWSPAPER") {
                 url:
                 config.APP_URL + "/send-concern?sender_psid=" + sender_psid,
                 webview_height_ratio: "compact",
-                // messenger_extensions: true
+                messenger_extensions: true
               }
             ]             
           }
@@ -12145,7 +12145,7 @@ else if (payload == "OFFICE_SIGNAGE") {
                 url:
                 config.APP_URL + "/send-concern?sender_psid=" + sender_psid,
                 webview_height_ratio: "compact",
-                // messenger_extensions: true
+                messenger_extensions: true
               }
             ]             
           }
@@ -12183,7 +12183,7 @@ else if (payload == "PHONE_DIRECTORY") {
                 url:
                 config.APP_URL + "/send-concern?sender_psid=" + sender_psid,
                 webview_height_ratio: "compact",
-                // messenger_extensions: true
+                messenger_extensions: true
               }
             ]             
           }
@@ -12221,7 +12221,7 @@ else if (payload == "RADIO_AD") {
                 url:
                 config.APP_URL + "/send-concern?sender_psid=" + sender_psid,
                 webview_height_ratio: "compact",
-                // messenger_extensions: true
+                messenger_extensions: true
               }
             ]             
           }
@@ -12259,7 +12259,7 @@ else if (payload == "RELATIVES") {
                 url:
                 config.APP_URL + "/send-concern?sender_psid=" + sender_psid,
                 webview_height_ratio: "compact",
-                // messenger_extensions: true
+                messenger_extensions: true
               }
             ]             
           }
@@ -12297,7 +12297,7 @@ else if (payload == "REFERRAL") {
                 url:
                 config.APP_URL + "/send-concern?sender_psid=" + sender_psid,
                 webview_height_ratio: "compact",
-                // messenger_extensions: true
+                messenger_extensions: true
               }
             ]             
           }
@@ -12335,7 +12335,7 @@ else if (payload == "RELATIVE_OF_RFC_EMPLOYEE") {
                 url:
                 config.APP_URL + "/send-concern?sender_psid=" + sender_psid,
                 webview_height_ratio: "compact",
-                // messenger_extensions: true
+                messenger_extensions: true
               }
             ]             
           }
@@ -12373,7 +12373,7 @@ else if (payload == "REPEAT_CUSTOMER") {
                 url:
                 config.APP_URL + "/send-concern?sender_psid=" + sender_psid,
                 webview_height_ratio: "compact",
-                // messenger_extensions: true
+                messenger_extensions: true
               }
             ]             
           }
@@ -12411,7 +12411,7 @@ else if (payload == "RFC_ON_WHEELS") {
                 url:
                 config.APP_URL + "/send-concern?sender_psid=" + sender_psid,
                 webview_height_ratio: "compact",
-                // messenger_extensions: true
+                messenger_extensions: true
               }
             ]             
           }
@@ -12449,7 +12449,7 @@ else if (payload == "NEWSPAPER") {
                 url:
                 config.APP_URL + "/send-concern?sender_psid=" + sender_psid,
                 webview_height_ratio: "compact",
-                // messenger_extensions: true
+                messenger_extensions: true
               }
             ]             
           }
@@ -12487,7 +12487,7 @@ else if (payload == "TARPAULINS") {
                 url:
                 config.APP_URL + "/send-concern?sender_psid=" + sender_psid,
                 webview_height_ratio: "compact",
-                // messenger_extensions: true
+                messenger_extensions: true
               }
             ]             
           }
@@ -12525,7 +12525,7 @@ else if (payload == "WALK_INS") {
                 url:
                 config.APP_URL + "/send-concern?sender_psid=" + sender_psid,
                 webview_height_ratio: "compact",
-                // messenger_extensions: true
+                messenger_extensions: true
               }
             ]             
           }
