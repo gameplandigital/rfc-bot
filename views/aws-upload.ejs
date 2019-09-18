@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/> <!--320-->
+
+    <%# <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> %>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>LOAN</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+    <style>
+      .space{
+        height: 20px;
+      }
+      .space-one{
+        height: 10px;
+      }
+      .space-two{
+        height: 5px;
+      }
+      .space-three{
+        height: 0.5px;
+      }
+      .text-line {
+        background-color: transparent;
+        color: black;
+        outline: none;
+        outline-style: none;
+        border-color: blue;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: solid #0084ff 1px;
+        /* padding: 0px 50px; */
+        width: 310px;
+        height: 20px;
+        padding: 8px 0px;
+      }
+      /*---------------------------
+        Blue Button
+      ---------------------------*/
+      .hidden-button {
+        margin-left: 25px;
+        margin-right: 10px;
+        font-size: px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #fff;
+        border: 1px solid #fff;
+        width: 35px;
+        height: 55px;
+        line-height: 35px;
+        position: center;
+        border-radius: 11px;
+        outline: none;
+        -webkit-transition: all ease .15s;
+        -o-transition: all ease .15s;
+        -moz-transition: all ease .15s;
+        transition: all ease .15s;
+
+      }
+      .fb-message-blue {
+        margin-left: 25px;
+        font-size: px;
+        font-family: Helvetica, Arial, sans-serif;
+        text-decoration: none;
+        color: #fff;
+        background-color: #0084ff;
+        border: 1px solid #0084ff;
+        width: 120px;
+        height: 55px;
+        line-height: 35px;
+        position: center;
+        border-radius: 11px;
+        outline: none;
+        -webkit-transition: all ease .15s;
+        -o-transition: all ease .15s;
+        -moz-transition: all ease .15s;
+        transition: all ease .15s;
+      }
+      .fb-message-blue:hover {
+        background-color: #2093ff;
+        border: 1px solid #2093ff;
+        -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+        /* transform: scale(1.15); */ /* uncomment to add zoom effect */
+      }
+      .fb-message-blue:focus {
+        background-color: #0084ff;
+        border: 1px solid #0084ff;
+        -webkit-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.3);
+        -moz-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.3);
+        box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.3);
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+body {
+  background-color: transparent;
+}
+
+#regForm {
+  background-color: #ffffff;
+  margin: 0px auto;
+  font-family: Raleway;
+  padding: 0px;
+  width: 20%;
+  min-width: 300px;
+}
+
+h1 {
+  text-align: center;  
+}
+
+input {
+        background-color: transparent;
+        font-size: 16px;
+        color: black;
+        outline: none;
+        outline-style: none;
+        border-color: blue;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: solid #0084ff 1px;
+        /* padding: 0px 50px; */
+        width: 320px;
+        height: 200px;
+        padding: 8px 0px;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 3px;
+  width: 3px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.step.finish {
+  background-color: #4CAF50;
+}
+
+    select#soflow, select#soflow-color {
+        background-color: transparent;
+        color: grey;
+        outline: none;
+        outline-style: none;
+        border-color: blue;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: solid #0084ff 1px;
+        width: 320px;
+        height: 20px;
+        padding: 0px -1px;
+      }
+
+
+.fb-share {
+  vertical-align: top;
+  display: inline-block;
+  height: 25px;
+  padding: 2.3px 13px;
+  border: 0px solid #cad4e7;
+  border-radius: 20px;
+  background: #eceef5;
+  color: #3b5998;
+  font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  /* IE7 */
+  *display: inline;
+  *zoom: 1;
+}
+
+
+
+
+
+
+
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(41, 41, 41, 0.815);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+#text2{
+  position: center;
+  top: 45%;
+  left: 40%;
+  right: 40%;
+  font-size: 17px;
+  color: rgb(189, 189, 189);
+  /* transform: translate(-40%,-40%);
+  -ms-transform: translate(-40%,-40%); */
+}
+
+
+/*=======================
+       C-Container
+=========================*/
+.c-container {
+  max-width: 27rem;
+  margin: 1rem auto 0;
+  padding: 1rem;
+}
+
+/*=======================
+       O-Circle
+=========================*/
+
+.o-circle {
+  display: flex;
+  width: 10.555rem; height: 10.555rem;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 50%; 
+  animation: circle-appearance .8s ease-in-out 1 forwards, set-overflow .1s 1.1s forwards;
+}
+
+.c-container__circle {
+  margin: 0 auto 5.5rem;
+}
+
+/*=======================
+    C-Circle Sign
+=========================*/
+      
+.o-circle__sign {
+  position: relative;
+  opacity: 0;
+  background: #d8d20c;
+  animation-duration: .8s;
+  animation-delay: .2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.o-circle__sign::before, 
+.o-circle__sign::after {
+  content: "";
+  position: absolute;
+  background: inherit;
+}
+
+.o-circle__sign::after {
+  left: 100%; top: 0%;
+  width: 500%; height: 95%; 
+  transform: translateY(4%) rotate(0deg);
+  border-radius: 0;
+  opacity: 0;
+  animation: set-shaddow 0s 1.13s ease-in-out forwards;
+  z-index: -1;
+}
+
+
+/*=======================
+      Sign Success
+=========================*/
+ 
+.o-circle__sign--success { 
+  background: rgb(57, 68, 219);
+}
+
+.o-circle__sign--success .o-circle__sign {
+  width: 1rem; height: 6rem;
+  border-radius: 50% 50% 50% 50% / 10%;
+  transform: translateX(130%) translateY(35%) rotate(45deg) scale(.11);  
+  animation-name: success-sign-appearance;
+}
+
+.o-circle__sign--success .o-circle__sign::before {
+   bottom: -16%;
+   width: 100%; height: 43%; 
+   transform: translateX(-130%) rotate(90deg);
+   border-radius: 50% 50% 50% 50% / 20%;
+
+}
+
+/*--shadow--*/
+.o-circle__sign--success .o-circle__sign::after {
+   background: rgb(39, 25, 122);
+}
+ 
+
+/*=======================
+      Sign Failure
+=========================*/
+
+.o-circle__sign--failure {
+  background: rgb(236, 78, 75);
+}
+
+.o-circle__sign--failure .o-circle__sign {
+  width: 1rem; height: 7rem;
+  transform: translateY(25%) rotate(45deg) scale(.1);
+  border-radius: 50% 50% 50% 50% / 10%;
+  animation-name: failure-sign-appearance;
+}
+
+.o-circle__sign--failure .o-circle__sign::before {
+   top: 50%;
+   width: 100%; height: 100%; 
+   transform: translateY(-50%) rotate(90deg);
+   border-radius: inherit;
+} 
+
+/*--shadow--*/
+.o-circle__sign--failure .o-circle__sign::after {
+   background: rgba(175, 57, 55, .8);
+}
+
+
+/*-----------------------
+      @Keyframes
+--------------------------*/
+ 
+/*CIRCLE*/
+@keyframes circle-appearance {
+  0% { transform: scale(0); }
+  
+  50% { transform: scale(1.5); }
+          
+  60% { transform: scale(1); }
+  
+  100% { transform: scale(1); }
+}
+
+/*SIGN*/
+@keyframes failure-sign-appearance {         
+  50% { opacity: 1;  transform: translateY(25%) rotate(45deg) scale(1.7); }
+    
+  100% { opacity: 1; transform: translateY(25%) rotate(45deg) scale(1); }
+}
+
+@keyframes success-sign-appearance {      
+  50% { opacity: 1;  transform: translateX(130%) translateY(35%) rotate(45deg) scale(1.7); }
+    
+  100% { opacity: 1; transform: translateX(130%) translateY(35%) rotate(45deg) scale(1); }
+}
+ 
+
+@keyframes set-shaddow {
+  to { opacity: 1; }
+}
+
+@keyframes set-overflow {
+  to { overflow: hidden; }
+}
+
+
+
+/*+++++++++++++++++++
+    @Media Queries
++++++++++++++++++++++*/
+
+@media screen and (min-width: 1300px) {
+  
+  HTML { font-size: 1.5625em; } /* 25 / 16 = 1.5625 */
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+<body>
+<center>
+  <!-- onsubmit="uploadCampaign(); return false; -->
+  <!-- action="/aws-upload1" method="POST" -->
+<form id="regForm" onsubmit="nextPrev(1);  return false;">
+  <h1></h1>
+
+
+  <input type="hidden" id="sender_id" name="sender_psid" value="<%= sender_psid %>">
+
+  <div class="tab">
+      <p>Attach your primary Valid I.D<input type="file" id="doc1" name="doc1" accept="application/pdf" class="fb-share"></p>
+      <p class="space-three"></p>      
+      <p>Attach your secondary Valid I.D<input type="file" id="doc2" name="doc2" accept="application/pdf"class="fb-share"></p>
+  <!-- </div>
+  <div class="tab"> -->
+      <p class="space-three"></p>        
+
+      <p>Attach your latest billing<input type="file" id="doc3" name="doc3" accept="application/pdf"class="fb-share"></p>
+      <p class="space-three"></p>        
+      <p>Attach your last payslip<input type="file" id="doc4" name="doc4" accept="application/pdf"class="fb-share"></p>   
+  </div>
+<!-- onclick="off()" -->
+  <div id="overlay">
+      <p></p>        
+      <div class="o-circle c-container__circle o-circle__sign--success">
+          <div class="o-circle__sign"></div>  
+        </div>         
+      <div id="text">Success</div>
+      <div id="text2">A RFC employee will contact you in a few days.</div>
+    </div>
+
+  <div style="overflow:no;">
+    <div style="float:left;">
+    <center>
+
+      	<!-- <a class="button" href="#popup1">Let me Pop up</a> -->
+<br>
+      <!-- <input type="submit" class="fb-message-blue" value="upload"> -->
+
+      <button class="hidden-button" type="button" id="prevBtn" onclick="on()" style="margin-left:19px;margin-top:60px;">Previous</button>
+      <button href="https://rfc-bot.herokuapp.com/marital-status" class="fb-message-blue" type="submit" id="nextBtn" style="margin-left:98px">Next</button>
+      <!-- <button class="fb-message-blue" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button> -->
+
+    </div>
+  </div>
+  <h1 class="space-one"></h1> 
+  <h1 class="space-two*-*[class]="expression"></h1> 
+
+
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="margin-left:19px;margin-top:40px;">
+    <span class="step"></span>
+    <!-- <span class="step"></span> -->
+  </div>
+</form>
+
+<script>
+
+
+  //   function on() {
+  //    alert("SUCCESS!!!");
+  //   // document.getElementById("overlay").style.display = "block";
+  // }
+
+
+      
+    function uploadAws() {
+      // on()
+
+    var file = $("#doc1")[0].files[0];
+    var file2 = $("#doc2")[0].files[0];
+
+    var file3 = $("#doc3")[0].files[0];
+    var file4 = $("#doc4")[0].files[0];
+
+    // $("#sender_psid").value;
+    var psid = document.getElementById("sender_id").value
+
+
+    console.log("+++++++++++++++++++++++")
+    console.log(psid)
+    console.log("+++++++++++++++++++++++")
+
+
+
+    var formData = new FormData();
+    formData.append("psid", psid);
+    formData.append("file", file);
+    formData.append("file2", file2);
+    formData.append("file3", file3);
+    formData.append("file4", file4);
+
+
+
+    $.ajax({
+      method: "POST",
+      url: "/api/aws",
+      data: formData,
+      processData: false,
+      contentType: false,
+
+      success: function() {
+        console.log("Success");
+      },
+      error: function() {
+        console.log("Error"); 
+      }
+    });
+
+    }
+
+var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the current tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  //... and fix the Previous/Next buttons:
+   if (n == 0) {
+     document.getElementById("prevBtn").style.display = "none";
+   } else {
+     document.getElementById("prevBtn").style.display = "inline";
+   }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
+  if (n == 0) {
+     document.getElementById("hidden").style.display = "inline";
+   } else {
+     document.getElementById("hidden").style.display = "none";
+   }
+
+  //... and run a function that will display the correct step indicator:
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateForm()) return false;
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form...
+  if (currentTab >= x.length) {
+    uploadAws()
+    on()
+    // ... the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  // showTab(currentTab);
+  on()
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+</script>
+
+</body>
+</html>

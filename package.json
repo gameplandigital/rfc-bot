@@ -1,0 +1,36 @@
+{
+  "name": "rfc-bot",
+  "version": "1.0.0",
+  "description": "- **Bot Name:** Cloudfone Patsy - **Author:** This account, LoL!",
+  "main": "app.js",
+  "dependencies": {
+    "aws-sdk": "^2.520.0",
+    "body-parser": "^1.19.0",
+    "botbuilder-adapter-facebook": "^1.0.3",
+    "botkit": "^4.0.2",
+    "busboy": "^0.3.1",
+    "cors": "^2.8.5",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.5",
+    "moment-timezone": "^0.5.25",
+    "mysql": "^2.17.1",
+    "request": "^2.88.0",
+    "require": "^2.4.20",
+    "save": "^2.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JOE",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gameplandigital/rfc-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gameplandigital/rfc-bot/issues"
+  },
+  "homepage": "https://github.com/gameplandigital/rfc-bot#readme"
+}
