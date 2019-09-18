@@ -13035,6 +13035,7 @@ app.post('/api/aws', (req, res) => {
                 console.log(err)
               }
                 console.log("SUCCESSFULLY UPDATE USER");
+                res.render("user_create");
               })
            }
          )  

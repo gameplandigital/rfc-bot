@@ -445,7 +445,9 @@ button:hover {
 <center>
   <!-- onsubmit="uploadCampaign(); return false; -->
   <!-- action="/aws-upload1" method="POST" -->
-<form id="regForm" onsubmit="nextPrev(1);  return false;">
+<!-- <form id="regForm" onsubmit="nextPrev(1);  return false;"> -->
+  <form id="regForm" onsubmit="uploadAws();  return false;">
+
   <h1></h1>
 
 
@@ -482,7 +484,7 @@ button:hover {
       <!-- <input type="submit" class="fb-message-blue" value="upload"> -->
 
       <button class="hidden-button" type="button" id="prevBtn" onclick="on()" style="margin-left:19px;margin-top:60px;">Previous</button>
-      <button href="https://rfc-bot.herokuapp.com/marital-status" class="fb-message-blue" type="submit" id="nextBtn" style="margin-left:98px">Next</button>
+      <button href="https://rfc-bot.herokuapp.com/marital-status" class="fb-message-blue" type="button" onclick="nextPrev(1)" id="nextBtn" style="margin-left:98px">Next</button>
       <!-- <button class="fb-message-blue" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button> -->
 
     </div>
@@ -501,15 +503,15 @@ button:hover {
 <script>
 
 
-  //   function on() {
-  //    alert("SUCCESS!!!");
-  //   // document.getElementById("overlay").style.display = "block";
-  // }
+    function on() {
+    //  alert("SUCCESS!!!");
+     document.getElementById("overlay").style.display = "block";
+  }
 
 
       
     function uploadAws() {
-      // on()
+       on()
 
     var file = $("#doc1")[0].files[0];
     var file2 = $("#doc2")[0].files[0];
@@ -542,7 +544,6 @@ button:hover {
       data: formData,
       processData: false,
       contentType: false,
-
       success: function() {
         console.log("Success");
       },
@@ -593,14 +594,19 @@ function nextPrev(n) {
   // if you have reached the end of the form...
   if (currentTab >= x.length) {
     uploadAws()
-    on()
+    console.log("************************************************************")
+    console.log("************************************************************")
+    console.log("************************************************************")
+    console.log("************************************************************")
+    console.log("************************************************************")
+    console.log("************************************************************")
+
     // ... the form gets submitted:
     document.getElementById("regForm").submit();
     return false;
   }
   // Otherwise, display the correct tab:
   // showTab(currentTab);
-  on()
 }
 
 function validateForm() {
