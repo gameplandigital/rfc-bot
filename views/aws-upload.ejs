@@ -454,16 +454,16 @@ button:hover {
   <input type="hidden" id="sender_id" name="sender_psid" value="<%= sender_psid %>">
 
   <div class="tab">
-      <p>Attach your primary Valid I.D<input type="file" id="doc1" name="doc1" accept="application/pdf" class="fb-share"></p>
+      <p>Attach your primary Valid I.D<input type="file" id="doc1" name="doc1" accept="application/pdf" class="fb-share" required></p>
       <p class="space-three"></p>      
-      <p>Attach your secondary Valid I.D<input type="file" id="doc2" name="doc2" accept="application/pdf"class="fb-share"></p>
+      <p>Attach your secondary Valid I.D<input type="file" id="doc2" name="doc2" accept="application/pdf"class="fb-share" required></p>
   <!-- </div>
   <div class="tab"> -->
       <p class="space-three"></p>        
 
-      <p>Attach your latest billing<input type="file" id="doc3" name="doc3" accept="application/pdf"class="fb-share"></p>
+      <p>Attach your latest billing<input type="file" id="doc3" name="doc3" accept="application/pdf"class="fb-share" required></p>
       <p class="space-three"></p>        
-      <p>Attach your last payslip<input type="file" id="doc4" name="doc4" accept="application/pdf"class="fb-share"></p>   
+      <p>Attach your last payslip<input type="file" id="doc4" name="doc4" accept="application/pdf"class="fb-share" required onchange="check()"></p>   
   </div>
 <!-- onclick="off()" -->
   <div id="overlay">
@@ -484,7 +484,7 @@ button:hover {
       <!-- <input type="submit" class="fb-message-blue" value="upload"> -->
 
       <button class="hidden-button" type="button" id="prevBtn" onclick="on()" style="margin-left:19px;margin-top:60px;">Previous</button>
-      <button href="https://rfc-bot.herokuapp.com/marital-status" class="fb-message-blue" type="button" onclick="nextPrev(1)" id="nextBtn" style="margin-left:98px">Next</button>
+      <button href="https://rfc-bot.herokuapp.com/marital-status" class="fb-message-blue" type="button" onclick="uploadAws()" id="nextBtn" style="margin-left:98px">Next</button>
       <!-- <button class="fb-message-blue" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button> -->
 
     </div>
@@ -501,6 +501,24 @@ button:hover {
 </form>
 
 <script>
+	check()
+    function check(){
+      var a = document.getElementById("doc1").files.length;
+      var b = document.getElementById("doc2").files.length;
+      var c = document.getElementById("doc3").files.length;
+      var d = document.getElementById("doc4").files.length;
+
+      if( a === 0 || b === 0 || c === 0 || d === 0 ){
+        console.log("no files selected");
+        document.getElementById("nextBtn").style.display = "none";
+      }
+      else {
+        // uploadAws()
+        console.log(" files selected");
+        document.getElementById("nextBtn").style.display = "block";
+      }
+      
+      }
 
 
     function on() {
