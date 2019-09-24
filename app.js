@@ -315,7 +315,7 @@ function handleAddress(sender_psid, received_message){
             elements: 
             [
             {
-              title: "",              
+              
               image_url: SERVER_URL + "/assets/new/Apply for a loan.jpg",
               buttons: 
               [
@@ -327,7 +327,7 @@ function handleAddress(sender_psid, received_message){
               ],
             },
             {
-              title: "",              
+              
               image_url: SERVER_URL + "/assets/new/Contact an RFC branch",
               buttons: 
               [
@@ -339,7 +339,7 @@ function handleAddress(sender_psid, received_message){
               ],
             },
             {
-              title: "",              
+              
               image_url: SERVER_URL + "/assets/new/More information.jpg",
               buttons: 
               [
@@ -378,7 +378,7 @@ else if (payload === "MENU_MAIN_MENU") {
             elements: 
             [
             {
-              title: "",              
+              
               image_url: SERVER_URL + "/assets/new/Apply for a loan.jpg",
               buttons: 
               [
@@ -390,7 +390,7 @@ else if (payload === "MENU_MAIN_MENU") {
               ],
             },
             {
-              title: "",              
+              
               image_url: SERVER_URL + "/assets/new/Contact an RFC branch.jpg",
               buttons: 
               [
@@ -402,7 +402,7 @@ else if (payload === "MENU_MAIN_MENU") {
               ],
             },
             {
-              title: "",              
+              
               image_url: SERVER_URL + "/assets/new/More information.jpg",
               buttons: 
               [
@@ -1077,8 +1077,7 @@ var handleQuickReply = (sender_psid, received_postback, received_message, callba
           template_type: "generic",
           elements: 
           [
-          {
-            title: "",              
+          {              
             image_url: SERVER_URL + "/assets/new/Apply for a loan.jpg",
             buttons: 
             [
@@ -1089,8 +1088,7 @@ var handleQuickReply = (sender_psid, received_postback, received_message, callba
               }
             ],
           },
-          {
-            title: "",              
+          {              
             image_url: SERVER_URL + "/assets/new/Contact an RFC branch.jpg",
             buttons: 
             [
@@ -1101,8 +1099,7 @@ var handleQuickReply = (sender_psid, received_postback, received_message, callba
               }
             ],
           },
-          {
-            title: "",              
+          {              
             image_url: SERVER_URL + "/assets/new/More information.jpg",
             buttons: 
             [
