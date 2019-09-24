@@ -12697,7 +12697,9 @@ app.post('/user_create', (req, res) => {
   console.log("bday: " + req.body.bday)
   console.log("education: " + req.body.education)
   console.log("nationality: " + req.body.nationality)
-  console.log("address: " + req.body.address)
+  console.log("province: " + req.body.province)
+  console.log("city: " + req.body.city)
+  console.log("barangay: " + req.body.barangay)
   console.log("email: " + req.body.email)
   console.log("number: " + req.body.number)
   console.log("dependents: " + req.body.dependents)
@@ -12714,14 +12716,15 @@ app.post('/user_create', (req, res) => {
   console.log("additional: " + req.body.additional)
   console.log("expense: " + req.body.expense)
   console.log("terms : " + req.body.accept)
-
   console.log("PSID: " + req.body.sender_psid)
 
   const firstName = req.body.create_first_name
   const middleName = req.body.create_middle_name
   const lastName = req.body.create_last_name
   const bday = req.body.bday
-  const address = req.body.address
+  const province = req.body.province
+  const city = req.body.city
+  const barangay = req.body.barangay
   const yearsStay = req.body.yearsStay
   const monthStay = req.body.monthStay
   const email = req.body.email
@@ -12737,8 +12740,8 @@ app.post('/user_create', (req, res) => {
 
   const psid = req.body.sender_psid
 
-  const queryString = "UPDATE rfc_apply SET fname = ?, mname = ?, lname = ?, birthday = ?,  address = ?, year_stay = ?, month_stay = ?, email = ?, m_number = ?, monthly_salary = ?, loan_amount_request = ?, addition_income = ?, terms_condition = ?, doc1 = ?, doc2 = ?, doc3 = ?, doc4 = ? WHERE user_id = ?"
-  getConnection.query(queryString, [firstName, middleName, lastName, bday, address, yearsStay, monthStay, email, number, monthlySalary, amountRequest, additional, accept, doc1, doc2, doc3, doc4, psid], (err, result, fields) =>{
+  const queryString = "UPDATE rfc_apply SET fname = ?, mname = ?, lname = ?, birthday = ?,  province = ?, city = ?, barangay = ?, year_stay = ?, month_stay = ?, email = ?, m_number = ?, monthly_salary = ?, loan_amount_request = ?, addition_income = ?, terms_condition = ?, doc1 = ?, doc2 = ?, doc3 = ?, doc4 = ? WHERE user_id = ?"
+  getConnection.query(queryString, [firstName, middleName, lastName, bday, province, city, barangay, yearsStay, monthStay, email, number, monthlySalary, amountRequest, additional, accept, doc1, doc2, doc3, doc4, psid], (err, result, fields) =>{
     if (err){
       console.log("FAILED TO INSERT " + err)
       // res.render("marital-status");
