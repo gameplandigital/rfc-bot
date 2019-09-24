@@ -315,8 +315,8 @@ function handleAddress(sender_psid, received_message){
             elements: 
             [
             {
-              title: "______________________________________",              
-              image_url: SERVER_URL + "/assets/new/Apply for a loan.jpg",
+              title: ".",              
+              image_url: SERVER_URL + "/assets/Apply for a loan.jpg",
               buttons: 
               [
                 {
@@ -327,8 +327,8 @@ function handleAddress(sender_psid, received_message){
               ],
             },
             {
-              title: "______________________________________",              
-              image_url: SERVER_URL + "/assets/new/Contact an RFC branch",
+              title: ".",              
+              image_url: SERVER_URL + "/assets/Contact an RFC branch",
               buttons: 
               [
                 {
@@ -339,8 +339,8 @@ function handleAddress(sender_psid, received_message){
               ],
             },
             {
-              title: "______________________________________",              
-              image_url: SERVER_URL + "/assets/new/More information.jpg",
+              title: ".",              
+              image_url: SERVER_URL + "/assets/More information.jpg",
               buttons: 
               [
                 {
@@ -378,8 +378,8 @@ else if (payload === "MENU_MAIN_MENU") {
             elements: 
             [
             {
-              title: "______________________________________",              
-              image_url: SERVER_URL + "/assets/new/Apply for a loan.jpg",
+              title: ".",              
+              image_url: SERVER_URL + "/assets/Apply for a loan.jpg",
               buttons: 
               [
                 {
@@ -390,8 +390,8 @@ else if (payload === "MENU_MAIN_MENU") {
               ],
             },
             {
-              title: "______________________________________",              
-              image_url: SERVER_URL + "/assets/new/Contact an RFC branch.jpg",
+              title: ".",              
+              image_url: SERVER_URL + "/assets/Contact an RFC branch.jpg",
               buttons: 
               [
                 {
@@ -402,8 +402,8 @@ else if (payload === "MENU_MAIN_MENU") {
               ],
             },
             {
-              title: "______________________________________",              
-              image_url: SERVER_URL + "/assets/new/More information.jpg",
+              title: ".",              
+              image_url: SERVER_URL + "/assets/More information.jpg",
               buttons: 
               [
                 {
@@ -482,7 +482,7 @@ else if (payload == "MORE_INFORMATION") {
         template_type: "generic",
         elements: [{
           title: "FAQS",
-          image_url: SERVER_URL + "/assets/new/FAQ.jpg",
+          image_url: SERVER_URL + "/assets/FAQ.jpg",
           buttons: [{
               type: "postback",
               title: "Show list",
@@ -490,7 +490,7 @@ else if (payload == "MORE_INFORMATION") {
             }],
           },{
           title: "Talk to us.",            
-          image_url: SERVER_URL + "/assets/new/Leave a message.jpg",
+          image_url: SERVER_URL + "/assets/Leave a message.jpg",
           buttons: [{
               type: "postback",
               title: "Leave us a message.",
@@ -530,7 +530,7 @@ else if (payload == "faq_concern") {
         template_type: "generic",
         elements: [{
           title: "APPLICATION & APPROVALS",              
-          image_url: SERVER_URL + "/assets/new/Applications and Approvals.jpg",
+          image_url: SERVER_URL + "/assets/Applications and Approvals.jpg",
            buttons: [{
               type: "postback",
               title: "LEARN MORE",
@@ -538,7 +538,7 @@ else if (payload == "faq_concern") {
             }],
           },{
           title: "FEE'S & REPAYMENT",              
-          image_url: SERVER_URL + "/assets/new/Fees and Repayments.jpg",
+          image_url: SERVER_URL + "/assets/Fees and Repayments.jpg",
           buttons: [{
               type: "postback",
               title: "LEARN MORE",
@@ -562,7 +562,7 @@ else if (payload == "FAQ_Application") {
         template_type: "generic",
         elements: [{
           title: "HOW TO APPLY FOR A LOAN?",              
-          image_url: SERVER_URL + "/assets/new/How do I apply.jpg",
+          image_url: SERVER_URL + "/assets/How do I apply.jpg",
           buttons: [{
               type: "postback",
               title: "LEARN MORE",
@@ -570,7 +570,7 @@ else if (payload == "FAQ_Application") {
             }],
           },{
           title: "AM I ELIGIBLE TO APPLY?",              
-          image_url: SERVER_URL + "/assets/new/Eligible to apply.jpg",
+          image_url: SERVER_URL + "/assets/Eligible to apply.jpg",
            buttons: [{
               type: "postback",
               title: "LEARN MORE",
@@ -578,7 +578,7 @@ else if (payload == "FAQ_Application") {
             }],
           },{
           title: "WHAT ARE THE LOAN REQUIREMENT?",              
-          image_url: SERVER_URL + "/assets/new/Requirements.jpg",
+          image_url: SERVER_URL + "/assets/Requirements.jpg",
            buttons: [{
               type: "postback",
               title: "LEARN MORE",
@@ -586,7 +586,7 @@ else if (payload == "FAQ_Application") {
             }],
           },{
           title: "HOW WILL I KNOW IF MY LOAN IS APPROVED?",              
-          image_url: SERVER_URL + "/assets/new/How will i know if my loan is approved.jpg",
+          image_url: SERVER_URL + "/assets/How will i know if my loan is approved.jpg",
            buttons: [{
               type: "postback",
               title: "LEARN MORE",
@@ -602,7 +602,7 @@ else if (payload == "FAQ_Application") {
             }],
           },{
           title: "HOW DO I RENEW LOAN?",              
-          image_url: SERVER_URL + "/assets/new/How do I renew a loan.jpg",
+          image_url: SERVER_URL + "/assets/How do I renew a loan.jpg",
            buttons: [{
               type: "postback",
               title: "LEARN MORE",
@@ -625,7 +625,7 @@ else if (payload == "FAQ_Fees") {
         template_type: "generic",
         elements: [{
           title: "IS THERE AN APPLICATION FEE?",              
-          image_url: SERVER_URL + "/assets/new/Is there an application fee.jpg",
+          image_url: SERVER_URL + "/assets/Is there an application fee.jpg",
           buttons: [{
               type: "postback",
               title: "LEARN MORE",
@@ -633,7 +633,7 @@ else if (payload == "FAQ_Fees") {
             }],
           },{
           title: "HOW WILL I PAY MY AMORTIZATION?",              
-          image_url: SERVER_URL + "/assets/new/How will I pay my amortization.jpg",
+          image_url: SERVER_URL + "/assets/How will I pay my amortization.jpg",
            buttons: [{
               type: "postback",
               title: "LEARN MORE",
@@ -641,7 +641,7 @@ else if (payload == "FAQ_Fees") {
             }],
           },{
           title: "DO I GET A DISCOUNT IF I WILL PAY MY LOAN ACCOUNT THROUGH ACCELERATION?",              
-          image_url: SERVER_URL + "/assets/new/Do I get a discount.jpg",
+          image_url: SERVER_URL + "/assets/Do I get a discount.jpg",
           buttons: [{
               type: "postback",
               title: "LEARN MORE",
@@ -1078,8 +1078,8 @@ var handleQuickReply = (sender_psid, received_postback, received_message, callba
           elements: 
           [
           {
-            title: "______________________________________",              
-            image_url: SERVER_URL + "/assets/new/Apply for a loan.jpg",
+            title: ".",              
+            image_url: SERVER_URL + "/assets/Apply for a loan.jpg",
             buttons: 
             [
               {
@@ -1090,8 +1090,8 @@ var handleQuickReply = (sender_psid, received_postback, received_message, callba
             ],
           },
           {
-            title: "______________________________________",              
-            image_url: SERVER_URL + "/assets/new/Contact an RFC branch.jpg",
+            title: ".",              
+            image_url: SERVER_URL + "/assets/Contact an RFC branch.jpg",
             buttons: 
             [
               {
@@ -1102,8 +1102,8 @@ var handleQuickReply = (sender_psid, received_postback, received_message, callba
             ],
           },
           {
-            title: "______________________________________",              
-            image_url: SERVER_URL + "/assets/new/More information.jpg",
+            title: ".",              
+            image_url: SERVER_URL + "/assets/More information.jpg",
             buttons: 
             [
               {
