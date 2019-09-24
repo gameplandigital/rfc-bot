@@ -35,9 +35,13 @@
         height: 0.5px;
       }
 
+      .space-four{
+        height: 0.1px;
+      }
+
       .text-line {
         background-color: transparent;
-        color: black;
+        color: white;
         outline: none;
         outline-style: none;
         border-color: blue;
@@ -48,10 +52,10 @@
         /* padding: 0px 50px; */
         width: 310px;
         height: 20px;
-        padding: 8px 0px;
+        padding: 0px -1px;
+        margin-left: -10px;
       }
       
-
       /*---------------------------
         Blue Button
       ---------------------------*/
@@ -78,13 +82,12 @@
 
 
       .fb-message-blue {
-        margin-left: 25px;
-        font-size: px;
+        margin-left: 10px;
         font-family: Helvetica, Arial, sans-serif;
         text-decoration: none;
         color: #fff;
         background-color: #0084ff;
-        border: 1px solid #0084ff;
+        border: 2px solid #0084ff;
         width: 120px;
         height: 55px;
         line-height: 35px;
@@ -147,6 +150,7 @@ input {
         width: 320px;
         height: 20px;
         padding: 8px 0px;
+        margin-left: -10px;
 }
 
 /* Mark input boxes that gets an error on validation: */
@@ -210,6 +214,7 @@ button:hover {
         width: 320px;
         height: 20px;
         padding: 0px -1px;
+        margin-left: -10px;
       }
 
 
@@ -265,6 +270,7 @@ button:hover {
         width: 320px;
         height: 20px;
         padding: 0px -1px;
+        margin-left: -10px;
       }
 
       select#city, select#city-color {
@@ -280,6 +286,25 @@ button:hover {
         width: 320px;
         height: 20px;
         padding: 0px -1px;
+        margin-left: -10px;
+        margin-top: 6px;
+      }
+
+      select#barangay, select#barangay-color {
+        background-color: transparent;
+        color: grey;
+        outline: none;
+        outline-style: none;
+        border-color: blue;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: solid #0084ff 1px;
+        width: 320px;
+        height: 20px;
+        padding: 0px -1px;
+        margin-left: -10px;
+        margin-top: 6px;
       }
       </style>
 
@@ -398,19 +423,20 @@ button:hover {
       </p>
 
       <p>              
-        <select id="city" name="city" class="form-control non-blank">
+        <select id="city" name="city-temp" class="form-control non-blank">
             <option value="" selected="">Select City</option>
         </select>
         <input type="hidden" name="city" value="">
       </p>
-
+        
       <p>
-        <select id="barangay" name="barangay" class="form-control non-blank">
+        <select id="barangay" name="barangay-temp" class="form-control non-blank">
             <option value="" selected="">Select Barangay</option>
         </select>
         <input type="hidden" name="barangay" value="">
       </p>
 
+      <p style="margin-top: 30px;"> </p>
 
   </div>
 
@@ -4173,7 +4199,7 @@ button:hover {
 
 
   <div class="tab">
-      <p>         
+      <p>Years of Stay
         <select id="soflow" name="yearsStay" required />
           <option value="" disabled selected>Years of stay</option>
           <option value="1"> 1</option>
@@ -4218,7 +4244,8 @@ button:hover {
           <option value="40"> 40</option>
         </select>  
       </p>
-      <p>        
+      <div style="margin-top: 25px;"></div>
+      <p>Months of Stay   
         <select id="soflow" name="monthStay" required />
            <option value="" selected="">Month of stay</option>
             <option value="1"> 1</option>
@@ -4235,44 +4262,53 @@ button:hover {
         </select>
         <h1><h1>
       </p>
+      <div style="margin-top: -2px;"></div>
   </div>
 
   <div class="tab">
       <p>E-mail:<input type="email"  id="text-line" placeholder="E-mail..." oninput="this.className = ''" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autofocus="true" required /><h1></h1></p>
-      <p>Mobile:<input type="tel" id="text-line" placeholder="Number..." oninput="this.className = ''" name="number" autofocus="true" maxlength="15" value="(+63)" required /><h1></h1></p>
-  </div>
+      <p>Mobile:<input style="margin-top: 5px" type="tel" id="text-line" placeholder="Number..." oninput="this.className = ''" name="number" autofocus="true" maxlength="15" value="(+63)" required /><h1></h1></p>
+      <div style="margin-top: 30px;"></div>
+    </div>
 
   <div class="tab">
       <p>Birthday:<input type="date" id="text-line" placeholder="..." oninput="this.className = ''" name="bday" autofocus="true" required /></p>
       <h1 class="space-two"></h1> 
       <h1 class="space-two"></h1> 
+      <div style="margin-top: 43px;"></div>
+
   </div>
 
   <div class="tab">
       <p>Monthly Salary:<input type="number" id="text-line" placeholder="..." oninput="this.className = ''" name="monthlySalary" autofocus="true" required /></p>
       <p>Additional Income:<input type="number" id="text-line" placeholder="..." oninput="this.className = ''" name="additional" autofocus="true" required /></p> 
+      <div style="margin-top: 40px;"></div>
   </div>
 
   <div class="tab">
-      <p>We're Almost There!</p>
-      <a href="https://www.rfc.com.ph/terms/">Terms and condition<input type="checkbox" checked="checked" name="accept" value="True" align="right" width="48" height="48"></a>
-  </div>
+      <p><h1>We're Almost There!</h1></p>
+      <div style="margin-top: 15px;"></div>
+      <a href="https://www.rfc.com.ph/terms/">Terms and condition
+      <div style="margin-top: 10px;"></div>  
+      <input style="margin-right: 400px;" type="checkbox" checked="checked" name="accept" value="True" align="right" width="48" height="48"></a>
+      <div style="margin-top: 20px;"></div>
+    </div>
 
 
   <div style="overflow:no;">
     <div style="float:left;">
     <center>
       <button class="hidden-button" type="button" id="hidden"></button>
-      <button class="fb-message-blue" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button style="margin-left:25px;" class="fb-message-blue" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
       <button class="fb-message-blue" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
     </div>
   </div>
   <h1 class="space-one"></h1> 
-  <h1 class="space-two*-*[class]="expression"></h1> 
+  <!-- <h1 class="space-two*-*[class]="expression"></h1>  -->
 
 
   <!-- Circles which indicates the steps of the form: -->
-  <div style="margin-left:19px;margin-top:60px;">
+  <div style="margin-left:10px;margin-top:50px;">
     <span class="step"></span>
     <span class="step"></span>
     <span class="step"></span>
