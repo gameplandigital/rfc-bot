@@ -12945,7 +12945,7 @@ var uploadContentToS3 = (file, folder) => {
 //S3 UPLOAD
 app.post('/api/aws', (req, res) => {
 
-  payload = req.body.payload;
+  payload = "OPEN_SEND_CONCERN_SUCCESS";
 
   if (payload === "OPEN_SEND_CONCERN_SUCCESS") {
     const message = {
