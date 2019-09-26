@@ -328,7 +328,7 @@ function handleAddress(sender_psid, received_message){
             },
             {
               title: ".",              
-              image_url: SERVER_URL + "/assets/ContactanRFCbranch",
+              image_url: SERVER_URL + "/assets/ContactanRFCbranch.jpg",
               buttons: 
               [
                 {
