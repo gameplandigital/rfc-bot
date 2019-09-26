@@ -12946,6 +12946,7 @@ var uploadContentToS3 = (file, folder) => {
 app.post('/api/aws', (req, res) => {
 
   var payload = "OPEN_SEND_CONCERN_SUCCESS";
+  const sender_psid = req.body.psid;
 
   if (payload === "OPEN_SEND_CONCERN_SUCCESS") {
     const message = {
