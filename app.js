@@ -12945,6 +12945,22 @@ var uploadContentToS3 = (file, folder) => {
 //S3 UPLOAD
 app.post('/api/aws', (req, res) => {
 
+  payload = req.body.payload;
+
+  if (payload === "OPEN_SEND_CONCERN_SUCCESS") {
+    const message = {
+      text: "Thanks! We'll get back to you soon :)",
+      quick_replies: [
+        {
+          content_type: "text",
+          title: "Back to Main Menu",
+          payload: "MENU_MAIN_MENU"
+        }
+      ]
+    };
+    callSendAPI(sender_psid, message);
+  }
+
   const psid = req.body.psid;
   user.getUserData(psid, result => {
     const user = JSON.parse(result);

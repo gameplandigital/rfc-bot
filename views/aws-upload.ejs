@@ -446,7 +446,7 @@ button:hover {
   <!-- onsubmit="uploadCampaign(); return false; -->
   <!-- action="/aws-upload1" method="POST" -->
 <!-- <form id="regForm" onsubmit="nextPrev(1);  return false;"> -->
-  <form id="regForm" onsubmit="uploadAws();  return false;">
+  <form id="regForm" onsubmit="uploadAws('OPEN_SEND_CONCERN_SUCCESS');  return false;">
 
   <h1></h1>
 
@@ -528,7 +528,7 @@ button:hover {
 
 
       
-    function uploadAws() {
+    function uploadAws(payload) {
        on()
 
     var file = $("#doc1")[0].files[0];
@@ -562,6 +562,7 @@ button:hover {
       data: formData,
       processData: false,
       contentType: false,
+      payload,
       success: function() {
         console.log("Success");
       },
