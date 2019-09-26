@@ -316,7 +316,7 @@ function handleAddress(sender_psid, received_message){
             [
             {
               title: ".",              
-              image_url: SERVER_URL + "/assets/Apply for a loan.jpg",
+              image_url: SERVER_URL + "/assets/Applyforaloan.jpg",
               buttons: 
               [
                 {
@@ -328,7 +328,7 @@ function handleAddress(sender_psid, received_message){
             },
             {
               title: ".",              
-              image_url: SERVER_URL + "/assets/Contact an RFC branch",
+              image_url: SERVER_URL + "/assets/ContactanRFCbranch",
               buttons: 
               [
                 {
@@ -340,7 +340,7 @@ function handleAddress(sender_psid, received_message){
             },
             {
               title: ".",              
-              image_url: SERVER_URL + "/assets/More information.jpg",
+              image_url: SERVER_URL + "/assets/Moreinformation.jpg",
               buttons: 
               [
                 {
@@ -379,7 +379,7 @@ else if (payload === "MENU_MAIN_MENU") {
             [
             {
               title: ".",              
-              image_url: SERVER_URL + "/assets/Apply for a loan.jpg",
+              image_url: SERVER_URL + "/assets/Applyforaloan.jpg",
               buttons: 
               [
                 {
@@ -391,7 +391,7 @@ else if (payload === "MENU_MAIN_MENU") {
             },
             {
               title: ".",              
-              image_url: SERVER_URL + "/assets/Contact an RFC branch.jpg",
+              image_url: SERVER_URL + "/assets/ContactanRFCbranch.jpg",
               buttons: 
               [
                 {
@@ -403,7 +403,7 @@ else if (payload === "MENU_MAIN_MENU") {
             },
             {
               title: ".",              
-              image_url: SERVER_URL + "/assets/More information.jpg",
+              image_url: SERVER_URL + "/assets/Moreinformation.jpg",
               buttons: 
               [
                 {
@@ -490,7 +490,7 @@ else if (payload == "MORE_INFORMATION") {
             }],
           },{
           title: "Talk to us.",            
-          image_url: SERVER_URL + "/assets/Leave a message.jpg",
+          image_url: SERVER_URL + "/assets/Leaveamessage.jpg",
           buttons: [{
               type: "postback",
               title: "Leave us a message.",
@@ -530,7 +530,7 @@ else if (payload == "faq_concern") {
         template_type: "generic",
         elements: [{
           title: "APPLICATION & APPROVALS",              
-          image_url: SERVER_URL + "/assets/Applications and Approvals.jpg",
+          image_url: SERVER_URL + "/assets/ApplicationsandApprovals.jpg",
            buttons: [{
               type: "postback",
               title: "LEARN MORE",
@@ -538,7 +538,7 @@ else if (payload == "faq_concern") {
             }],
           },{
           title: "FEE'S & REPAYMENT",              
-          image_url: SERVER_URL + "/assets/Fees and Repayments.jpg",
+          image_url: SERVER_URL + "/assets/FeesandRepayments.jpg",
           buttons: [{
               type: "postback",
               title: "LEARN MORE",
@@ -562,7 +562,7 @@ else if (payload == "FAQ_Application") {
         template_type: "generic",
         elements: [{
           title: "HOW TO APPLY FOR A LOAN?",              
-          image_url: SERVER_URL + "/assets/How do I apply.jpg",
+          image_url: SERVER_URL + "/assets/HowdoIapply.jpg",
           buttons: [{
               type: "postback",
               title: "LEARN MORE",
@@ -570,7 +570,7 @@ else if (payload == "FAQ_Application") {
             }],
           },{
           title: "AM I ELIGIBLE TO APPLY?",              
-          image_url: SERVER_URL + "/assets/Eligible to apply.jpg",
+          image_url: SERVER_URL + "/assets/Eligibletoapply.jpg",
            buttons: [{
               type: "postback",
               title: "LEARN MORE",
@@ -586,7 +586,7 @@ else if (payload == "FAQ_Application") {
             }],
           },{
           title: "HOW WILL I KNOW IF MY LOAN IS APPROVED?",              
-          image_url: SERVER_URL + "/assets/How will i know if my loan is approved.jpg",
+          image_url: SERVER_URL + "/assets/Howwilliknowifmyloanisapproved.jpg",
            buttons: [{
               type: "postback",
               title: "LEARN MORE",
@@ -602,7 +602,7 @@ else if (payload == "FAQ_Application") {
             }],
           },{
           title: "HOW DO I RENEW LOAN?",              
-          image_url: SERVER_URL + "/assets/How do I renew a loan.jpg",
+          image_url: SERVER_URL + "/assets/HowdoIrenewaloan.jpg",
            buttons: [{
               type: "postback",
               title: "LEARN MORE",
@@ -625,7 +625,7 @@ else if (payload == "FAQ_Fees") {
         template_type: "generic",
         elements: [{
           title: "IS THERE AN APPLICATION FEE?",              
-          image_url: SERVER_URL + "/assets/Is there an application fee.jpg",
+          image_url: SERVER_URL + "/assets/Isthereanapplicationfee.jpg",
           buttons: [{
               type: "postback",
               title: "LEARN MORE",
@@ -633,7 +633,7 @@ else if (payload == "FAQ_Fees") {
             }],
           },{
           title: "HOW WILL I PAY MY AMORTIZATION?",              
-          image_url: SERVER_URL + "/assets/How will I pay my amortization.jpg",
+          image_url: SERVER_URL + "/assets/HowwillIpaymyamortization.jpg",
            buttons: [{
               type: "postback",
               title: "LEARN MORE",
@@ -641,7 +641,7 @@ else if (payload == "FAQ_Fees") {
             }],
           },{
           title: "DO I GET A DISCOUNT IF I WILL PAY MY LOAN ACCOUNT THROUGH ACCELERATION?",              
-          image_url: SERVER_URL + "/assets/Do I get a discount.jpg",
+          image_url: SERVER_URL + "/assets/DoIgetadiscount.jpg",
           buttons: [{
               type: "postback",
               title: "LEARN MORE",
@@ -1079,7 +1079,7 @@ var handleQuickReply = (sender_psid, received_postback, received_message, callba
           [
           {
             title: ".",              
-            image_url: SERVER_URL + "/assets/Apply for a loan.jpg",
+            image_url: SERVER_URL + "/assets/Applyforaloan.jpg",
             buttons: 
             [
               {
@@ -1091,7 +1091,7 @@ var handleQuickReply = (sender_psid, received_postback, received_message, callba
           },
           {
             title: ".",              
-            image_url: SERVER_URL + "/assets/Contact an RFC branch.jpg",
+            image_url: SERVER_URL + "/assets/ContactanRFCbranch.jpg",
             buttons: 
             [
               {
@@ -1103,7 +1103,7 @@ var handleQuickReply = (sender_psid, received_postback, received_message, callba
           },
           {
             title: ".",              
-            image_url: SERVER_URL + "/assets/More information.jpg",
+            image_url: SERVER_URL + "/assets/Moreinformation.jpg",
             buttons: 
             [
               {
