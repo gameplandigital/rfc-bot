@@ -1084,9 +1084,101 @@ var handleQuickReply = (sender_psid, received_postback, received_message, callba
   let response;
   let payload = received_postback.payload;
   // var user_input = received_message.text;
+
+  if (payload === "GET_STARTED") {
+
+    con.query("SELECT getstarted FROM rfc_phase2_users WHERE MessengerId = ?", [sender_psid], 
+    (error, result) => {
+        con.query("UPDATE rfc_phase2_users SET getstarted = ? WHERE MessengerId = ?",
+        ["1", sender_psid])       
+      }
+    )
+
+    con.query("SELECT get_started_date FROM rfc_apply WHERE MessengerId = ?", [sender_psid], 
+    (error, result) => {
+        con.query("UPDATE rfc_phase2_users SET getstarted = ? WHERE MessengerId = ?",
+          [moment().format("YYYY/MM/DD HH:mm:ss"), sender_psid])       
+      }
+    )
+
+
+
+  
+  
+    user.getUserData(sender_psid, result => {
+    const user = JSON.parse(result);
+    senderAction(sender_psid, "typing_on");    
+      response = {
+         text: "Hi " + user.first_name+ "!" +"\nWhat would you like to do?",
+      };
+      callSendAPI(sender_psid, response);
+    });
+  
+    setTimeout(function() {
+      senderAction(sender_psid, "typing_on");
+      response = {
+        attachment: {
+          type: "template",
+          payload: {
+            template_type: "generic",
+            elements: 
+            [
+            {
+              title: "Apply Now",              
+              image_url: SERVER_URL + "/assets/Applyforaloan.jpg",
+              buttons: 
+              [
+                {
+                  type: "postback",
+                  title: "APPLY NOW",
+                  payload: "APPLY_NOW",                                  
+                }
+              ],
+            },
+            {
+              title: "Contact An RFC Branch",              
+              image_url: SERVER_URL + "/assets/ContactanRFCbranch.jpg",
+              buttons: 
+              [
+                {
+                  type: "postback",
+                  title: "Where are you located?",
+                  payload: "LOCATION",                                  
+                }
+              ],
+            },
+            {
+              title: "More Information",              
+              image_url: SERVER_URL + "/assets/Moreinformation.jpg",
+              buttons: 
+              [
+                {
+                  type: "postback",
+                  title: "LEARN MORE",
+                  payload: "MORE_INFORMATION",                                  
+                }
+              ],                    
+            }
+          ]
+          }
+        }
+  };
+      callSendAPI(sender_psid, response);
+    }, 1500);
+
+  user.saveUser(sender_psid, "QR_USER_AGREE", result => {
+    if (result.success) {
+      console.log(`Messenger ID ${sender_psid} action saved to the database.`
+      );
+    }
+ });
+
+
+}
+
   
   // ---- GREETINGS ----
- if (payload === "MENU_MAIN_MENU") {
+ else if (payload === "MENU_MAIN_MENU") {
     senderAction(sender_psid, "typing_on");
     response = {
       attachment: {
