@@ -441,6 +441,21 @@ button:hover {
   </div>
 
   <script>	
+$(function()
+{
+    $("#myform").validate(
+      {
+        rules: 
+        {
+          item: 
+          {
+            required: true
+          }
+        }
+      });	
+});
+
+
   	$(document).ready(function () {
 
 			$('#province').change( function(){
