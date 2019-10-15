@@ -368,6 +368,24 @@ function handleAddress(sender_psid, received_message){
 }
 
 
+else if (payload === "ACCEPT") {
+  senderAction(sender_psid, "typing_on");
+  response = {
+    text: "Your accessing of the RFC chatbot onFacebook Messenger indicates your understanding, agreement to and acceptance of the Fullterms and Condition and Privacy Policy of the RFC Chatbot.",
+    quick_replies: [
+      {
+        content_type : "text",
+        title : "I Agree",
+        payload : "GET_STARTED"
+      }
+    ]
+};
+callSendAPI(sender_psid, response);
+}
+
+
+
+
 else if (payload === "MENU_MAIN_MENU") {
       senderAction(sender_psid, "typing_on");
       response = {
@@ -12756,7 +12774,7 @@ var persistentMenu = () => {
 var getStarted = () => {
   let menu = {
     get_started: {
-      payload: "GET_STARTED"
+      payload: "ACCEPT"
     },
     whitelisted_domains: [
       config.APP_URL,
