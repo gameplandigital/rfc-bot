@@ -371,7 +371,7 @@ function handleAddress(sender_psid, received_message){
 else if (payload === "ACCEPT") {
   senderAction(sender_psid, "typing_on");
   response = {
-    text: "Your accessing of the RFC chatbot on Facebook Messenger indicates your understanding, agreement to and acceptance of the Fullterms and Condition and Privacy Policy of the RFC Chatbot. Click the link below if you want to review it \n http://www.rfc.com.ph/privacy/",
+    text: "Your accessing of the RFC chatbot on Facebook Messenger indicates your understanding, agreement to and acceptance of the Fullterms and Condition and Privacy Policy of the RFC Chatbot. Click the link below if you want to review it \nhttp://www.rfc.com.ph/privacy/",
     quick_replies: [
       {
         content_type : "text",
@@ -8427,7 +8427,7 @@ else if (payload == "5-13") {
        {
         content_type : "text",
         title : "Go Back",
-        payload : " "
+        payload : "TENURE_24_ABOVE"
        }
       ]
   } 
@@ -8487,7 +8487,7 @@ else if (payload == "14-22") {
        {
         content_type : "text",
         title : "Go Back",
-        payload : " "
+        payload : "TENURE_24_ABOVE"
        }
       ]
   } 
@@ -8547,7 +8547,7 @@ else if (payload == "23-31") {
        {
         content_type : "text",
         title : "Go Back",
-        payload : " "
+        payload : "TENURE_24_ABOVE"
        }
       ]
   } 
@@ -8607,7 +8607,7 @@ else if (payload == "32-40") {
        {
         content_type : "text",
         title : "Go Back",
-        payload : " "
+        payload : "TENURE_24_ABOVE"
        }
       ]
   } 
