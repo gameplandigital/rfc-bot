@@ -11882,11 +11882,6 @@ else if (payload == "INFO_MORE") {
        },
        {
         content_type : "text",
-        title : "Referral",
-        payload : "REFERRAL"
-       },
-       {
-        content_type : "text",
         title : "Relative of RFC Employee",
         payload : "RELATIVE_OF_RFC_EMPLOYEE"
        },
@@ -11914,12 +11909,78 @@ else if (payload == "INFO_MORE") {
         content_type : "text",
         title : "Walk-Ins",
         payload : "WALK_INS"
+       },
+       {
+        content_type : "text",
+        title : "Go Back",
+        payload : "BACK_TO_INFO"
        }
       ]
   } 
   callSendAPI(sender_psid, response);
 }
 
+// ************* BACK_TO_INFO ****************
+else if (payload == "BACK_TO_INFO") {
+
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    text : "(15/15) How did you find out about RFC?",
+     quick_replies:[
+       {
+        content_type : "text",
+        title : "Branch Personnel/RFC Employee",
+        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+       },
+       {
+        content_type : "text",
+        title : "Flyers",
+        payload : "FLYERS"
+       },
+       {
+        content_type : "text",
+        title : "Friends",
+        payload : "FRIENDS"
+       },
+       {
+        content_type : "text",
+        title : "Internet",
+        payload : "INTERNET"
+       },
+       {
+        content_type : "text",
+        title : "LIC",
+        payload : "LIC"
+       },
+       {
+        content_type : "text",
+        title : "Mall Based BCOs",
+        payload : "MALL_BASED_BC_OS"
+       },
+       {
+        content_type : "text",
+        title : "MBO (MicroBusOff)",
+        payload : "MBO"
+       },
+       {
+        content_type : "text",
+        title : "Newspaper",
+        payload : "NEWSPAPER"
+       },
+       {
+        content_type : "text",
+        title : "Office Signage",
+        payload : "OFFICE_SIGNAGE"
+       },
+       {
+        content_type : "text",
+        title : "More..",
+        payload : "INFO_MORE"
+       }
+      ]
+  } 
+  callSendAPI(sender_psid, response);
+}
 
 
 
