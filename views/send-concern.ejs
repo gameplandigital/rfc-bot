@@ -423,14 +423,14 @@ button:hover {
       </p>
 
       <p>              
-        <select id="city" name="city-temp" class="form-control non-blank">
+        <select id="city" name="city-temp" class="form-control non-blank" required>
             <option value="" selected="">Select City</option>
         </select>
         <input type="hidden" name="city" value="">
       </p>
         
       <p>
-        <select id="barangay" name="barangay-temp" class="form-control non-blank">
+        <select id="barangay" name="barangay-temp" class="form-control non-blank" required>
             <option value="" selected="">Select Barangay</option>
         </select>
         <input type="hidden" name="barangay" value="">
@@ -4200,7 +4200,7 @@ button:hover {
 
   <div class="tab">
       <p>Years of Stay
-        <select id="soflow" name="yearsStay" required />
+        <select id="soflow" name="yearsStay" required>
           <option value="" disabled selected>Years of stay</option>
           <option value="1"> 1</option>
           <option value="2"> 2</option>
@@ -4246,7 +4246,7 @@ button:hover {
       </p>
       <div style="margin-top: 25px;"></div>
       <p>Months of Stay   
-        <select id="soflow" name="monthStay" required />
+        <select id="soflow" name="monthStay" required >
            <option value="" selected="">Month of stay</option>
             <option value="1"> 1</option>
             <option value="2"> 2</option>
@@ -4266,8 +4266,8 @@ button:hover {
   </div>
 
   <div class="tab">
-      <p>E-mail:<input type="email"  id="text-line" placeholder="E-mail..." oninput="this.className = ''" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autofocus="true" required /><h1></h1></p>
-      <p>Mobile:<input style="margin-top: 5px" type="tel" id="text-line" placeholder="Number..." oninput="this.className = ''" name="number" autofocus="true" maxlength="15" value="(+63)" required /><h1></h1></p>
+      <p>E-mail:<input type="email"  pattern=".+@.+.com" size="30" id="text-line" placeholder="E-mail..." oninput="this.className = ''" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autofocus="true" required /><h1></h1></p>
+      <p>Mobile: <span>(+63)</span><input style="margin-top: 5px" type="tel" id="text-line" placeholder="Number..." oninput="this.className = ''" name="number" autofocus="true" maxlength="10" value="" required /><h1></h1></p>
       <div style="margin-top: 30px;"></div>
     </div>
 
@@ -4288,11 +4288,23 @@ button:hover {
   <div class="tab">
       <p><h1>We're Almost There!</h1></p>
       <div style="margin-top: 15px;"></div>
-      <a href="https://www.rfc.com.ph/terms/">Terms and condition
+      <a href="https://www.rfc.com.ph/terms/" target="_blank">Terms and condition
       <div style="margin-top: 10px;"></div>  
-      <input style="margin-right: 400px;" type="checkbox" checked="checked" name="accept" value="True" align="right" width="48" height="48"></a>
+      <input id="myCheck" style="margin-right: 400px;" type="checkbox" checked="checked" name="accept" value="True" align="right" width="48" height="48"></a>
       <div style="margin-top: 20px;"></div>
-    </div>
+	</div>
+	
+	<script>
+		function myFunction() {
+		  var checkBox = document.getElementById("myCheck");
+		  var text = document.getElementById("nextBtn");
+		  if (checkBox.checked == true){
+			text.style.display = "block";
+		  } else {
+			 text.style.display = "none";
+		  }
+		}
+	</script>
 
 
   <div style="overflow:no;">

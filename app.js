@@ -658,7 +658,7 @@ else if (payload == "FAQ_Fees") {
               payload: "Detls_11"                                  
             }],
           },{
-          title: "DO I GET A DISCOUNT IF I WILL PAY MY LOAN ACCOUNT THROUGH ACCELERATION?",              
+          title: "DO I GET A DISCOUNT IF I PAY OFF MY LOAN BEFORE THE MATURITY DATE?",              
           image_url: SERVER_URL + "/assets/DoIgetadiscount.jpg",
           buttons: [{
               type: "postback",
@@ -11997,7 +11997,7 @@ else if (payload == "BRANCH_PERSONNEL_RFC_EMPLOYEE") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing kindly prepare the following stricly on a PDF format with 5mb file size only:\n\n (2)VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\n\nYou will be needing this files later. Thanks!" 
+      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -12043,7 +12043,7 @@ else if (payload == "FLYERS") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing kindly prepare the following stricly on a PDF format with 5mb file size only:\n\n (2)VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\n\nYou will be needing this files later. Thanks!" 
+      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -12089,7 +12089,7 @@ else if (payload == "FRIENDS") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing kindly prepare the following stricly on a PDF format with 5mb file size only:\n\n (2)VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\n\nYou will be needing this files later. Thanks!" 
+      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -12135,7 +12135,7 @@ else if (payload == "INTERNET") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing kindly prepare the following stricly on a PDF format with 5mb file size only:\n\n (2)VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\n\nYou will be needing this files later. Thanks!" 
+      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -12181,7 +12181,7 @@ else if (payload == "LIC") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing kindly prepare the following stricly on a PDF format with 5mb file size only:\n\n (2)VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\n\nYou will be needing this files later. Thanks!" 
+      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -12227,7 +12227,7 @@ else if (payload == "MALL_BASED_BC_OS") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing kindly prepare the following stricly on a PDF format with 5mb file size only:\n\n (2)VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\n\nYou will be needing this files later. Thanks!" 
+      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -12273,7 +12273,7 @@ else if (payload == "MBO") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing kindly prepare the following stricly on a PDF format with 5mb file size only:\n\n (2)VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\n\nYou will be needing this files later. Thanks!" 
+      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -12319,7 +12319,7 @@ else if (payload == "NEWSPAPER") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing kindly prepare the following stricly on a PDF format with 5mb file size only:\n\n (2)VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\n\nYou will be needing this files later. Thanks!" 
+      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -12365,7 +12365,7 @@ else if (payload == "OFFICE_SIGNAGE") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing kindly prepare the following stricly on a PDF format with 5mb file size only:\n\n (2)VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\n\nYou will be needing this files later. Thanks!" 
+      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -12411,7 +12411,7 @@ else if (payload == "PHONE_DIRECTORY") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing kindly prepare the following stricly on a PDF format with 5mb file size only:\n\n (2)VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\n\nYou will be needing this files later. Thanks!" 
+      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -12457,7 +12457,7 @@ else if (payload == "RADIO_AD") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing kindly prepare the following stricly on a PDF format with 5mb file size only:\n\n (2)VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\n\nYou will be needing this files later. Thanks!" 
+      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -12503,7 +12503,7 @@ else if (payload == "RELATIVES") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing kindly prepare the following stricly on a PDF format with 5mb file size only:\n\n (2)VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\n\nYou will be needing this files later. Thanks!" 
+      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -12549,7 +12549,7 @@ else if (payload == "REFERRAL") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing kindly prepare the following stricly on a PDF format with 5mb file size only:\n\n (2)VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\n\nYou will be needing this files later. Thanks!" 
+      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -12595,7 +12595,7 @@ else if (payload == "RELATIVE_OF_RFC_EMPLOYEE") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing kindly prepare the following stricly on a PDF format with 5mb file size only:\n\n (2)VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\n\nYou will be needing this files later. Thanks!" 
+      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -12641,7 +12641,7 @@ else if (payload == "REPEAT_CUSTOMER") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing kindly prepare the following stricly on a PDF format with 5mb file size only:\n\n (2)VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\n\nYou will be needing this files later. Thanks!" 
+      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -12687,7 +12687,7 @@ else if (payload == "RFC_ON_WHEELS") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing kindly prepare the following stricly on a PDF format with 5mb file size only:\n\n (2)VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\n\nYou will be needing this files later. Thanks!" 
+      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -12733,7 +12733,7 @@ else if (payload == "NEWSPAPER") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing kindly prepare the following stricly on a PDF format with 5mb file size only:\n\n (2)VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\n\nYou will be needing this files later. Thanks!" 
+      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -12779,7 +12779,7 @@ else if (payload == "TARPAULINS") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing kindly prepare the following stricly on a PDF format with 5mb file size only:\n\n (2)VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\n\nYou will be needing this files later. Thanks!" 
+      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -12825,7 +12825,7 @@ else if (payload == "WALK_INS") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing kindly prepare the following stricly on a PDF format with 5mb file size only:\n\n (2)VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\n\nYou will be needing this files later. Thanks!" 
+      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -12879,15 +12879,29 @@ var handleAttachments = (sender_psid, received_postback) => {
       longitude = received_postback[0].payload.coordinates.long;
 
           user.getBranches(latitude, longitude, result => {
+            // response = {
+            //   text:
+            //     "Nearest Branch: " +
+            //     result[0].name +
+            //     "\nAddress: " +
+            //     result[0].address +
+            //     "\nDistance: " +
+            //     result[0].distance.toFixed(1) +
+            //     " km",
+            //   quick_replies: [
+            //     {
+            //       content_type: "text",
+            //       title: "Back to Main Menu",
+            //       payload: "MENU_MAIN_MENU"
+            //     }
+            //   ]
+            // };
             response = {
               text:
-                "Nearest Branch: " +
                 result[0].name +
-                "\nAddress: " +
                 result[0].address +
-                "\nDistance: " +
-                result[0].distance.toFixed(1) +
-                " km",
+                "\n: " +
+                result[0].Sched,
               quick_replies: [
                 {
                   content_type: "text",

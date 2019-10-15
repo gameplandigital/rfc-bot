@@ -124,7 +124,7 @@ var saveUser = (sender_psid, action, callback) => {
 
 var getBranches = (latitude, longitude, callback) => {
   con.query(
-    'SELECT id, name, contacts, address, Mon, Tue, Wed, Thur, Fri, Sat, (6371 * acos(cos(radians("' +
+    'SELECT id, name, contacts, address, Sched, (6371 * acos(cos(radians("' +
       latitude +
       '")) * cos(radians(lat)) * cos(radians(lng) - radians("' +
       longitude +
