@@ -51,7 +51,7 @@ app.use(express.static(path.join(__dirname, "views")));
 
  app.get("/send-concern", (req, res) => {
   const sender_psid = req.query.sender_psid;
-  res.render("send-concern", { sender_psid });
+  res.render("form", { sender_psid });
 });
 
 app.get("/user_create", (req, res) => {
@@ -63,6 +63,11 @@ app.get("/user_create", (req, res) => {
    const sender_psid = req.query.sender_psid;
    res.render("aws-upload",{ sender_psid });
  });
+
+ app.get("/form", (req, res) => {
+  const sender_psid = req.query.sender_psid;
+  res.render("form",{ sender_psid });
+});
 
 
 
@@ -238,8 +243,6 @@ function greetingMessage(sender_psid){
 
 function now(sender_psid){
   let response;
-  // let payload = received_postback.payload;
-
   user.getUserData(sender_psid, result => {
     const user = JSON.parse(result);
     response = {
