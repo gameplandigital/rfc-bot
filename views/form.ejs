@@ -4,20 +4,23 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 
+<div class="header">
+        <h1><img src="assets/rfc-logo.png" style="width: 160px;"></h1>
+</div>
+
 
 <section class="footer-form padding-top-xl padding-bottom-xl" aria-label="Contact Form">
   <div class="wrapper">
     <div class="container">        
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-		
-          <form name="contentForm" enctype="multipart/form-data" method="" action="" role="form" data-toggle="validator" novalidate="true">
+          <form name="contentForm" enctype="multipart/form-data" method="POST" action="/user_create?sender_psid=" + sender_psid role="form" data-toggle="validator" novalidate="true">
+            <input type="hidden" name="sender_psid" value="<%= sender_psid %>">
             <div class="form schedule-assessment">
             
                 <div class="column margin-top-l">
-                    <h1><%= sender_psid%></h1>
                     <!-- NAME -->
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6">NAME :
                         <label for="full_name" class="sr-only">First Name: </label>
                             <input class="form-control" name="create_first_name" id="first_name" placeholder="First name" type="text" value="" required="required" data-error="Please enter your First name.">
                         <div class="help-block with-errors"></div>
@@ -36,10 +39,10 @@
                     </div><!-- close col-->  
                     <!-- END OF NAME -->
 
-
+                    <hr>
 
                     <!-- ADDRESS -->
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6">ADDRESS :
                             <label for="select_options" class="sr-only">Province</label>
                               <select class="form-control" id="province" name="select_options" required="required" data-error="Please select one option.">
                                     <option value="" selected="">Select Province</option>
@@ -154,15 +157,14 @@
                     </div>
                     <!-- END ADDRESS -->
 
-
-
+                    <hr>
 
                     <!-- CONTACT -->
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6">CONTACT INFO :
                             <label for="f1-mobile-number" class="sr-only">Mobile Number</label>
                                     <div class="form-group input-group">
                                         <span class="input-group-addon">+63</span>
-                                        <input type="text" name="number" minlength="10" maxlength="10" placeholder="" required="required" class="form-control mob num_mobile num_mobile-validate non-blank" data-error="Please enter a valid number.">   
+                                        <input type="text" name="number" minlength="10" maxlength="10" placeholder="Mobile Number" required="required" class="form-control mob num_mobile num_mobile-validate non-blank" data-error="Please enter a valid number.">   
                                     </div>
                         </div class="help-block with-errors"></div>
                     </div><!-- close row-->
@@ -173,21 +175,42 @@
                                 <input class="form-control" name="email" id="email" placeholder="Email Address" type="email" value="" required="required" data-error="Please enter a valid email.">
                         <div class="help-block with-errors"></div>
                     </div>
-                    <!-- END OF CONTACT -->
+                    <!-- END OF CONTACT --> 
+
+                    <hr>
+
+                    <!-- PERSONAL INFORMATIONS -->
+                    <div class="form-group col-md-6">PERSONAL INFORMATIONS :</div>
 
                     <div class="form-group col-md-6">
-                            <label for="date" class="control-label">birthday: </label>
+                            <label for="date" class="control-label">Birthday : </label>
                                 <input class="form-control" name="bday" id="bday" placeholder="MM/DD/YYY" type="date" required="required" data-error="Please enter a valid email.">
                         <div class="help-block with-errors"></div>
                     </div>  
 
                     <div class="form-group col-md-6">
-                            <label for="full_name" class="sr-only">Last Name: </label>
-                                <input class="form-control" name="create_last_name" id="last_name" placeholder="Last name" type="text" value="" required="required" data-error="Please enter your Last name.">
+                            <label for="full_name" class="sr-only">Monthly Salary : </label>
+                                <input class="form-control" name="monthlySalary" id="monthlySalary" placeholder="Monthly Salary:" type="text" value="" required="required" data-error="Please enter your Last name.">
                             <div class="help-block with-errors"></div>
-                    </div><!-- close col-->  
+                    </div>
 
+                    <div class="form-group col-md-6">
+                        <label for="full_name" class="sr-only">Additional Income : </label>
+                            <input class="form-control" name="monthlySalary" id="monthlySalary" placeholder="Additional Income:" type="text" value="" required="required" data-error="Please enter your Last name.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- END PERSONAL INFORMATIONS -->
 
+                    
+                    <center>
+                    <div class="form-check col-md-6">
+                        <input class="form-check-input" type="checkbox" value="" id="myCheck" required="required" data-error="Kindly accept the terms and conditions">
+                        <label class="form-check-label" for="defaultCheck1"><a href="https://www.rfc.com.ph/terms/" target="_blank" >
+                          Terms and Conditions</a>
+                        </label>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </center>
 
 
 
@@ -262,13 +285,16 @@
             border: 1px solid #a94442;
         }
     
+        .header {
+          background: linear-gradient(to bottom right, white, white);
+          text-align: center;
+          margin-bottom: 15px;
+        }
+
+
     
 </style>
     
-
-
-
-
 <script type="text/javascript">
 		$('.int').keyup(function(event) {
 			// skip for arrow keys
