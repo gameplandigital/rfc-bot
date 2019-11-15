@@ -6971,8 +6971,6 @@ else if (payload == "EMP_33") {
 
 
 
- 
-
 
 // ************* EMP_MONTHS_0 ****************
 else if (payload == "EMP_MONTHS_0") {
@@ -6991,30 +6989,15 @@ else if (payload == "EMP_MONTHS_0") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Personal",
-        payload : "PERSONAL"
-      },
-      {
+        title : "Muti-Purpose Cash Loan",
+        payload : "MULTI_PURPOSE"
+       },
+       {
         content_type : "text",
-        title : "Accommodation",
-        payload : "ACCOMMODATION"
-      },
-      {
-        content_type : "text",
-        title : "Gift",
-        payload : "GIFT"
-      },
-      {
-        content_type : "text",
-        title : "Commercial/Business",
-        payload : "COMMERCIAL_BUSINESS"
-      },
-      {
-        content_type : "text",
-        title : "Others",
-        payload : "OTHERS"
-      }
-      ]
+        title : "Business Loan",
+        payload : "BUSINESS_LOAN"
+       }
+      ]   
   } 
   callSendAPI(sender_psid, response);
 
@@ -7034,33 +7017,18 @@ else if (payload == "EMP_MONTHS_1") {
   senderAction(sender_psid, "typing_on");
   response = {   
     text : "(10/15) What is the purpose of your loan?",
-     quick_replies:[
+      quick_replies:[
        {
         content_type : "text",
-        title : "Personal",
-        payload : "PERSONAL"
-      },
-      {
+        title : "Muti-Purpose Cash Loan",
+        payload : "MULTI_PURPOSE"
+       },
+       {
         content_type : "text",
-        title : "Accommodation",
-        payload : "ACCOMMODATION"
-      },
-      {
-        content_type : "text",
-        title : "Gift",
-        payload : "GIFT"
-      },
-      {
-        content_type : "text",
-        title : "Commercial/Business",
-        payload : "COMMERCIAL_BUSINESS"
-      },
-      {
-        content_type : "text",
-        title : "Others",
-        payload : "OTHERS"
-      }
-      ]
+        title : "Business Loan",
+        payload : "BUSINESS_LOAN"
+       }
+      ]   
   } 
   callSendAPI(sender_psid, response);
 }
@@ -7078,33 +7046,18 @@ else if (payload == "EMP_MONTHS_2") {
   senderAction(sender_psid, "typing_on");
   response = {   
     text : "(10/15) What is the purpose of your loan?",
-     quick_replies:[
+      quick_replies:[
        {
         content_type : "text",
-        title : "Personal",
-        payload : "PERSONAL"
-      },
-      {
+        title : "Muti-Purpose Cash Loan",
+        payload : "MULTI_PURPOSE"
+       },
+       {
         content_type : "text",
-        title : "Accommodation",
-        payload : "ACCOMMODATION"
-      },
-      {
-        content_type : "text",
-        title : "Gift",
-        payload : "GIFT"
-      },
-      {
-        content_type : "text",
-        title : "Commercial/Business",
-        payload : "COMMERCIAL_BUSINESS"
-      },
-      {
-        content_type : "text",
-        title : "Others",
-        payload : "OTHERS"
-      }
-      ]
+        title : "Business Loan",
+        payload : "BUSINESS_LOAN"
+       }
+      ]   
   } 
   callSendAPI(sender_psid, response);
 }
@@ -7122,33 +7075,18 @@ else if (payload == "EMP_MONTHS_3") {
   senderAction(sender_psid, "typing_on");
   response = {   
     text : "(10/15) What is the purpose of your loan?",
-     quick_replies:[
+      quick_replies:[
        {
         content_type : "text",
-        title : "Personal",
-        payload : "PERSONAL"
-      },
-      {
+        title : "Muti-Purpose Cash Loan",
+        payload : "MULTI_PURPOSE"
+       },
+       {
         content_type : "text",
-        title : "Accommodation",
-        payload : "ACCOMMODATION"
-      },
-      {
-        content_type : "text",
-        title : "Gift",
-        payload : "GIFT"
-      },
-      {
-        content_type : "text",
-        title : "Commercial/Business",
-        payload : "COMMERCIAL_BUSINESS"
-      },
-      {
-        content_type : "text",
-        title : "Others",
-        payload : "OTHERS"
-      }
-      ]
+        title : "Business Loan",
+        payload : "BUSINESS_LOAN"
+       }
+      ]   
   } 
   callSendAPI(sender_psid, response);
 }
@@ -7166,33 +7104,18 @@ else if (payload == "EMP_MONTHS_4") {
   senderAction(sender_psid, "typing_on");
   response = {   
     text : "(10/15) What is the purpose of your loan?",
-     quick_replies:[
+      quick_replies:[
        {
         content_type : "text",
-        title : "Personal",
-        payload : "PERSONAL"
-      },
-      {
+        title : "Muti-Purpose Cash Loan",
+        payload : "MULTI_PURPOSE"
+       },
+       {
         content_type : "text",
-        title : "Accommodation",
-        payload : "ACCOMMODATION"
-      },
-      {
-        content_type : "text",
-        title : "Gift",
-        payload : "GIFT"
-      },
-      {
-        content_type : "text",
-        title : "Commercial/Business",
-        payload : "COMMERCIAL_BUSINESS"
-      },
-      {
-        content_type : "text",
-        title : "Others",
-        payload : "OTHERS"
-      }
-      ]
+        title : "Business Loan",
+        payload : "BUSINESS_LOAN"
+       }
+      ]   
   } 
   callSendAPI(sender_psid, response);
 }
@@ -7210,33 +7133,18 @@ else if (payload == "EMP_MONTHS_5") {
   senderAction(sender_psid, "typing_on");
   response = {   
     text : "(10/15) What is the purpose of your loan?",
-     quick_replies:[
+      quick_replies:[
        {
         content_type : "text",
-        title : "Personal",
-        payload : "PERSONAL"
-      },
-      {
+        title : "Muti-Purpose Cash Loan",
+        payload : "MULTI_PURPOSE"
+       },
+       {
         content_type : "text",
-        title : "Accommodation",
-        payload : "ACCOMMODATION"
-      },
-      {
-        content_type : "text",
-        title : "Gift",
-        payload : "GIFT"
-      },
-      {
-        content_type : "text",
-        title : "Commercial/Business",
-        payload : "COMMERCIAL_BUSINESS"
-      },
-      {
-        content_type : "text",
-        title : "Others",
-        payload : "OTHERS"
-      }
-      ]
+        title : "Business Loan",
+        payload : "BUSINESS_LOAN"
+       }
+      ]   
   } 
   callSendAPI(sender_psid, response);
 }
@@ -7254,33 +7162,18 @@ else if (payload == "EMP_MONTHS_6") {
   senderAction(sender_psid, "typing_on");
   response = {   
     text : "(10/15) What is the purpose of your loan?",
-     quick_replies:[
+      quick_replies:[
        {
         content_type : "text",
-        title : "Personal",
-        payload : "PERSONAL"
-      },
-      {
+        title : "Muti-Purpose Cash Loan",
+        payload : "MULTI_PURPOSE"
+       },
+       {
         content_type : "text",
-        title : "Accommodation",
-        payload : "ACCOMMODATION"
-      },
-      {
-        content_type : "text",
-        title : "Gift",
-        payload : "GIFT"
-      },
-      {
-        content_type : "text",
-        title : "Commercial/Business",
-        payload : "COMMERCIAL_BUSINESS"
-      },
-      {
-        content_type : "text",
-        title : "Others",
-        payload : "OTHERS"
-      }
-      ]
+        title : "Business Loan",
+        payload : "BUSINESS_LOAN"
+       }
+      ]   
   } 
   callSendAPI(sender_psid, response);
 }
@@ -7298,33 +7191,18 @@ else if (payload == "EMP_MONTHS_7") {
   senderAction(sender_psid, "typing_on");
   response = {   
     text : "(10/15) What is the purpose of your loan?",
-     quick_replies:[
+      quick_replies:[
        {
         content_type : "text",
-        title : "Personal",
-        payload : "PERSONAL"
-      },
-      {
+        title : "Muti-Purpose Cash Loan",
+        payload : "MULTI_PURPOSE"
+       },
+       {
         content_type : "text",
-        title : "Accommodation",
-        payload : "ACCOMMODATION"
-      },
-      {
-        content_type : "text",
-        title : "Gift",
-        payload : "GIFT"
-      },
-      {
-        content_type : "text",
-        title : "Commercial/Business",
-        payload : "COMMERCIAL_BUSINESS"
-      },
-      {
-        content_type : "text",
-        title : "Others",
-        payload : "OTHERS"
-      }
-      ]
+        title : "Business Loan",
+        payload : "BUSINESS_LOAN"
+       }
+      ]   
   } 
   callSendAPI(sender_psid, response);
 }
@@ -7342,33 +7220,18 @@ else if (payload == "EMP_MONTHS_8") {
   senderAction(sender_psid, "typing_on");
   response = {   
     text : "(10/15) What is the purpose of your loan?",
-     quick_replies:[
+      quick_replies:[
        {
         content_type : "text",
-        title : "Personal",
-        payload : "PERSONAL"
-      },
-      {
+        title : "Muti-Purpose Cash Loan",
+        payload : "MULTI_PURPOSE"
+       },
+       {
         content_type : "text",
-        title : "Accommodation",
-        payload : "ACCOMMODATION"
-      },
-      {
-        content_type : "text",
-        title : "Gift",
-        payload : "GIFT"
-      },
-      {
-        content_type : "text",
-        title : "Commercial/Business",
-        payload : "COMMERCIAL_BUSINESS"
-      },
-      {
-        content_type : "text",
-        title : "Others",
-        payload : "OTHERS"
-      }
-      ]
+        title : "Business Loan",
+        payload : "BUSINESS_LOAN"
+       }
+      ]   
   } 
   callSendAPI(sender_psid, response);
 }
@@ -7386,33 +7249,18 @@ else if (payload == "EMP_MONTHS_9") {
   senderAction(sender_psid, "typing_on");
   response = {   
     text : "(10/15) What is the purpose of your loan?",
-     quick_replies:[
+      quick_replies:[
        {
         content_type : "text",
-        title : "Personal",
-        payload : "PERSONAL"
-      },
-      {
+        title : "Muti-Purpose Cash Loan",
+        payload : "MULTI_PURPOSE"
+       },
+       {
         content_type : "text",
-        title : "Accommodation",
-        payload : "ACCOMMODATION"
-      },
-      {
-        content_type : "text",
-        title : "Gift",
-        payload : "GIFT"
-      },
-      {
-        content_type : "text",
-        title : "Commercial/Business",
-        payload : "COMMERCIAL_BUSINESS"
-      },
-      {
-        content_type : "text",
-        title : "Others",
-        payload : "OTHERS"
-      }
-      ]
+        title : "Business Loan",
+        payload : "BUSINESS_LOAN"
+       }
+      ]   
   } 
   callSendAPI(sender_psid, response);
 }
@@ -7430,33 +7278,18 @@ else if (payload == "EMP_MONTHS_10") {
   senderAction(sender_psid, "typing_on");
   response = {   
     text : "(10/15) What is the purpose of your loan?",
-     quick_replies:[
+      quick_replies:[
        {
         content_type : "text",
-        title : "Personal",
-        payload : "PERSONAL"
-      },
-      {
+        title : "Muti-Purpose Cash Loan",
+        payload : "MULTI_PURPOSE"
+       },
+       {
         content_type : "text",
-        title : "Accommodation",
-        payload : "ACCOMMODATION"
-      },
-      {
-        content_type : "text",
-        title : "Gift",
-        payload : "GIFT"
-      },
-      {
-        content_type : "text",
-        title : "Commercial/Business",
-        payload : "COMMERCIAL_BUSINESS"
-      },
-      {
-        content_type : "text",
-        title : "Others",
-        payload : "OTHERS"
-      }
-      ]
+        title : "Business Loan",
+        payload : "BUSINESS_LOAN"
+       }
+      ]   
   } 
   callSendAPI(sender_psid, response);
 }
@@ -7474,42 +7307,107 @@ else if (payload == "EMP_MONTHS_11") {
   senderAction(sender_psid, "typing_on");
   response = {   
     text : "(10/15) What is the purpose of your loan?",
-     quick_replies:[
+      quick_replies:[
        {
         content_type : "text",
-        title : "Personal",
-        payload : "PERSONAL"
-      },
-      {
+        title : "Muti-Purpose Cash Loan",
+        payload : "MULTI_PURPOSE"
+       },
+       {
         content_type : "text",
-        title : "Accommodation",
-        payload : "ACCOMMODATION"
-      },
-      {
-        content_type : "text",
-        title : "Gift",
-        payload : "GIFT"
-      },
-      {
-        content_type : "text",
-        title : "Commercial/Business",
-        payload : "COMMERCIAL_BUSINESS"
-      },
-      {
-        content_type : "text",
-        title : "Others",
-        payload : "OTHERS"
-      }
-      ]
+        title : "Business Loan",
+        payload : "BUSINESS_LOAN"
+       }
+      ]   
   } 
   callSendAPI(sender_psid, response);
 }
 
 
 
-// ************* PERSONAL ****************
-else if (payload == "PERSONAL") {
+// ************* MULTI_PURPOSE ****************
+else if (payload == "MULTI_PURPOSE") {
 
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    text : "Kindly chose one from the choices below",
+      quick_replies:[
+       {
+        content_type : "text",
+        title : "Medical Assistance",
+        payload : "MEDICAL_ASSISTANCE"
+       },
+       {
+        content_type : "text",
+        title : "Educational Assistance",
+        payload : "EDUCATIONAL_ASSISTANCE"
+       },
+       {
+        content_type : "text",
+        title : "Home Improvement",
+        payload : "HOME_IMPROVEMENT"
+       },
+       {
+        content_type : "text",
+        title : "Emergency Fund",
+        payload : "EMERGENCY_FUND"
+       },
+       {
+        content_type : "text",
+        title : "Travel / Vacation Fund",
+        payload : "TRAVEL_VACATION_FUND"
+       },
+       {
+        content_type : "text",
+        title : "Gadget / Application Fund",
+        payload : "GADGET_APPLICATION_FUND"
+       }
+      ]   
+  } 
+  callSendAPI(sender_psid, response);
+  
+}
+// ************* BUSINESS_LOAN ****************
+else if (payload == "BUSINESS_LOAN") {
+
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    text : "Kindly chose one from the choices below",
+      quick_replies:[
+       {
+        content_type : "text",
+        title : "Working Capital",
+        payload : "WORKING_CAPITAL"
+       },
+       {
+        content_type : "text",
+        title : "Business Expansion",
+        payload : "BUSINESS_EXPANSION"
+       },
+       {
+        content_type : "text",
+        title : "Equipment Acquisition",
+        payload : "EQUIPMENT_ACQUISITION"
+       },
+       {
+        content_type : "text",
+        title : "Franchising",
+        payload : "FRANCHISING"
+       }
+      ]   
+  } 
+  callSendAPI(sender_psid, response);
+  
+}
+
+
+
+
+
+
+// ************* MEDICAL_ASSISTANCE ****************
+else if (payload == "MEDICAL_ASSISTANCE") {
+  
   con.query("SELECT loan_purpose FROM rfc_apply WHERE user_id = ?",
   [sender_psid], 
   (error, result) => {
@@ -7517,63 +7415,38 @@ else if (payload == "PERSONAL") {
       [payload, sender_psid])       
     }
   ) 
-
+  
   senderAction(sender_psid, "typing_on");
   response = {   
-    text : "(12/15) How about your collateral type?",
+    text : "(13/15) How long do you wish to repay this loan (in months)?",
      quick_replies:[
        {
         content_type : "text",
-        title : "Motorcycle",
-        payload : "MOTORCYCLE"
+        title : "0 - 6",
+        payload : "TENURE_0_6"
       },
       {
         content_type : "text",
-        title : "Vehicle",
-        payload : "VEHICLE"
+        title : "7 - 12",
+        payload : "TENURE_7_12"
       },
       {
         content_type : "text",
-        title : "Farm Equipment",
-        payload : "FARM_EQUIPMENT"
+        title : "12 - 24",
+        payload : "TENURE_12_24"
       },
       {
         content_type : "text",
-        title : "Heavy Equipment",
-        payload : "HEAVY_EQUIPMENT"
-      },
-      {
-        content_type : "text",
-        title : "Machineries",
-        payload : "MACHINERIES"
-      },
-      {
-        content_type : "text",
-        title : "REM (Real Estate Mortgage)",
-        payload : "REM"
-      },
-      {
-        content_type : "text",
-        title : "Appliances",
-        payload : "APPLIANCES"
-      },
-      {
-        content_type : "text",
-        title : "Receivable",
-        payload : "RECEIVABLE"
-      },
-      {
-        content_type : "text",
-        title : "No Collateral",
-        payload : "NO_COLLATERAL"
+        title : "24 and above",
+        payload : "TENURE_24_ABOVE"
       }
       ]
   } 
   callSendAPI(sender_psid, response);
 }
-// ************* ACCOMMODATION ****************
-else if (payload == "ACCOMMODATION") {
-
+// ************* EDUCATIONAL_ASSISTANCE ****************
+else if (payload == "EDUCATIONAL_ASSISTANCE") {
+  
   con.query("SELECT loan_purpose FROM rfc_apply WHERE user_id = ?",
   [sender_psid], 
   (error, result) => {
@@ -7581,63 +7454,38 @@ else if (payload == "ACCOMMODATION") {
       [payload, sender_psid])       
     }
   ) 
-
+  
   senderAction(sender_psid, "typing_on");
   response = {   
-    text : "(12/15) How about your collateral type?",
+    text : "(13/15) How long do you wish to repay this loan (in months)?",
      quick_replies:[
        {
         content_type : "text",
-        title : "Motorcycle",
-        payload : "MOTORCYCLE"
+        title : "0 - 6",
+        payload : "TENURE_0_6"
       },
       {
         content_type : "text",
-        title : "Vehicle",
-        payload : "VEHICLE"
+        title : "7 - 12",
+        payload : "TENURE_7_12"
       },
       {
         content_type : "text",
-        title : "Farm Equipment",
-        payload : "FARM_EQUIPMENT"
+        title : "12 - 24",
+        payload : "TENURE_12_24"
       },
       {
         content_type : "text",
-        title : "Heavy Equipment",
-        payload : "HEAVY_EQUIPMENT"
-      },
-      {
-        content_type : "text",
-        title : "Machineries",
-        payload : "MACHINERIES"
-      },
-      {
-        content_type : "text",
-        title : "REM (Real Estate Mortgage)",
-        payload : "REM"
-      },
-      {
-        content_type : "text",
-        title : "Appliances",
-        payload : "APPLIANCES"
-      },
-      {
-        content_type : "text",
-        title : "Receivable",
-        payload : "RECEIVABLE"
-      },
-      {
-        content_type : "text",
-        title : "No Collateral",
-        payload : "NO_COLLATERAL"
+        title : "24 and above",
+        payload : "TENURE_24_ABOVE"
       }
       ]
   } 
   callSendAPI(sender_psid, response);
 }
-// ************* GIFT ****************
-else if (payload == "GIFT") {
-
+// ************* HOME_IMPROVEMENT ****************
+else if (payload == "HOME_IMPROVEMENT") {
+  
   con.query("SELECT loan_purpose FROM rfc_apply WHERE user_id = ?",
   [sender_psid], 
   (error, result) => {
@@ -7645,63 +7493,38 @@ else if (payload == "GIFT") {
       [payload, sender_psid])       
     }
   ) 
-
+  
   senderAction(sender_psid, "typing_on");
   response = {   
-    text : "(12/15) How about your collateral type?",
+    text : "(13/15) How long do you wish to repay this loan (in months)?",
      quick_replies:[
        {
         content_type : "text",
-        title : "Motorcycle",
-        payload : "MOTORCYCLE"
+        title : "0 - 6",
+        payload : "TENURE_0_6"
       },
       {
         content_type : "text",
-        title : "Vehicle",
-        payload : "VEHICLE"
+        title : "7 - 12",
+        payload : "TENURE_7_12"
       },
       {
         content_type : "text",
-        title : "Farm Equipment",
-        payload : "FARM_EQUIPMENT"
+        title : "12 - 24",
+        payload : "TENURE_12_24"
       },
       {
         content_type : "text",
-        title : "Heavy Equipment",
-        payload : "HEAVY_EQUIPMENT"
-      },
-      {
-        content_type : "text",
-        title : "Machineries",
-        payload : "MACHINERIES"
-      },
-      {
-        content_type : "text",
-        title : "REM (Real Estate Mortgage)",
-        payload : "REM"
-      },
-      {
-        content_type : "text",
-        title : "Appliances",
-        payload : "APPLIANCES"
-      },
-      {
-        content_type : "text",
-        title : "Receivable",
-        payload : "RECEIVABLE"
-      },
-      {
-        content_type : "text",
-        title : "No Collateral",
-        payload : "NO_COLLATERAL"
+        title : "24 and above",
+        payload : "TENURE_24_ABOVE"
       }
       ]
   } 
   callSendAPI(sender_psid, response);
 }
-// ************* COMMERCIAL_BUSINESS ****************
-else if (payload == "COMMERCIAL_BUSINESS") {
-
+// ************* EMERGENCY_FUND ****************
+else if (payload == "EMERGENCY_FUND") {
+  
   con.query("SELECT loan_purpose FROM rfc_apply WHERE user_id = ?",
   [sender_psid], 
   (error, result) => {
@@ -7709,63 +7532,38 @@ else if (payload == "COMMERCIAL_BUSINESS") {
       [payload, sender_psid])       
     }
   ) 
-
+  
   senderAction(sender_psid, "typing_on");
   response = {   
-    text : "(12/15) How about your collateral type?",
+    text : "(13/15) How long do you wish to repay this loan (in months)?",
      quick_replies:[
        {
         content_type : "text",
-        title : "Motorcycle",
-        payload : "MOTORCYCLE"
+        title : "0 - 6",
+        payload : "TENURE_0_6"
       },
       {
         content_type : "text",
-        title : "Vehicle",
-        payload : "VEHICLE"
+        title : "7 - 12",
+        payload : "TENURE_7_12"
       },
       {
         content_type : "text",
-        title : "Farm Equipment",
-        payload : "FARM_EQUIPMENT"
+        title : "12 - 24",
+        payload : "TENURE_12_24"
       },
       {
         content_type : "text",
-        title : "Heavy Equipment",
-        payload : "HEAVY_EQUIPMENT"
-      },
-      {
-        content_type : "text",
-        title : "Machineries",
-        payload : "MACHINERIES"
-      },
-      {
-        content_type : "text",
-        title : "REM (Real Estate Mortgage)",
-        payload : "REM"
-      },
-      {
-        content_type : "text",
-        title : "Appliances",
-        payload : "APPLIANCES"
-      },
-      {
-        content_type : "text",
-        title : "Receivable",
-        payload : "RECEIVABLE"
-      },
-      {
-        content_type : "text",
-        title : "No Collateral",
-        payload : "NO_COLLATERAL"
+        title : "24 and above",
+        payload : "TENURE_24_ABOVE"
       }
       ]
   } 
   callSendAPI(sender_psid, response);
 }
-// ************* OTHERS ****************
-else if (payload == "OTHERS") {
-
+// ************* TRAVEL_VACATION_FUND ****************
+else if (payload == "TRAVEL_VACATION_FUND") {
+  
   con.query("SELECT loan_purpose FROM rfc_apply WHERE user_id = ?",
   [sender_psid], 
   (error, result) => {
@@ -7773,79 +7571,42 @@ else if (payload == "OTHERS") {
       [payload, sender_psid])       
     }
   ) 
-
+  
   senderAction(sender_psid, "typing_on");
   response = {   
-    text : "(12/15) How about your collateral type?",
+    text : "(13/15) How long do you wish to repay this loan (in months)?",
      quick_replies:[
        {
         content_type : "text",
-        title : "Motorcycle",
-        payload : "MOTORCYCLE"
+        title : "0 - 6",
+        payload : "TENURE_0_6"
       },
       {
         content_type : "text",
-        title : "Vehicle",
-        payload : "VEHICLE"
+        title : "7 - 12",
+        payload : "TENURE_7_12"
       },
       {
         content_type : "text",
-        title : "Farm Equipment",
-        payload : "FARM_EQUIPMENT"
+        title : "12 - 24",
+        payload : "TENURE_12_24"
       },
       {
         content_type : "text",
-        title : "Heavy Equipment",
-        payload : "HEAVY_EQUIPMENT"
-      },
-      {
-        content_type : "text",
-        title : "Machineries",
-        payload : "MACHINERIES"
-      },
-      {
-        content_type : "text",
-        title : "REM (Real Estate Mortgage)",
-        payload : "REM"
-      },
-      {
-        content_type : "text",
-        title : "Appliances",
-        payload : "APPLIANCES"
-      },
-      {
-        content_type : "text",
-        title : "Receivable",
-        payload : "RECEIVABLE"
-      },
-      {
-        content_type : "text",
-        title : "No Collateral",
-        payload : "NO_COLLATERAL"
+        title : "24 and above",
+        payload : "TENURE_24_ABOVE"
       }
       ]
   } 
   callSendAPI(sender_psid, response);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-// ************* MOTORCYCLE ****************
-else if (payload == "MOTORCYCLE") {
+// ************* GADGET_APPLICATION_FUND ****************
+else if (payload == "GADGET_APPLICATION_FUND") {
   
-  con.query("SELECT collateral_type FROM rfc_apply WHERE user_id = ?",
+  con.query("SELECT loan_purpose FROM rfc_apply WHERE user_id = ?",
   [sender_psid], 
   (error, result) => {
-      con.query("UPDATE rfc_apply SET collateral_type = ? WHERE user_id = ?",
+      con.query("UPDATE rfc_apply SET loan_purpose = ? WHERE user_id = ?",
       [payload, sender_psid])       
     }
   ) 
@@ -7878,13 +7639,16 @@ else if (payload == "MOTORCYCLE") {
   } 
   callSendAPI(sender_psid, response);
 }
-// ************* VEHICLE ****************
-else if (payload == "VEHICLE") {
+
+
+
+// ************* WORKING_CAPITAL ****************
+else if (payload == "WORKING_CAPITAL") {
   
-  con.query("SELECT collateral_type FROM rfc_apply WHERE user_id = ?",
+  con.query("SELECT loan_purpose FROM rfc_apply WHERE user_id = ?",
   [sender_psid], 
   (error, result) => {
-      con.query("UPDATE rfc_apply SET collateral_type = ? WHERE user_id = ?",
+      con.query("UPDATE rfc_apply SET loan_purpose = ? WHERE user_id = ?",
       [payload, sender_psid])       
     }
   ) 
@@ -7917,13 +7681,13 @@ else if (payload == "VEHICLE") {
   } 
   callSendAPI(sender_psid, response);
 }
-// ************* FARM_EQUIPMENT ****************
-else if (payload == "FARM_EQUIPMENT") {
+// ************* BUSINESS_EXPANSION ****************
+else if (payload == "BUSINESS_EXPANSION") {
   
-  con.query("SELECT collateral_type FROM rfc_apply WHERE user_id = ?",
+  con.query("SELECT loan_purpose FROM rfc_apply WHERE user_id = ?",
   [sender_psid], 
   (error, result) => {
-      con.query("UPDATE rfc_apply SET collateral_type = ? WHERE user_id = ?",
+      con.query("UPDATE rfc_apply SET loan_purpose = ? WHERE user_id = ?",
       [payload, sender_psid])       
     }
   ) 
@@ -7956,13 +7720,13 @@ else if (payload == "FARM_EQUIPMENT") {
   } 
   callSendAPI(sender_psid, response);
 }
-// ************* HEAVY_EQUIPMENT ****************
-else if (payload == "HEAVY_EQUIPMENT") {
+// ************* EQUIPMENT_ACQUISITION ****************
+else if (payload == "EQUIPMENT_ACQUISITION") {
   
-  con.query("SELECT collateral_type FROM rfc_apply WHERE user_id = ?",
+  con.query("SELECT loan_purpose FROM rfc_apply WHERE user_id = ?",
   [sender_psid], 
   (error, result) => {
-      con.query("UPDATE rfc_apply SET collateral_type = ? WHERE user_id = ?",
+      con.query("UPDATE rfc_apply SET loan_purpose = ? WHERE user_id = ?",
       [payload, sender_psid])       
     }
   ) 
@@ -7995,13 +7759,13 @@ else if (payload == "HEAVY_EQUIPMENT") {
   } 
   callSendAPI(sender_psid, response);
 }
-// ************* MACHINERIES ****************
-else if (payload == "MACHINERIES") {
+// ************* FRANCHISING ****************
+else if (payload == "FRANCHISING") {
   
-  con.query("SELECT collateral_type FROM rfc_apply WHERE user_id = ?",
+  con.query("SELECT loan_purpose FROM rfc_apply WHERE user_id = ?",
   [sender_psid], 
   (error, result) => {
-      con.query("UPDATE rfc_apply SET collateral_type = ? WHERE user_id = ?",
+      con.query("UPDATE rfc_apply SET loan_purpose = ? WHERE user_id = ?",
       [payload, sender_psid])       
     }
   ) 
@@ -8034,162 +7798,10 @@ else if (payload == "MACHINERIES") {
   } 
   callSendAPI(sender_psid, response);
 }
-// ************* REM ****************
-else if (payload == "REM") {
-  
-  con.query("SELECT collateral_type FROM rfc_apply WHERE user_id = ?",
-  [sender_psid], 
-  (error, result) => {
-      con.query("UPDATE rfc_apply SET collateral_type = ? WHERE user_id = ?",
-      [payload, sender_psid])       
-    }
-  ) 
-  
-  senderAction(sender_psid, "typing_on");
-  response = {   
-    text : "(13/15) How long do you wish to repay this loan (in months)?",
-     quick_replies:[
-       {
-        content_type : "text",
-        title : "0 - 6",
-        payload : "TENURE_0_6"
-      },
-      {
-        content_type : "text",
-        title : "7 - 12",
-        payload : "TENURE_7_12"
-      },
-      {
-        content_type : "text",
-        title : "12 - 24",
-        payload : "TENURE_12_24"
-      },
-      {
-        content_type : "text",
-        title : "24 and above",
-        payload : "TENURE_24_ABOVE"
-      }
-      ]
-  } 
-  callSendAPI(sender_psid, response);
-}
-// ************* APPLIANCES ****************
-else if (payload == "APPLIANCES") {
-  
-  con.query("SELECT collateral_type FROM rfc_apply WHERE user_id = ?",
-  [sender_psid], 
-  (error, result) => {
-      con.query("UPDATE rfc_apply SET collateral_type = ? WHERE user_id = ?",
-      [payload, sender_psid])       
-    }
-  ) 
-  
-  senderAction(sender_psid, "typing_on");
-  response = {   
-    text : "(13/15) How long do you wish to repay this loan (in months)?",
-     quick_replies:[
-       {
-        content_type : "text",
-        title : "0 - 6",
-        payload : "TENURE_0_6"
-      },
-      {
-        content_type : "text",
-        title : "7 - 12",
-        payload : "TENURE_7_12"
-      },
-      {
-        content_type : "text",
-        title : "12 - 24",
-        payload : "TENURE_12_24"
-      },
-      {
-        content_type : "text",
-        title : "24 and above",
-        payload : "TENURE_24_ABOVE"
-      }
-      ]
-  } 
-  callSendAPI(sender_psid, response);
-}
-// ************* RECEIVABLE ****************
-else if (payload == "RECEIVABLE") {
-  
-  con.query("SELECT collateral_type FROM rfc_apply WHERE user_id = ?",
-  [sender_psid], 
-  (error, result) => {
-      con.query("UPDATE rfc_apply SET collateral_type = ? WHERE user_id = ?",
-      [payload, sender_psid])       
-    }
-  ) 
-  
-  senderAction(sender_psid, "typing_on");
-  response = {   
-    text : "(13/15) How long do you wish to repay this loan (in months)?",
-     quick_replies:[
-       {
-        content_type : "text",
-        title : "0 - 6",
-        payload : "TENURE_0_6"
-      },
-      {
-        content_type : "text",
-        title : "7 - 12",
-        payload : "TENURE_7_12"
-      },
-      {
-        content_type : "text",
-        title : "12 - 24",
-        payload : "TENURE_12_24"
-      },
-      {
-        content_type : "text",
-        title : "24 and above",
-        payload : "TENURE_24_ABOVE"
-      }
-      ]
-  } 
-  callSendAPI(sender_psid, response);
-}
-// ************* NO_COLLATERAL ****************
-else if (payload == "NO_COLLATERAL") {
-  
-  con.query("SELECT collateral_type FROM rfc_apply WHERE user_id = ?",
-  [sender_psid], 
-  (error, result) => {
-      con.query("UPDATE rfc_apply SET collateral_type = ? WHERE user_id = ?",
-      [payload, sender_psid])       
-    }
-  ) 
-  
-  senderAction(sender_psid, "typing_on");
-  response = {   
-    text : "(13/15) How long do you wish to repay this loan (in months)?",
-     quick_replies:[
-       {
-        content_type : "text",
-        title : "0 - 6",
-        payload : "TENURE_0_6"
-      },
-      {
-        content_type : "text",
-        title : "7 - 12",
-        payload : "TENURE_7_12"
-      },
-      {
-        content_type : "text",
-        title : "12 - 24",
-        payload : "TENURE_12_24"
-      },
-      {
-        content_type : "text",
-        title : "24 and above",
-        payload : "TENURE_24_ABOVE"
-      }
-      ]
-  } 
-  callSendAPI(sender_psid, response);
-}
+
+
+
+
 
 
 
@@ -8758,7 +8370,7 @@ else if (payload == "LOAN_6,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["6,000", sender_psid])       
+      ['6,000', sender_psid])       
     }
   ) 
 
