@@ -12858,6 +12858,18 @@ app.post('/api/aws', (req, res) => {
   const firstName = user.first_name
   const lastName = user.last_name
 
+
+  const uploadFile = req.files.file;
+  const uploadFile2 = req.files.file2;
+  const uploadFile3 = req.files.file3;
+  const uploadFile4 = req.files.file4;
+
+  const uploadType = req.files.Type;
+  const uploadType2 = req.files.Type2;
+  const uploadType3 = req.files.Type3;
+  const uploadType4 = req.files.Type4;
+
+
   console.log("======================")
   console.log(req.body);
   console.log(psid)
@@ -12872,19 +12884,6 @@ app.post('/api/aws', (req, res) => {
 
 
   console.log("======================")
-
-  
-
-    const uploadFile = req.files.file;
-    const uploadFile2 = req.files.file2;
-    const uploadFile3 = req.files.file3;
-    const uploadFile4 = req.files.file4;
-
-    const uploadType = req.files.Type;
-    const uploadType2 = req.files.Type2;
-    const uploadType3 = req.files.Type3;
-    const uploadType4 = req.files.Type4;
-
 
     var busboy = new Busboy({ headers: req.headers });
     if (uploadFile) {
