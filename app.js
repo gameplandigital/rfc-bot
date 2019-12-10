@@ -12903,8 +12903,9 @@ app.post('/api/aws', (req, res) => {
 
       busboy.on("finish", function() {
         let n = `${"01"}_${"ID 1"}_${firstName}_${lastName}`;
-        let extension = `.${mimetype}`;
-        let fileName = `${n}${"."}${extension}`;
+        //let extension = `.${mimetype}`;
+        console.log(extension)
+        let fileName = `${n}.${extension}`;
         req.files.file.name = fileName;
         uploadContentToS3(uploadFile, psid, res);
 
