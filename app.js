@@ -12905,7 +12905,8 @@ app.post('/api/aws', (req, res) => {
         let n = `${"01"}_${"ID 1"}_${firstName}_${lastName}`;
         //let extension = `.${mimetype}`;
         console.log(mimetype)
-        let fileName = `${n}.${extension}`;
+        let fileName = uploadFile;
+        console.log("-----------------------",filename,"-----------------------")
         req.files.file.name = fileName;
         uploadContentToS3(uploadFile, psid, res);
 
