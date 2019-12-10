@@ -12904,7 +12904,6 @@ app.post('/api/aws', (req, res) => {
       busboy.on("finish", function() {
         let n = `${"01"}_${"ID 1"}_${firstName}_${lastName}`;
         //let extension = `.${mimetype}`;
-        console.log(mimetype)
         let fileName = uploadFile;
         console.log("-----------------------",filename,"-----------------------")
         req.files.file.name = fileName;
