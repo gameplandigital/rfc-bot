@@ -11496,7 +11496,7 @@ else if (payload == "50,000+") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["50,000+", sender_psid])       
+      [payload, sender_psid])       
     }
   ) 
 
@@ -12903,10 +12903,10 @@ app.post('/api/aws', (req, res) => {
 
       busboy.on("finish", function() {
         let n = `${"01"}_${"ID 1"}_${firstName}_${lastName}`;
-        // let extension = `.${mimetype}`;
-        let fileName = `${n}`;
+        let extension = `.${mimetype}`;
+        let fileName = `${n}${"."}${extension}`;
         req.files.file.name = fileName;
-        uploadContentToS3(uploadFile, psid, res);02
+        uploadContentToS3(uploadFile, psid, res);
 
         con.query("SELECT doc1 FROM rfc_apply WHERE user_id = ?",
         [psid], 
@@ -12961,8 +12961,8 @@ app.post('/api/aws', (req, res) => {
 
        busboy.on("finish", function() {
          let n = `${"01"}_${"ID 2"}_${firstName}_${lastName}`;
-         // let extension = `.${mimetype}`;
-         let fileName = `${n}${".pdf"}`;
+         let extension = `.${mimetype}`;
+         let fileName = `${n}${"."}${extension}`;
          req.files.file.name = fileName;
          uploadContentToS3(uploadFile, psid);
 
@@ -13016,8 +13016,8 @@ app.post('/api/aws', (req, res) => {
 
        busboy.on("finish", function() {
          let n = `${"01"}_${"BILLING 1"}_${firstName}_${lastName}`;
-         // let extension = `.${mimetype}`;
-         let fileName = `${n}${".pdf"}`;
+         let extension = `.${mimetype}`;
+         let fileName = `${n}${"."}${extension}`;
          req.files.file.name = fileName;
          uploadContentToS3(uploadFile, psid);
 
@@ -13073,8 +13073,8 @@ app.post('/api/aws', (req, res) => {
 
        busboy.on("finish", function() {
          let n = `${"01"}_${"BILLING 2"}_${firstName}_${lastName}`;
-         // let extension = `.${mimetype}`;
-         let fileName = `${n}${".pdf"}`;
+         let extension = `.${mimetype}`;
+         let fileName = `${n}${"."}${extension}`;
          req.files.file.name = fileName;
          uploadContentToS3(uploadFile, psid);
 
