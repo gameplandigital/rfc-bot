@@ -7844,6 +7844,11 @@ else if (payload == "TENURE_0_6") {
         content_type : "text",
         title : "41,000 - 50,000",
         payload : "41-50"
+       },
+       {
+        content_type : "text",
+        title : "50,000+",
+        payload : "50,000+"
        }
       ]
   } 
@@ -7889,6 +7894,11 @@ else if (payload == "TENURE_7_12") {
         content_type : "text",
         title : "41,000 - 50,000",
         payload : "41-50"
+       },
+       {
+        content_type : "text",
+        title : "50,000+",
+        payload : "50,000+"
        }
       ]
   } 
@@ -7934,6 +7944,11 @@ else if (payload == "TENURE_12_24") {
         content_type : "text",
         title : "41,000 - 50,000",
         payload : "41-50"
+       },
+       {
+        content_type : "text",
+        title : "50,000+",
+        payload : "50,000+"
        }
       ]
   } 
@@ -7979,6 +7994,11 @@ else if (payload == "TENURE_24_ABOVE") {
         content_type : "text",
         title : "41,000 - 50,000",
         payload : "41-50"
+       },
+       {
+        content_type : "text",
+        title : "50,000+",
+        payload : "50,000+"
        }
       ]
   } 
@@ -11470,6 +11490,76 @@ else if (payload == "LOAN_50,000") {
 }
 
 
+// ************* 50,000+ ****************
+else if (payload == "50,000+") {
+
+  con.query("SELECT loan_amount_request FROM rfc_apply WHERE user_id = ?",
+  [sender_psid], 
+  (error, result) => {
+      con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
+      ["50,000+", sender_psid])       
+    }
+  ) 
+
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    text : "(15/15) How did you find out about RFC?",
+     quick_replies:[
+       {
+        content_type : "text",
+        title : "Branch Personnel/RFC Employee",
+        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+       },
+       {
+        content_type : "text",
+        title : "Flyers",
+        payload : "FLYERS"
+       },
+       {
+        content_type : "text",
+        title : "Friends",
+        payload : "FRIENDS"
+       },
+       {
+        content_type : "text",
+        title : "Internet",
+        payload : "INTERNET"
+       },
+       {
+        content_type : "text",
+        title : "LIC",
+        payload : "LIC"
+       },
+       {
+        content_type : "text",
+        title : "Mall Based BCOs",
+        payload : "MALL_BASED_BC_OS"
+       },
+       {
+        content_type : "text",
+        title : "MBO (MicroBusOff)",
+        payload : "MBO"
+       },
+       {
+        content_type : "text",
+        title : "Newspaper",
+        payload : "NEWSPAPER"
+       },
+       {
+        content_type : "text",
+        title : "Office Signage",
+        payload : "OFFICE_SIGNAGE"
+       },
+       {
+        content_type : "text",
+        title : "More..",
+        payload : "INFO_MORE"
+       }
+      ]
+  } 
+  callSendAPI(sender_psid, response);
+}
+
 
 
 
@@ -12815,9 +12905,9 @@ app.post('/api/aws', (req, res) => {
       busboy.on("finish", function() {
         let n = `${"01"}_${"ID 1"}_${firstName}_${lastName}`;
         // let extension = `.${mimetype}`;
-        let fileName = `${n}${".pdf"}`;
+        let fileName = `${n}`;
         req.files.file.name = fileName;
-        uploadContentToS3(uploadFile, psid, res);
+        uploadContentToS3(uploadFile, psid, res);02
 
         con.query("SELECT doc1 FROM rfc_apply WHERE user_id = ?",
         [psid], 
