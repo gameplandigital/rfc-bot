@@ -12807,7 +12807,7 @@ var uploadContentToS3 = (file, folder) => {
     accessKeyId: IAM_USER_KEY,
     secretAccessKey: IAM_USER_SECRET,
     Bucket: BUCKET_NAME,
-    ContentType: "application/pdf"
+    ContentType: "application/octet-stream"
   });
 
   s3bucket.createBucket(function() {
@@ -12863,6 +12863,14 @@ app.post('/api/aws', (req, res) => {
   console.log(psid)
   console.log(firstName)
   console.log(lastName)
+
+
+  console.log(uploadFile,uploadType)
+  console.log(uploadFile2,uploadType2)
+  console.log(uploadFile3,uploadType3)
+  console.log(uploadFile4,uploadType4)
+
+
   console.log("======================")
 
   
@@ -12872,6 +12880,10 @@ app.post('/api/aws', (req, res) => {
     const uploadFile3 = req.files.file3;
     const uploadFile4 = req.files.file4;
 
+    const uploadType = req.files.Type;
+    const uploadType2 = req.files.Type2;
+    const uploadType3 = req.files.Type3;
+    const uploadType4 = req.files.Type4;
 
 
     var busboy = new Busboy({ headers: req.headers });
@@ -12903,9 +12915,8 @@ app.post('/api/aws', (req, res) => {
 
       busboy.on("finish", function() {
         let n = `${"01"}_${"ID 1"}_${firstName}_${lastName}`;
-        //let extension = `.${mimetype}`;
-        let fileName = uploadFile;
-        console.log("-----------------------",filename,"-----------------------")
+        // let extension = `.${mimetype}`;
+        let fileName = `${n}`;
         req.files.file.name = fileName;
         uploadContentToS3(uploadFile, psid, res);
 
@@ -12962,8 +12973,8 @@ app.post('/api/aws', (req, res) => {
 
        busboy.on("finish", function() {
          let n = `${"01"}_${"ID 2"}_${firstName}_${lastName}`;
-         let extension = `.${mimetype}`;
-         let fileName = `${n}${"."}${extension}`;
+         // let extension = `.${mimetype}`;
+         let fileName = `${n}${".pdf"}`;
          req.files.file.name = fileName;
          uploadContentToS3(uploadFile, psid);
 
@@ -13017,8 +13028,8 @@ app.post('/api/aws', (req, res) => {
 
        busboy.on("finish", function() {
          let n = `${"01"}_${"BILLING 1"}_${firstName}_${lastName}`;
-         let extension = `.${mimetype}`;
-         let fileName = `${n}${"."}${extension}`;
+         // let extension = `.${mimetype}`;
+         let fileName = `${n}${".pdf"}`;
          req.files.file.name = fileName;
          uploadContentToS3(uploadFile, psid);
 
@@ -13074,8 +13085,8 @@ app.post('/api/aws', (req, res) => {
 
        busboy.on("finish", function() {
          let n = `${"01"}_${"BILLING 2"}_${firstName}_${lastName}`;
-         let extension = `.${mimetype}`;
-         let fileName = `${n}${"."}${extension}`;
+         // let extension = `.${mimetype}`;
+         let fileName = `${n}${".pdf"}`;
          req.files.file.name = fileName;
          uploadContentToS3(uploadFile, psid);
 
