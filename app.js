@@ -12864,14 +12864,11 @@ app.post('/api/aws', (req, res) => {
   const uploadFile3 = req.files.file3;
   const uploadFile4 = req.files.file4;
 
-  getFileExtension(uploadFile); 
-  getFileExtension(uploadFile2); 
-  getFileExtension(uploadFile3); 
-  getFileExtension(uploadFile4); 
+  var fileExtension = uploadFile.substr((uploadFile.lastIndexOf('.') + 1));
+  var fileExtension2 = uploadFile2.substr((uploadFile2.lastIndexOf('.') + 1));
+  var fileExtension3 = uploadFile3.substr((uploadFile3.lastIndexOf('.') + 1));
+  var fileExtension4 = uploadFile4.substr((uploadFile4.lastIndexOf('.') + 1));
 
-  function getFileExtension(filename) {
-    return (/[.]/.exec(filename)) ? /[^.]+$/.exec(filename)[0] : undefined;
-  }
 
 
   console.log("======================")
@@ -12881,16 +12878,15 @@ app.post('/api/aws', (req, res) => {
   console.log(lastName)
 
 
-  console.log(uploadFile,getFileExtension(uploadFile))
-  console.log(uploadFile2,getFileExtension(uploadFile2))
-  console.log(uploadFile3,uploadType3)
-  console.log(uploadFile4,uploadType4)
-
+  console.log(fileExtension)
+  console.log(fileExtension2)
+  console.log(fileExtension3)
+  console.log(fileExtension4)
 
   console.log("======================")
 
     var busboy = new Busboy({ headers: req.headers });
-    if (uploadFile) {
+     if (uploadFile) {
       busboy.on("file", function(
         fieldname,
         file,
@@ -12919,7 +12915,7 @@ app.post('/api/aws', (req, res) => {
       busboy.on("finish", function() {
         let n = `${"01"}_${"ID 1"}_${firstName}_${lastName}`;
         // let extension = `.${mimetype}`;
-        let fileName = `${n}-${uploadFile.name}`;
+        let fileName = `${n}-${uploadFile}`;
         req.files.file.name = fileName;
         uploadContentToS3(uploadFile, psid, res);
 
@@ -12945,8 +12941,7 @@ app.post('/api/aws', (req, res) => {
 
 
     
-    }
-
+     }
 
      if (uploadFile2) {
        busboy.on("file", function(
@@ -13001,8 +12996,6 @@ app.post('/api/aws', (req, res) => {
        req.pipe(busboy);
      }
 
-
-
      if (uploadFile3) {
        busboy.on("file", function(
          fieldname,
@@ -13056,10 +13049,6 @@ app.post('/api/aws', (req, res) => {
        });
        req.pipe(busboy);
      }
-
-
-
-
 
      if (uploadFile4) {
        busboy.on("file", function(
