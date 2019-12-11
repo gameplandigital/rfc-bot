@@ -283,7 +283,7 @@ function handleAddress(sender_psid, received_message){
     con.query("SELECT getstarted FROM rfc_phase2_users WHERE MessengerId = ?", [sender_psid], 
     (error, result) => {
         con.query("UPDATE rfc_phase2_users SET getstarted = ? WHERE MessengerId = ?",
-        ["1", sender_psid])       
+        ['1', sender_psid])       
       }
     )
 
@@ -1092,7 +1092,7 @@ var handleQuickReply = (sender_psid, received_postback, received_message, callba
     con.query("SELECT getstarted FROM rfc_phase2_users WHERE MessengerId = ?", [sender_psid], 
     (error, result) => {
         con.query("UPDATE rfc_phase2_users SET getstarted = ? WHERE MessengerId = ?",
-        ["1", sender_psid])       
+        ['1', sender_psid])       
       }
     )
 
@@ -8320,7 +8320,7 @@ else if (payload == "LOAN_5,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["5,000", sender_psid])       
+      ['5,000', sender_psid])       
     }
   ) 
 
@@ -8458,7 +8458,7 @@ else if (payload == "LOAN_7,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["7,000", sender_psid])       
+      ['7,000', sender_psid])       
     }
   ) 
 
@@ -8527,7 +8527,7 @@ else if (payload == "LOAN_8,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["8,000", sender_psid])       
+      ['8,000', sender_psid])       
     }
   ) 
 
@@ -8596,7 +8596,7 @@ else if (payload == "LOAN_9,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["9,000", sender_psid])       
+      ['9,000', sender_psid])       
     }
   ) 
 
@@ -8665,7 +8665,7 @@ else if (payload == "LOAN_10,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["10,000", sender_psid])       
+      ['10,000', sender_psid])       
     }
   ) 
 
@@ -8734,7 +8734,7 @@ else if (payload == "LOAN_11,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["11,000", sender_psid])       
+      ['11,000', sender_psid])       
     }
   ) 
 
@@ -8803,7 +8803,7 @@ else if (payload == "LOAN_12,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["12,000", sender_psid])       
+      ['12,000', sender_psid])       
     }
   ) 
 
@@ -8872,7 +8872,7 @@ else if (payload == "LOAN_13,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["13,000", sender_psid])       
+      ['13,000', sender_psid])       
     }
   ) 
 
@@ -8941,7 +8941,7 @@ else if (payload == "LOAN_14,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["14,000", sender_psid])       
+      ['14,000', sender_psid])       
     }
   ) 
 
@@ -9010,7 +9010,7 @@ else if (payload == "LOAN_15,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["15,000", sender_psid])       
+      ['15,000', sender_psid])       
     }
   ) 
 
@@ -9079,7 +9079,7 @@ else if (payload == "LOAN_16,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["16,000", sender_psid])       
+      ['16,000', sender_psid])       
     }
   ) 
 
@@ -9148,7 +9148,7 @@ else if (payload == "LOAN_17,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["17,000", sender_psid])       
+      ['17,000', sender_psid])       
     }
   ) 
 
@@ -9217,7 +9217,7 @@ else if (payload == "LOAN_18,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["18,000", sender_psid])       
+      ['18,000', sender_psid])       
     }
   ) 
 
@@ -9286,7 +9286,7 @@ else if (payload == "LOAN_19,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["19,000", sender_psid])       
+      ['19,000', sender_psid])       
     }
   ) 
 
@@ -9355,7 +9355,7 @@ else if (payload == "LOAN_20,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["20,000", sender_psid])       
+      ['20,000', sender_psid])       
     }
   ) 
 
@@ -9424,7 +9424,7 @@ else if (payload == "LOAN_21,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["21,000", sender_psid])       
+      ['21,000', sender_psid])       
     }
   ) 
 
@@ -9493,7 +9493,7 @@ else if (payload == "LOAN_22,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["22,000", sender_psid])       
+      ['22,000', sender_psid])       
     }
   ) 
 
@@ -9562,7 +9562,7 @@ else if (payload == "LOAN_23,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["23,000", sender_psid])       
+      ['23,000', sender_psid])       
     }
   ) 
 
@@ -9631,7 +9631,7 @@ else if (payload == "LOAN_24,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["24,000", sender_psid])       
+      ['24,000', sender_psid])       
     }
   ) 
 
@@ -9700,7 +9700,7 @@ else if (payload == "LOAN_25,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["25,000", sender_psid])       
+      ['25,000', sender_psid])       
     }
   ) 
 
@@ -9769,7 +9769,7 @@ else if (payload == "LOAN_26,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["26,000", sender_psid])       
+      ['26,000', sender_psid])       
     }
   ) 
 
@@ -9838,7 +9838,7 @@ else if (payload == "LOAN_27,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["27,000", sender_psid])       
+      ['27,000', sender_psid])       
     }
   ) 
 
@@ -9907,7 +9907,7 @@ else if (payload == "LOAN_28,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["28,000", sender_psid])       
+      ['28,000', sender_psid])       
     }
   ) 
 
@@ -9976,7 +9976,7 @@ else if (payload == "LOAN_29,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["29,000", sender_psid])       
+      ['29,000', sender_psid])       
     }
   ) 
 
@@ -10045,7 +10045,7 @@ else if (payload == "LOAN_30,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["30,000", sender_psid])       
+      ['30,000', sender_psid])       
     }
   ) 
 
@@ -10114,7 +10114,7 @@ else if (payload == "LOAN_31,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["31,000", sender_psid])       
+      ['31,000', sender_psid])       
     }
   ) 
 
@@ -10183,7 +10183,7 @@ else if (payload == "LOAN_32,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["32,000", sender_psid])       
+      ['32,000', sender_psid])       
     }
   ) 
 
@@ -10252,7 +10252,7 @@ else if (payload == "LOAN_33,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["33,000", sender_psid])       
+      ['33,000', sender_psid])       
     }
   ) 
 
@@ -10321,7 +10321,7 @@ else if (payload == "LOAN_34,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["34,000", sender_psid])       
+      ['34,000', sender_psid])       
     }
   ) 
 
@@ -10390,7 +10390,7 @@ else if (payload == "LOAN_35,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["35,000", sender_psid])       
+      ['35,000', sender_psid])       
     }
   ) 
 
@@ -10459,7 +10459,7 @@ else if (payload == "LOAN_36,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["36,000", sender_psid])       
+      ['36,000', sender_psid])       
     }
   ) 
 
@@ -10528,7 +10528,7 @@ else if (payload == "LOAN_37,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["37,000", sender_psid])       
+      ['37,000', sender_psid])       
     }
   ) 
 
@@ -10597,7 +10597,7 @@ else if (payload == "LOAN_38,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["38,000", sender_psid])       
+      ['38,000', sender_psid])       
     }
   ) 
 
@@ -10666,7 +10666,7 @@ else if (payload == "LOAN_39,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["39,000", sender_psid])       
+      ['39,000', sender_psid])       
     }
   ) 
 
@@ -10735,7 +10735,7 @@ else if (payload == "LOAN_40,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["40,000", sender_psid])       
+      ['40,000', sender_psid])       
     }
   ) 
 
@@ -10804,7 +10804,7 @@ else if (payload == "LOAN_41,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["41,000", sender_psid])       
+      ['41,000', sender_psid])       
     }
   ) 
 
@@ -10873,7 +10873,7 @@ else if (payload == "LOAN_42,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["42,000", sender_psid])       
+      ['42,000', sender_psid])       
     }
   ) 
 
@@ -10942,7 +10942,7 @@ else if (payload == "LOAN_43,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["43,000", sender_psid])       
+      ['43,000', sender_psid])       
     }
   ) 
 
@@ -11011,7 +11011,7 @@ else if (payload == "LOAN_44,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["44,000", sender_psid])       
+      ['44,000', sender_psid])       
     }
   ) 
 
@@ -11080,7 +11080,7 @@ else if (payload == "LOAN_45,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["45,000", sender_psid])       
+      ['45,000', sender_psid])       
     }
   ) 
 
@@ -11149,7 +11149,7 @@ else if (payload == "LOAN_46,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["46,000", sender_psid])       
+      ['46,000', sender_psid])       
     }
   ) 
 
@@ -11218,7 +11218,7 @@ else if (payload == "LOAN_47,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["47,000", sender_psid])       
+      ['47,000', sender_psid])       
     }
   ) 
 
@@ -11287,7 +11287,7 @@ else if (payload == "LOAN_48,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["48,000", sender_psid])       
+      ['48,000', sender_psid])       
     }
   ) 
 
@@ -11356,7 +11356,7 @@ else if (payload == "LOAN_49,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["49,000", sender_psid])       
+      ['49,000', sender_psid])       
     }
   ) 
 
