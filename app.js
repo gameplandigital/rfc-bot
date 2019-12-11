@@ -12870,20 +12870,20 @@ app.post('/api/aws', (req, res) => {
   const uploadType4 = req.files.Type4;
 
 
-  console.log("======================")
-  console.log(req.body);
-  console.log(psid)
-  console.log(firstName)
-  console.log(lastName)
+  // console.log("======================")
+  // console.log(req.body);
+  // console.log(psid)
+  // console.log(firstName)
+  // console.log(lastName)
 
 
-  console.log(uploadFile,uploadType)
-  console.log(uploadFile2,uploadType2)
-  console.log(uploadFile3,uploadType3)
-  console.log(uploadFile4,uploadType4)
+  // console.log(uploadFile,uploadType)
+  // console.log(uploadFile2,uploadType2)
+  // console.log(uploadFile3,uploadType3)
+  // console.log(uploadFile4,uploadType4)
 
 
-  console.log("======================")
+  // console.log("======================")
 
     var busboy = new Busboy({ headers: req.headers });
     if (uploadFile) {

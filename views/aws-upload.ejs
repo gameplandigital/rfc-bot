@@ -536,10 +536,10 @@ button:hover {
     var file3 = $("#doc3")[0].files[0];
     var file4 = $("#doc4")[0].files[0];
 
-    var type = $("#doc1")[0].files[0].type;
-    var type2 = $("#doc2")[0].files[0].type;
-    var type3 = $("#doc3")[0].files[0].type;
-    var type4 = $("#doc4")[0].files[0].type;
+    let extension = file.split('.').pop(); 
+    let extension2 = file2.split('.').pop(); 
+    let extension3 = file3.split('.').pop(); 
+    let extension4 = file4.split('.').pop(); 
 
 
     // $("#sender_psid").value;
@@ -548,10 +548,10 @@ button:hover {
 
     console.log("+++++++++++++++++++++++")
     console.log(psid)
-    console.log( )
-    console.log( )
-    console.log( )
-    console.log( )
+    console.log(extension)
+    console.log(extension2)
+    console.log(extension3)
+    console.log(extension4)
     console.log("+++++++++++++++++++++++")
 
 
@@ -562,6 +562,7 @@ button:hover {
     formData.append("file2", file2);
     formData.append("file3", file3);
     formData.append("file4", file4);
+    
 
 
 
