@@ -12864,10 +12864,16 @@ app.post('/api/aws', (req, res) => {
   const uploadFile3 = req.files.file3;
   const uploadFile4 = req.files.file4;
 
-  var fileExtension = uploadFile.substr((uploadFile.lastIndexOf('.') + 1));
-  var fileExtension2 = uploadFile2.substr((uploadFile2.lastIndexOf('.') + 1));
-  var fileExtension3 = uploadFile3.substr((uploadFile3.lastIndexOf('.') + 1));
-  var fileExtension4 = uploadFile4.substr((uploadFile4.lastIndexOf('.') + 1));
+  const ext = uploadFile.name;
+  const ext2 = uploadFile.name;
+  const ext3 = uploadFile.name;
+  const ext4 = uploadFile.name;
+
+
+  var fileExtension = ext.substr((ext.lastIndexOf('.') + 1));
+  var fileExtension2 = ext2.substr((ext2.lastIndexOf('.') + 1));
+  var fileExtension3 = ext3.substr((ext3.lastIndexOf('.') + 1));
+  var fileExtension4 = ext4.substr((ext4.lastIndexOf('.') + 1));
 
 
 
