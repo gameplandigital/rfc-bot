@@ -535,11 +535,16 @@ button:hover {
     var file2 = $("#doc2")[0].files[0];
     var file3 = $("#doc3")[0].files[0];
     var file4 = $("#doc4")[0].files[0];
+    
+    var ext = $("#doc1")[0].files[0];
+    var ext2 = $("#doc2")[0].files[0];
+    var ext3 = $("#doc3")[0].files[0];
+    var ext4 = $("#doc4")[0].files[0];
 
-    let extension = file.split('.').pop(); 
-    let extension2 = file2.split('.').pop(); 
-    let extension3 = file3.split('.').pop(); 
-    let extension4 = file4.split('.').pop(); 
+    let extension = ext.split('.').pop(); 
+    let extension2 = ext2.split('.').pop(); 
+    let extension3 = ext3.split('.').pop(); 
+    let extension4 = ext4.split('.').pop(); 
 
 
     // $("#sender_psid").value;
