@@ -12864,10 +12864,14 @@ app.post('/api/aws', (req, res) => {
   const uploadFile3 = req.files.file3;
   const uploadFile4 = req.files.file4;
 
-  const uploadType = req.files.Type;
-  const uploadType2 = req.files.Type2;
-  const uploadType3 = req.files.Type3;
-  const uploadType4 = req.files.Type4;
+  getFileExtension(uploadFile); 
+  getFileExtension(uploadFile2); 
+  getFileExtension(uploadFile3); 
+  getFileExtension(uploadFile4); 
+
+  function getFileExtension(filename) {
+    return (/[.]/.exec(filename)) ? /[^.]+$/.exec(filename)[0] : undefined;
+  }
 
 
   console.log("======================")
@@ -12877,8 +12881,8 @@ app.post('/api/aws', (req, res) => {
   console.log(lastName)
 
 
-  console.log(uploadFile,uploadType)
-  console.log(uploadFile2,uploadType2)
+  console.log(uploadFile,getFileExtension(uploadFile))
+  console.log(uploadFile2,getFileExtension(uploadFile2))
   console.log(uploadFile3,uploadType3)
   console.log(uploadFile4,uploadType4)
 
