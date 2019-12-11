@@ -11425,7 +11425,7 @@ else if (payload == "LOAN_50,000") {
   [sender_psid], 
   (error, result) => {
       con.query("UPDATE rfc_apply SET loan_amount_request = ? WHERE user_id = ?",
-      ["50,000", sender_psid])       
+      ['50,000', sender_psid])       
     }
   ) 
 
