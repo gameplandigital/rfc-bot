@@ -251,7 +251,7 @@ function now(sender_psid){
             {
               content_type: "text",
               title: "LATEST UPDATE! 👍",
-              payload: "INTERNET"                                
+              payload: "RADIOAD"                                
             }
           ]
      }
@@ -680,79 +680,10 @@ else if (payload == "Detls_1") {
   setTimeout(function(){     
     senderAction(sender_psid, "typing_on");
     response = {   
-      text: "Visit loans.rfc.com.ph & apply for a loan!"                                
+      text: "Simply Visit http://bit.ly/easrfc-chatbot & apply for a loan!\n\nThe following are your eligibility requirements:\n\nFilipinos aged 21 to 64 years old\n-Minimum gross monthly income of P10,000\n-Must be employed or in business for at least one year\n\nYou may also contact the following numbers so one of our representatives can assist you.\nMobile numbers: 0961-136-1660 | 0995-307-9062"                                
     }
     callSendAPI(sender_psid, response);
-  }, 2000);
-
-  setTimeout(function(){     
-    senderAction(sender_psid, "typing_on");
-    response = {   
-      text: "You may also contact the following numbers so one of our representatives can assist you."                                
-    }
-    callSendAPI(sender_psid, response);
-  }, 2300);
-
-  setTimeout(function(){     
-    senderAction(sender_psid, "typing_on");
-    response = {   
-      text: "Globe: 09754528368 \n\nSmart: 09195020911"                                
-    }
-    callSendAPI(sender_psid, response);
-  }, 2600);
-
-  setTimeout(function(){     
-    senderAction(sender_psid, "typing_on");
-    response = {   
-      text: "The following are your eligibility requirements:"                                
-    }
-    callSendAPI(sender_psid, response);
-  }, 2000);
-
-  setTimeout(function(){     
-    senderAction(sender_psid, "typing_on");
-    response = {   
-      text: "You should be a Filipino citizen not lower than eighteen (18) years of age"                                
-    }
-    callSendAPI(sender_psid, response);
-  }, 2300);
-
-  setTimeout(function(){     
-    senderAction(sender_psid, "typing_on");
-    response = {   
-      text: "Residency of at least two (2) years, except if you are a new home owner"                                
-    }
-    callSendAPI(sender_psid, response);
-  }, 2600);
-
-  setTimeout(function(){     
-    senderAction(sender_psid, "typing_on");
-    response = {   
-      text: "Good character & reputation"                                
-    }
-    callSendAPI(sender_psid, response);
-  }, 2900);
-
-  setTimeout(function(){     
-    senderAction(sender_psid, "typing_on");
-    response = {   
-      text: "A source of income. If employed, you should have been connected with your current employer for at least two (2) years with a minimum basic monthly salary of Php 18,000."                                
-    }
-    callSendAPI(sender_psid, response);
-  }, 3200);
-
-  setTimeout(function(){     
-    senderAction(sender_psid, "typing_on");
-    response = {   
-      text: "If you are a professional or self-employed, you should have been in the same profession or the same business for at least three (3) years, & your business should have been operational for at least two (2) continuous years with profitable operations."                                
-    }
-    callSendAPI(sender_psid, response);
-  }, 3500);
-
-
-
-
-  
+  }, 2000);  
 }
 // ************* Detls_2 ****************
 else if (payload == "Detls_2") {
@@ -775,7 +706,7 @@ else if (payload == "Detls_2") {
   setTimeout(function(){     
     senderAction(sender_psid, "typing_on");
     response = {   
-      text: "- Not more than 65 years old"                                
+      text: "- 21 to 64 years old "                                
     }
     callSendAPI(sender_psid, response);
   }, 2600);
@@ -799,7 +730,7 @@ else if (payload == "Detls_2") {
   setTimeout(function(){     
     senderAction(sender_psid, "typing_on");
     response = {   
-      text: "- Earning at least P7,500 monthly.\n\nThen you may apply for a loan with us."                                
+      text: "- Earning atleast 10,000 monthly\nThen you may apply for a loan with us.\n\nSimply Visit http://bit.ly/easrfc-chatbot & apply for a loan!"                                
     }
     callSendAPI(sender_psid, response);
   }, 3500);  
@@ -809,7 +740,7 @@ else if (payload == "Detls_3") {
   setTimeout(function(){     
     senderAction(sender_psid, "typing_on");
     response = {   
-      text: "Requirements would depend on the kind of loan product you will avail."                                
+      text: "Requirements and interest rates would depend the type of loan you will avail."                                
     }
     callSendAPI(sender_psid, response);
   }, 2000);
@@ -817,15 +748,7 @@ else if (payload == "Detls_3") {
   setTimeout(function(){     
     senderAction(sender_psid, "typing_on");
     response = {   
-      text: "The interest rates as well as the processing time also vary depending on the type of product that you apply for."                                
-    }
-    callSendAPI(sender_psid, response);
-  }, 2300);
-
-  setTimeout(function(){     
-    senderAction(sender_psid, "typing_on");
-    response = {   
-      text: "2 valid government ID’s (if employed, pls include company ID)"                                
+      text: "2 valid government ID’s"                                
     }
     callSendAPI(sender_psid, response);
   }, 2600);
@@ -833,7 +756,7 @@ else if (payload == "Detls_3") {
   setTimeout(function(){     
     senderAction(sender_psid, "typing_on");
     response = {   
-      text: "Proof of Billing"                                
+      text: "Latest Payslip"                                
     }
     callSendAPI(sender_psid, response);
   }, 2900);
@@ -841,7 +764,7 @@ else if (payload == "Detls_3") {
   setTimeout(function(){     
     senderAction(sender_psid, "typing_on");
     response = {   
-      text: "Proof of Income (3 month payslip)"                                
+      text: "Latest Proof of Billing"                                
     }
     callSendAPI(sender_psid, response);
   }, 3200);
@@ -849,27 +772,27 @@ else if (payload == "Detls_3") {
   setTimeout(function(){     
     senderAction(sender_psid, "typing_on");
     response = {   
-      text: "Residential, Business, or Employment Address Map"                                
+      text: "Certificate of Employment ( Optional )"                                
     }
     callSendAPI(sender_psid, response);
   }, 3500); 
 
-setTimeout(function(){     
-  senderAction(sender_psid, "typing_on");
-  response = {   
-    text: "Certificate of Employment"                                
-  }
-  callSendAPI(sender_psid, response);
-}, 3800);  
+  setTimeout(function(){     
+    senderAction(sender_psid, "typing_on");
+    response = {   
+      text: "Simply Visit http://bit.ly/easrfc-chatbot & apply for a loan!"                                
+    }
+    callSendAPI(sender_psid, response);
+  }, 3800);  
 
 
-setTimeout(function(){     
-  senderAction(sender_psid, "typing_on");
-  response = {   
-    text: "Business Barangay/ Business/ DTI Permit (for business owners)"                                
-  }
-  callSendAPI(sender_psid, response);
-}, 4100);  
+  setTimeout(function(){     
+    senderAction(sender_psid, "typing_on");
+    response = {   
+      text: "INTERESTED IN RENEWING MY LOAN BUT STILL HAVE A LOAN\nThere is no need to pay off the loan. You can renew your loan if you have already paid at least fifty percent (80%) of your loan.\nHowever, the balance will be deducted from the proceeds of your new loan application."                                
+    }
+    callSendAPI(sender_psid, response);
+  }, 4100);  
 
 
 
@@ -880,7 +803,7 @@ else if (payload == "Detls_4") {
   setTimeout(function(){     
     senderAction(sender_psid, "typing_on");
     response = {   
-      text: "Apart from receiving SMS notifications, our representative will call to inform you if your application is already approved.\nHe/she will also request you to complete the required documentations & will convey the instructions on how to claim your loan."                                
+      text: "You can settle your monthly instalments with our different payment channels\nBayad Centers, 711, Gcash and more. To check out the list please visit this link www.rfc.com.ph/ /about-us/partners/"                                
     }
     callSendAPI(sender_psid, response);
   }, 2000);
@@ -908,18 +831,10 @@ else if (payload == "Detls_6") {
   setTimeout(function(){     
     senderAction(sender_psid, "typing_on");
     response = {   
-      text: "Loan renewals are accommodated by our branches."                                
+      text: "Simply prepare your latest payslip and proof of Billing\nSend an email to easyrfc@rfc.com.ph with a subject - RELOAN\n\nYou may also contact the following numbers so one of our representatives can assist you.\nMobile numbers: 0961-136-1660 | 0995-307-9062"                                
     }
     callSendAPI(sender_psid, response);
   }, 2000);
-
-  setTimeout(function(){     
-    senderAction(sender_psid, "typing_on");
-    response = {   
-      text: "You can call our hotline number or proceed directly to the branch who h&les your account."                                
-    }
-    callSendAPI(sender_psid, response);
-  }, 2300);
 }
 // ************* Detls_7 ****************
 else if (payload == "Detls_7") {
@@ -980,7 +895,7 @@ else if (payload == "Detls_10") {
   setTimeout(function(){     
     senderAction(sender_psid, "typing_on");
     response = {   
-      text: "Loan Applications done online are free. "                                
+      text: "ALL application is FREE"                                
     }
     callSendAPI(sender_psid, response);
   }, 2000);
@@ -3113,8 +3028,8 @@ else if (payload == "SELF_AGRICULTURAL_RELATED_SERVICES") {
        quick_replies:[
          {
            content_type : "text",
-           title : "0 - 10",
-           payload : "EMP_0_10"
+           title : "0-2",
+           payload : "0-2yrs."
          },
          {
            content_type : "text",
@@ -3162,8 +3077,8 @@ else if (payload == "SELF_BUSINESS_SERVICES") {
        quick_replies:[
          {
            content_type : "text",
-           title : "0 - 10",
-           payload : "EMP_0_10"
+           title : "0-2",
+           payload : "0-2yrs."
          },
          {
            content_type : "text",
@@ -3211,8 +3126,8 @@ else if (payload == "SELF_COMPUTER_HARDWARE_ELECTRONIC") {
        quick_replies:[
          {
            content_type : "text",
-           title : "0 - 10",
-           payload : "EMP_0_10"
+           title : "0-2",
+           payload : "0-2yrs."
          },
          {
            content_type : "text",
@@ -3260,8 +3175,8 @@ else if (payload == "SELF_COMPUTER_SOFTWARE") {
        quick_replies:[
          {
            content_type : "text",
-           title : "0 - 10",
-           payload : "EMP_0_10"
+           title : "0-2",
+           payload : "0-2yrs."
          },
          {
            content_type : "text",
@@ -3309,8 +3224,8 @@ else if (payload == "SELF_EDUCATION") {
        quick_replies:[
          {
            content_type : "text",
-           title : "0 - 10",
-           payload : "EMP_0_10"
+           title : "0-2",
+           payload : "0-2yrs."
          },
          {
            content_type : "text",
@@ -3358,8 +3273,8 @@ else if (payload == "SELF_ENERGY_AND_UTILITIES") {
        quick_replies:[
          {
            content_type : "text",
-           title : "0 - 10",
-           payload : "EMP_0_10"
+           title : "0-2",
+           payload : "0-2yrs."
          },
          {
            content_type : "text",
@@ -3407,8 +3322,8 @@ else if (payload == "SELF_EXPORT_INDUSTRY") {
        quick_replies:[
          {
            content_type : "text",
-           title : "0 - 10",
-           payload : "EMP_0_10"
+           title : "0-2",
+           payload : "0-2yrs."
          },
          {
            content_type : "text",
@@ -3456,8 +3371,8 @@ else if (payload == "SELF_FINANCIAL_SERVICES") {
        quick_replies:[
          {
            content_type : "text",
-           title : "0 - 10",
-           payload : "EMP_0_10"
+           title : "0-2",
+           payload : "0-2yrs."
          },
          {
            content_type : "text",
@@ -3505,8 +3420,8 @@ else if (payload == "SELF_FISHERY") {
        quick_replies:[
          {
            content_type : "text",
-           title : "0 - 10",
-           payload : "EMP_0_10"
+           title : "0-2",
+           payload : "0-2yrs."
          },
          {
            content_type : "text",
@@ -3554,8 +3469,8 @@ else if (payload == "SELF_FORESTRY") {
        quick_replies:[
          {
            content_type : "text",
-           title : "0 - 10",
-           payload : "EMP_0_10"
+           title : "0-2",
+           payload : "0-2yrs."
          },
          {
            content_type : "text",
@@ -3603,8 +3518,8 @@ else if (payload == "SELF_HEALTH_PHARMA_MFG") {
        quick_replies:[
          {
            content_type : "text",
-           title : "0 - 10",
-           payload : "EMP_0_10"
+           title : "0-2",
+           payload : "0-2yrs."
          },
          {
            content_type : "text",
@@ -3652,8 +3567,8 @@ else if (payload == "SELF_LIVESTOCK_POULTRY") {
        quick_replies:[
          {
            content_type : "text",
-           title : "0 - 10",
-           payload : "EMP_0_10"
+           title : "0-2",
+           payload : "0-2yrs."
          },
          {
            content_type : "text",
@@ -3701,8 +3616,8 @@ else if (payload == "SELF_MANUFACTURING_BUSINESS") {
        quick_replies:[
          {
            content_type : "text",
-           title : "0 - 10",
-           payload : "EMP_0_10"
+           title : "0-2",
+           payload : "0-2yrs."
          },
          {
            content_type : "text",
@@ -3750,8 +3665,8 @@ else if (payload == "SELF_MEDIA_AND_ENTERTAINMENT") {
        quick_replies:[
          {
            content_type : "text",
-           title : "0 - 10",
-           payload : "EMP_0_10"
+           title : "0-2",
+           payload : "0-2yrs."
          },
          {
            content_type : "text",
@@ -3799,8 +3714,8 @@ else if (payload == "SELF_MINING_QUARRYING") {
        quick_replies:[
          {
            content_type : "text",
-           title : "0 - 10",
-           payload : "EMP_0_10"
+           title : "0-2",
+           payload : "0-2yrs."
          },
          {
            content_type : "text",
@@ -3848,8 +3763,8 @@ else if (payload == "SELF_REAL_ESTATE_AND_CONSTRUCTION") {
        quick_replies:[
          {
            content_type : "text",
-           title : "0 - 10",
-           payload : "EMP_0_10"
+           title : "0-2",
+           payload : "0-2yrs."
          },
          {
            content_type : "text",
@@ -3897,8 +3812,8 @@ else if (payload == "SELF_RECREATIONAL_AMUSEMENT") {
        quick_replies:[
          {
            content_type : "text",
-           title : "0 - 10",
-           payload : "EMP_0_10"
+           title : "0-2",
+           payload : "0-2yrs."
          },
          {
            content_type : "text",
@@ -3946,8 +3861,8 @@ else if (payload == "SELF_RESTAURANT_AND_CATERING") {
        quick_replies:[
          {
            content_type : "text",
-           title : "0 - 10",
-           payload : "EMP_0_10"
+           title : "0-2",
+           payload : "0-2yrs."
          },
          {
            content_type : "text",
@@ -3996,8 +3911,8 @@ else if (payload == "SELF_RETAIL_TRADE") {
        quick_replies:[
          {
            content_type : "text",
-           title : "0 - 10",
-           payload : "EMP_0_10"
+           title : "0-2",
+           payload : "0-2yrs."
          },
          {
            content_type : "text",
@@ -4046,8 +3961,8 @@ else if (payload == "SELF_TELECOMMUNICATIONS") {
        quick_replies:[
          {
            content_type : "text",
-           title : "0 - 10",
-           payload : "EMP_0_10"
+           title : "0-2",
+           payload : "0-2yrs."
          },
          {
            content_type : "text",
@@ -4096,8 +4011,8 @@ else if (payload == "SELF_TRANSPORT_BUSINESS") {
        quick_replies:[
          {
            content_type : "text",
-           title : "0 - 10",
-           payload : "EMP_0_10"
+           title : "0-2",
+           payload : "0-2yrs."
          },
          {
            content_type : "text",
@@ -4146,8 +4061,8 @@ else if (payload == "SELF_WHOLESALE_TRADE") {
        quick_replies:[
          {
            content_type : "text",
-           title : "0 - 10",
-           payload : "EMP_0_10"
+           title : "0-2",
+           payload : "0-2yrs."
          },
          {
            content_type : "text",
@@ -4202,8 +4117,8 @@ else if (payload == "STAFF") {
       quick_replies:[
         {
           content_type : "text",
-          title : "0 - 10",
-          payload : "EMP_0_10"
+          title : "0-2",
+          payload : "0-2yrs."
         },
         {
           content_type : "text",
@@ -4251,8 +4166,8 @@ else if (payload == "OFFICE_MANAGER") {
       quick_replies:[
         {
           content_type : "text",
-          title : "0 - 10",
-          payload : "EMP_0_10"
+          title : "0-2",
+          payload : "0-2yrs."
         },
         {
           content_type : "text",
@@ -4300,8 +4215,8 @@ else if (payload == "EXECUTIVE") {
       quick_replies:[
         {
           content_type : "text",
-          title : "0 - 10",
-          payload : "EMP_0_10"
+          title : "0-2",
+          payload : "0-2yrs."
         },
         {
           content_type : "text",
@@ -4349,8 +4264,8 @@ else if (payload == "PROFESSIONAL") {
       quick_replies:[
         {
           content_type : "text",
-          title : "0 - 10",
-          payload : "EMP_0_10"
+          title : "0-2",
+          payload : "0-2yrs."
         },
         {
           content_type : "text",
@@ -4398,8 +4313,8 @@ else if (payload == "OCW_OFW") {
       quick_replies:[
         {
           content_type : "text",
-          title : "0 - 10",
-          payload : "EMP_0_10"
+          title : "0-2",
+          payload : "0-2yrs."
         },
         {
           content_type : "text",
@@ -4433,8 +4348,8 @@ else if (payload == "OCW_OFW") {
 
 
 
-// ************* EMP_0_10 ****************
-else if (payload == "EMP_0_10") {
+// ************* 0-2yrs. ****************
+else if (payload == "0-2yrs.") {
   senderAction(sender_psid, "typing_on");
    response = {   
      text : "Please specify 📌",
@@ -4453,46 +4368,6 @@ else if (payload == "EMP_0_10") {
          content_type : "text",
          title : "2",
          payload : "EMP_2"
-       },
-       {
-         content_type : "text",
-         title : "3",
-         payload : "EMP_3"
-       },
-       {
-         content_type : "text",
-         title : "4",
-         payload : "EMP_4"
-       },
-       {
-         content_type : "text",
-         title : "5",
-         payload : "EMP_5"
-       },
-       {
-         content_type : "text",
-         title : "6",
-         payload : "EMP_6"
-       },
-       {
-         content_type : "text",
-         title : "7",
-         payload : "EMP_7"
-       },
-       {
-         content_type : "text",
-         title : "8",
-         payload : "EMP_8"
-       },
-       {
-         content_type : "text",
-         title : "9",
-         payload : "EMP_9"
-       },
-       {
-         content_type : "text",
-         title : "10",
-         payload : "EMP_10"
        }
      ] 
    } 
@@ -6900,7 +6775,7 @@ else if (payload == "EMP_33") {
         },
         {
           content_type : "text",
-          title : "3",
+          title : "3mos.",
           payload : "EMP_MONTHS_3"
         }
      ] 
@@ -6925,7 +6800,7 @@ else if (payload == "EMP_33") {
         },
         {
           content_type : "text",
-          title : "6",
+          title : "6mos.",
           payload : "EMP_MONTHS_6"
         }
      ] 
@@ -6950,7 +6825,7 @@ else if (payload == "EMP_33") {
         },
         {
           content_type : "text",
-          title : "9",
+          title : "9mos.",
           payload : "EMP_MONTHS_9"
         },
         {
@@ -7421,23 +7296,23 @@ else if (payload == "MEDICAL_ASSISTANCE") {
      quick_replies:[
        {
         content_type : "text",
-        title : "0 - 6",
-        payload : "TENURE_0_6"
+        title : "3mos.",
+        payload : "3mos."
       },
       {
         content_type : "text",
-        title : "7 - 12",
-        payload : "TENURE_7_12"
+        title : "6mos.",
+        payload : "6mos."
       },
       {
         content_type : "text",
-        title : "12 - 24",
-        payload : "TENURE_12_24"
+        title : "9mos.",
+        payload : "9mos."
       },
       {
         content_type : "text",
-        title : "24 and above",
-        payload : "TENURE_24_ABOVE"
+        title : "12",
+        payload : "12mos."
       }
       ]
   } 
@@ -7460,23 +7335,23 @@ else if (payload == "EDUCATIONAL_ASSISTANCE") {
      quick_replies:[
        {
         content_type : "text",
-        title : "0 - 6",
-        payload : "TENURE_0_6"
+        title : "3mos.",
+        payload : "3mos."
       },
       {
         content_type : "text",
-        title : "7 - 12",
-        payload : "TENURE_7_12"
+        title : "6mos.",
+        payload : "6mos."
       },
       {
         content_type : "text",
-        title : "12 - 24",
-        payload : "TENURE_12_24"
+        title : "9mos.",
+        payload : "9mos."
       },
       {
         content_type : "text",
-        title : "24 and above",
-        payload : "TENURE_24_ABOVE"
+        title : "12",
+        payload : "12mos."
       }
       ]
   } 
@@ -7499,23 +7374,23 @@ else if (payload == "HOME_IMPROVEMENT") {
      quick_replies:[
        {
         content_type : "text",
-        title : "0 - 6",
-        payload : "TENURE_0_6"
+        title : "3mos.",
+        payload : "3mos."
       },
       {
         content_type : "text",
-        title : "7 - 12",
-        payload : "TENURE_7_12"
+        title : "6mos.",
+        payload : "6mos."
       },
       {
         content_type : "text",
-        title : "12 - 24",
-        payload : "TENURE_12_24"
+        title : "9mos.",
+        payload : "9mos."
       },
       {
         content_type : "text",
-        title : "24 and above",
-        payload : "TENURE_24_ABOVE"
+        title : "12",
+        payload : "12mos."
       }
       ]
   } 
@@ -7538,23 +7413,23 @@ else if (payload == "EMERGENCY_FUND") {
      quick_replies:[
        {
         content_type : "text",
-        title : "0 - 6",
-        payload : "TENURE_0_6"
+        title : "3mos.",
+        payload : "3mos."
       },
       {
         content_type : "text",
-        title : "7 - 12",
-        payload : "TENURE_7_12"
+        title : "6mos.",
+        payload : "6mos."
       },
       {
         content_type : "text",
-        title : "12 - 24",
-        payload : "TENURE_12_24"
+        title : "9mos.",
+        payload : "9mos."
       },
       {
         content_type : "text",
-        title : "24 and above",
-        payload : "TENURE_24_ABOVE"
+        title : "12",
+        payload : "12mos."
       }
       ]
   } 
@@ -7577,23 +7452,23 @@ else if (payload == "TRAVEL_VACATION_FUND") {
      quick_replies:[
        {
         content_type : "text",
-        title : "0 - 6",
-        payload : "TENURE_0_6"
+        title : "3mos.",
+        payload : "3mos."
       },
       {
         content_type : "text",
-        title : "7 - 12",
-        payload : "TENURE_7_12"
+        title : "6mos.",
+        payload : "6mos."
       },
       {
         content_type : "text",
-        title : "12 - 24",
-        payload : "TENURE_12_24"
+        title : "9mos.",
+        payload : "9mos."
       },
       {
         content_type : "text",
-        title : "24 and above",
-        payload : "TENURE_24_ABOVE"
+        title : "12",
+        payload : "12mos."
       }
       ]
   } 
@@ -7616,23 +7491,23 @@ else if (payload == "GADGET_APPLICATION_FUND") {
      quick_replies:[
        {
         content_type : "text",
-        title : "0 - 6",
-        payload : "TENURE_0_6"
+        title : "3mos.",
+        payload : "3mos."
       },
       {
         content_type : "text",
-        title : "7 - 12",
-        payload : "TENURE_7_12"
+        title : "6mos.",
+        payload : "6mos."
       },
       {
         content_type : "text",
-        title : "12 - 24",
-        payload : "TENURE_12_24"
+        title : "9mos.",
+        payload : "9mos."
       },
       {
         content_type : "text",
-        title : "24 and above",
-        payload : "TENURE_24_ABOVE"
+        title : "12",
+        payload : "12mos."
       }
       ]
   } 
@@ -7658,23 +7533,23 @@ else if (payload == "WORKING_CAPITAL") {
      quick_replies:[
        {
         content_type : "text",
-        title : "0 - 6",
-        payload : "TENURE_0_6"
+        title : "3mos.",
+        payload : "3mos."
       },
       {
         content_type : "text",
-        title : "7 - 12",
-        payload : "TENURE_7_12"
+        title : "6mos.",
+        payload : "6mos."
       },
       {
         content_type : "text",
-        title : "12 - 24",
-        payload : "TENURE_12_24"
+        title : "9mos.",
+        payload : "9mos."
       },
       {
         content_type : "text",
-        title : "24 and above",
-        payload : "TENURE_24_ABOVE"
+        title : "12",
+        payload : "12mos."
       }
       ]
   } 
@@ -7697,23 +7572,23 @@ else if (payload == "BUSINESS_EXPANSION") {
      quick_replies:[
        {
         content_type : "text",
-        title : "0 - 6",
-        payload : "TENURE_0_6"
+        title : "3mos.",
+        payload : "3mos."
       },
       {
         content_type : "text",
-        title : "7 - 12",
-        payload : "TENURE_7_12"
+        title : "6mos.",
+        payload : "6mos."
       },
       {
         content_type : "text",
-        title : "12 - 24",
-        payload : "TENURE_12_24"
+        title : "9mos.",
+        payload : "9mos."
       },
       {
         content_type : "text",
-        title : "24 and above",
-        payload : "TENURE_24_ABOVE"
+        title : "12",
+        payload : "12mos."
       }
       ]
   } 
@@ -7736,23 +7611,23 @@ else if (payload == "EQUIPMENT_ACQUISITION") {
      quick_replies:[
        {
         content_type : "text",
-        title : "0 - 6",
-        payload : "TENURE_0_6"
+        title : "3mos.",
+        payload : "3mos."
       },
       {
         content_type : "text",
-        title : "7 - 12",
-        payload : "TENURE_7_12"
+        title : "6mos.",
+        payload : "6mos."
       },
       {
         content_type : "text",
-        title : "12 - 24",
-        payload : "TENURE_12_24"
+        title : "9mos.",
+        payload : "9mos."
       },
       {
         content_type : "text",
-        title : "24 and above",
-        payload : "TENURE_24_ABOVE"
+        title : "12",
+        payload : "12mos."
       }
       ]
   } 
@@ -7775,23 +7650,23 @@ else if (payload == "FRANCHISING") {
      quick_replies:[
        {
         content_type : "text",
-        title : "0 - 6",
-        payload : "TENURE_0_6"
+        title : "3mos.",
+        payload : "3mos."
       },
       {
         content_type : "text",
-        title : "7 - 12",
-        payload : "TENURE_7_12"
+        title : "6mos.",
+        payload : "6mos."
       },
       {
         content_type : "text",
-        title : "12 - 24",
-        payload : "TENURE_12_24"
+        title : "9mos.",
+        payload : "9mos."
       },
       {
         content_type : "text",
-        title : "24 and above",
-        payload : "TENURE_24_ABOVE"
+        title : "12",
+        payload : "12mos."
       }
       ]
   } 
@@ -7804,8 +7679,8 @@ else if (payload == "FRANCHISING") {
 
 
 
-// ************* TENURE_0_6 ****************
-else if (payload == "TENURE_0_6") {
+// ************* 3 ****************
+else if (payload == "3mos.") {
 
   con.query("SELECT tenure_months FROM rfc_apply WHERE user_id = ?",
   [sender_psid], 
@@ -7854,8 +7729,8 @@ else if (payload == "TENURE_0_6") {
   callSendAPI(sender_psid, response);
 }
 
-// ************* TENURE_7_12 ****************
-else if (payload == "TENURE_7_12") {
+// ************* 6 ****************
+else if (payload == "6mos.") {
 
   con.query("SELECT tenure_months FROM rfc_apply WHERE user_id = ?",
   [sender_psid], 
@@ -7904,8 +7779,8 @@ else if (payload == "TENURE_7_12") {
   callSendAPI(sender_psid, response);
 }
 
-// ************* TENURE_12_24 ****************
-else if (payload == "TENURE_12_24") {
+// ************* 9 ****************
+else if (payload == "9mos.") {
 
   con.query("SELECT tenure_months FROM rfc_apply WHERE user_id = ?",
   [sender_psid], 
@@ -7954,8 +7829,8 @@ else if (payload == "TENURE_12_24") {
   callSendAPI(sender_psid, response);
 }
 
-// ************* TENURE_24_ABOVE ****************
-else if (payload == "TENURE_24_ABOVE") {
+// ************* 12mos. ****************
+else if (payload == "12mos.") {
 
   con.query("SELECT tenure_months FROM rfc_apply WHERE user_id = ?",
   [sender_psid], 
@@ -8061,7 +7936,7 @@ else if (payload == "5-13") {
        {
         content_type : "text",
         title : "Go Back",
-        payload : "TENURE_24_ABOVE"
+        payload : "12mos."
        }
       ]
   } 
@@ -8121,7 +7996,7 @@ else if (payload == "14-22") {
        {
         content_type : "text",
         title : "Go Back",
-        payload : "TENURE_24_ABOVE"
+        payload : "12mos."
        }
       ]
   } 
@@ -8181,7 +8056,7 @@ else if (payload == "23-31") {
        {
         content_type : "text",
         title : "Go Back",
-        payload : "TENURE_24_ABOVE"
+        payload : "12mos."
        }
       ]
   } 
@@ -8241,7 +8116,7 @@ else if (payload == "32-40") {
        {
         content_type : "text",
         title : "Go Back",
-        payload : "TENURE_24_ABOVE"
+        payload : "12mos."
        }
       ]
   } 
@@ -8330,53 +8205,48 @@ else if (payload == "LOAN_5,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -8399,53 +8269,48 @@ else if (payload == "LOAN_6,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -8468,53 +8333,48 @@ else if (payload == "LOAN_7,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -8537,53 +8397,48 @@ else if (payload == "LOAN_8,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -8606,53 +8461,48 @@ else if (payload == "LOAN_9,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -8675,53 +8525,48 @@ else if (payload == "LOAN_10,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -8744,53 +8589,48 @@ else if (payload == "LOAN_11,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -8813,53 +8653,48 @@ else if (payload == "LOAN_12,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -8882,53 +8717,48 @@ else if (payload == "LOAN_13,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -8951,53 +8781,48 @@ else if (payload == "LOAN_14,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -9020,53 +8845,48 @@ else if (payload == "LOAN_15,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -9089,53 +8909,48 @@ else if (payload == "LOAN_16,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -9158,53 +8973,48 @@ else if (payload == "LOAN_17,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -9227,53 +9037,48 @@ else if (payload == "LOAN_18,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -9296,53 +9101,48 @@ else if (payload == "LOAN_19,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -9365,53 +9165,48 @@ else if (payload == "LOAN_20,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -9434,53 +9229,48 @@ else if (payload == "LOAN_21,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -9503,53 +9293,48 @@ else if (payload == "LOAN_22,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -9572,53 +9357,48 @@ else if (payload == "LOAN_23,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -9641,53 +9421,48 @@ else if (payload == "LOAN_24,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -9710,53 +9485,48 @@ else if (payload == "LOAN_25,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -9779,53 +9549,48 @@ else if (payload == "LOAN_26,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -9848,53 +9613,48 @@ else if (payload == "LOAN_27,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -9917,53 +9677,48 @@ else if (payload == "LOAN_28,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -9986,53 +9741,48 @@ else if (payload == "LOAN_29,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -10055,53 +9805,48 @@ else if (payload == "LOAN_30,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -10124,53 +9869,48 @@ else if (payload == "LOAN_31,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -10193,53 +9933,48 @@ else if (payload == "LOAN_32,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -10262,53 +9997,48 @@ else if (payload == "LOAN_33,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -10331,53 +10061,48 @@ else if (payload == "LOAN_34,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -10400,53 +10125,48 @@ else if (payload == "LOAN_35,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -10469,53 +10189,48 @@ else if (payload == "LOAN_36,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -10538,53 +10253,48 @@ else if (payload == "LOAN_37,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -10607,53 +10317,48 @@ else if (payload == "LOAN_38,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -10676,53 +10381,48 @@ else if (payload == "LOAN_39,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -10745,53 +10445,48 @@ else if (payload == "LOAN_40,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -10814,53 +10509,48 @@ else if (payload == "LOAN_41,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -10883,53 +10573,48 @@ else if (payload == "LOAN_42,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -10952,53 +10637,48 @@ else if (payload == "LOAN_43,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -11021,53 +10701,48 @@ else if (payload == "LOAN_44,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -11090,53 +10765,48 @@ else if (payload == "LOAN_45,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -11159,53 +10829,48 @@ else if (payload == "LOAN_46,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -11228,53 +10893,48 @@ else if (payload == "LOAN_47,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -11297,53 +10957,48 @@ else if (payload == "LOAN_48,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -11366,53 +11021,48 @@ else if (payload == "LOAN_49,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -11435,53 +11085,48 @@ else if (payload == "LOAN_50,000") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -11506,123 +11151,54 @@ else if (payload == "50,000+") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
-       },
-       {
-        content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
-       },
-       {
-        content_type : "text",
-        title : "LIC",
-        payload : "LIC"
-       },
-       {
-        content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
-       },
-       {
-        content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
-       },
-       {
-        content_type : "text",
-        title : "Newspaper",
-        payload : "NEWSPAPER"
-       },
-       {
-        content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
-       }
-      ]
-  } 
-  callSendAPI(sender_psid, response);
-}
-
-
-
-
-
-// ************* INFO_MORE ****************
-else if (payload == "INFO_MORE") {
-  senderAction(sender_psid, "typing_on");
-  response = {   
-    text : "(15/15) How did you find out about RFC?",
-     quick_replies:[
-       {
-        content_type : "text",
-        title : "Phone Directory",
-        payload : "PHONE_DIRECTORY"
-       },
-       {
-        content_type : "text",
-        title : "Radio Ad",
-        payload : "RADIO_AD"
-       },
-       {
-        content_type : "text",
-        title : "Relatives",
+        title : "RELATIVES",
         payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Relative of RFC Employee",
-        payload : "RELATIVE_OF_RFC_EMPLOYEE"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "Repeat Customer",
+        title : "REFERRAL",
+        payload : "REFERRAL"
+       },
+       {
+        content_type : "text",
+        title : "REPEAT CUSTOMER",
         payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "RFC On Wheels",
-        payload : "RFC_ON_WHEELS"
-       },
-       {
-        content_type : "text",
-        title : "Newspaper",
-        payload : "NEWSPAPER"
-       },
-       {
-        content_type : "text",
-        title : "Tarpaulins",
+        title : "TARPAULINS",
         payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Walk-Ins",
-        payload : "WALK_INS"
+        title : "NEWSPAPER",
+        payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Go Back",
-        payload : "BACK_TO_INFO"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
   callSendAPI(sender_psid, response);
 }
+
 
 // ************* BACK_TO_INFO ****************
 else if (payload == "BACK_TO_INFO") {
@@ -11633,53 +11209,48 @@ else if (payload == "BACK_TO_INFO") {
      quick_replies:[
        {
         content_type : "text",
-        title : "Branch Personnel/RFC Employee",
-        payload : "BRANCH_PERSONNEL_RFC_EMPLOYEE"
+        title : "FACEBOOK",
+        payload : "FACEBOOK"
        },
        {
         content_type : "text",
-        title : "Flyers",
-        payload : "FLYERS"
+        title : "WEBSITE",
+        payload : "WEBSITE"
        },
        {
         content_type : "text",
-        title : "Friends",
-        payload : "FRIENDS"
+        title : "RELATIVES",
+        payload : "RELATIVES"
        },
        {
         content_type : "text",
-        title : "Internet",
-        payload : "INTERNET"
+        title : "RADIO AD",
+        payload : "RADIOAD"
        },
        {
         content_type : "text",
-        title : "LIC",
-        payload : "LIC"
+        title : "REFERRAL",
+        payload : "REFERRAL"
        },
        {
         content_type : "text",
-        title : "Mall Based BCOs",
-        payload : "MALL_BASED_BC_OS"
+        title : "REPEAT CUSTOMER",
+        payload : "REPEAT_CUSTOMER"
        },
        {
         content_type : "text",
-        title : "MBO (MicroBusOff)",
-        payload : "MBO"
+        title : "TARPAULINS",
+        payload : "TARPAULINS"
        },
        {
         content_type : "text",
-        title : "Newspaper",
+        title : "NEWSPAPER",
         payload : "NEWSPAPER"
        },
        {
         content_type : "text",
-        title : "Office Signage",
-        payload : "OFFICE_SIGNAGE"
-       },
-       {
-        content_type : "text",
-        title : "More..",
-        payload : "INFO_MORE"
+        title : "WALK-INS",
+        payload : "WALKINS"
        }
       ]
   } 
@@ -11688,8 +11259,54 @@ else if (payload == "BACK_TO_INFO") {
 
 
 
-// ************* BRANCH_PERSONNEL_RFC_EMPLOYEE ****************
-else if (payload == "BRANCH_PERSONNEL_RFC_EMPLOYEE") {
+// ************* FACEBOOK ****************
+else if (payload == "FACEBOOK") {
+  
+  con.query("SELECT source_info FROM rfc_apply WHERE user_id = ?",
+  [sender_psid], 
+  (error, result) => {
+      con.query("UPDATE rfc_apply SET source_info = ? WHERE user_id = ?",
+      [payload, sender_psid])       
+    }
+  ) 
+  
+  senderAction(sender_psid, "typing_on");
+   response = {   
+      text : "Great! Before continuing, kindly prepare the following:\n(2) VALID I.Ds\nLATEST BILLING\nLATEST PAYSLIP." 
+   } 
+   callSendAPI(sender_psid, response);
+
+
+
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    attachment:{
+      type:"template",
+      payload:{
+        template_type:"generic",
+        elements:[
+           {
+            title:"You're almost done",
+            subtitle:"We just need a few personal information so we can successfuly process your loan application",
+            buttons: [
+              {
+                title: "Let's Go! 👍",
+                type: "web_url",
+                url:
+                config.APP_URL + "/send-concern?sender_psid=" + sender_psid,
+                webview_height_ratio: "compact",
+                messenger_extensions: true
+              }
+            ]             
+          }
+        ]
+      }
+    }
+} 
+  callSendAPI(sender_psid, response);
+}
+// ************* WEBSITE ****************
+else if (payload == "WEBSITE") {
   
   con.query("SELECT source_info FROM rfc_apply WHERE user_id = ?",
   [sender_psid], 
@@ -11734,8 +11351,8 @@ else if (payload == "BRANCH_PERSONNEL_RFC_EMPLOYEE") {
 } 
   callSendAPI(sender_psid, response);
 }
-// ************* FLYERS ****************
-else if (payload == "FLYERS") {
+// ************* RELATIVES ****************
+else if (payload == "RELATIVES") {
   
   con.query("SELECT source_info FROM rfc_apply WHERE user_id = ?",
   [sender_psid], 
@@ -11780,54 +11397,8 @@ else if (payload == "FLYERS") {
 } 
   callSendAPI(sender_psid, response);
 }
-// ************* FRIENDS ****************
-else if (payload == "FRIENDS") {
-  
-  con.query("SELECT source_info FROM rfc_apply WHERE user_id = ?",
-  [sender_psid], 
-  (error, result) => {
-      con.query("UPDATE rfc_apply SET source_info = ? WHERE user_id = ?",
-      [payload, sender_psid])       
-    }
-  ) 
-  
-  senderAction(sender_psid, "typing_on");
-   response = {   
-      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
-   } 
-   callSendAPI(sender_psid, response);
-
-
-
-  senderAction(sender_psid, "typing_on");
-  response = {   
-    attachment:{
-      type:"template",
-      payload:{
-        template_type:"generic",
-        elements:[
-           {
-            title:"You're almost done",
-            subtitle:"We just need a few personal information so we can successfuly process your loan application",
-            buttons: [
-              {
-                title: "Let's Go! 👍",
-                type: "web_url",
-                url:
-                config.APP_URL + "/send-concern?sender_psid=" + sender_psid,
-                webview_height_ratio: "compact",
-                messenger_extensions: true
-              }
-            ]             
-          }
-        ]
-      }
-    }
-} 
-  callSendAPI(sender_psid, response);
-}
-// ************* INTERNET ****************
-else if (payload == "INTERNET") {
+// ************* RADIOAD ****************
+else if (payload == "RADIOAD") {
   
   con.query("SELECT source_info FROM rfc_apply WHERE user_id = ?",
   [sender_psid], 
@@ -11873,7 +11444,7 @@ else if (payload == "INTERNET") {
   callSendAPI(sender_psid, response);
 }
 // ************* LIC ****************
-else if (payload == "LIC") {
+else if (payload == "REFERRAL") {
   
   con.query("SELECT source_info FROM rfc_apply WHERE user_id = ?",
   [sender_psid], 
@@ -11918,8 +11489,8 @@ else if (payload == "LIC") {
 } 
   callSendAPI(sender_psid, response);
 }
-// ************* MALL_BASED_BC_OS ****************
-else if (payload == "MALL_BASED_BC_OS") {
+// ************* REPEAT_CUSTOMER ****************
+else if (payload == "REPEAT_CUSTOMER") {
   
   con.query("SELECT source_info FROM rfc_apply WHERE user_id = ?",
   [sender_psid], 
@@ -11964,8 +11535,8 @@ else if (payload == "MALL_BASED_BC_OS") {
 } 
   callSendAPI(sender_psid, response);
 }
-// ************* MBO ****************
-else if (payload == "MBO") {
+// ************* TARPAULINS ****************
+else if (payload == "TARPAULINS") {
   
   con.query("SELECT source_info FROM rfc_apply WHERE user_id = ?",
   [sender_psid], 
@@ -12056,8 +11627,8 @@ else if (payload == "NEWSPAPER") {
 } 
   callSendAPI(sender_psid, response);
 }
-// ************* OFFICE_SIGNAGE ****************
-else if (payload == "OFFICE_SIGNAGE") {
+// ************* WALKINS ****************
+else if (payload == "WALKINS") {
   
   con.query("SELECT source_info FROM rfc_apply WHERE user_id = ?",
   [sender_psid], 

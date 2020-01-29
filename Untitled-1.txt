@@ -1,0 +1,943 @@
+// ************* EMP_MONTHS_0 ****************
+else if (payload == "EMP_MONTHS_0") {
+
+ con.query("SELECT months_employment FROM rfc_apply WHERE user_id = ?",
+  [sender_psid], 
+  (error, result) => {
+      con.query("UPDATE rfc_apply SET months_employment = ? WHERE user_id = ?",
+      [payload, sender_psid])       
+    }
+  ) 
+
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    text : "(10/15) What is the purpose of your loan?",
+     quick_replies:[
+       {
+        content_type : "text",
+        title : "Personal",
+        payload : "PERSONAL"
+      },
+      {
+        content_type : "text",
+        title : "Accommodation",
+        payload : "ACCOMMODATION"
+      },
+      {
+        content_type : "text",
+        title : "Gift",
+        payload : "GIFT"
+      },
+      {
+        content_type : "text",
+        title : "Commercial/Business",
+        payload : "COMMERCIAL_BUSINESS"
+      },
+      {
+        content_type : "text",
+        title : "Others",
+        payload : "OTHERS"
+      }
+      ]
+  } 
+  callSendAPI(sender_psid, response);
+
+
+}
+// ************* EMP_MONTHS_1 ****************
+else if (payload == "EMP_MONTHS_1") {
+
+ con.query("SELECT months_employment FROM rfc_apply WHERE user_id = ?",
+  [sender_psid], 
+  (error, result) => {
+      con.query("UPDATE rfc_apply SET months_employment = ? WHERE user_id = ?",
+      [payload, sender_psid])       
+    }
+  ) 
+
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    text : "(10/15) What is the purpose of your loan?",
+     quick_replies:[
+       {
+        content_type : "text",
+        title : "Personal",
+        payload : "PERSONAL"
+      },
+      {
+        content_type : "text",
+        title : "Accommodation",
+        payload : "ACCOMMODATION"
+      },
+      {
+        content_type : "text",
+        title : "Gift",
+        payload : "GIFT"
+      },
+      {
+        content_type : "text",
+        title : "Commercial/Business",
+        payload : "COMMERCIAL_BUSINESS"
+      },
+      {
+        content_type : "text",
+        title : "Others",
+        payload : "OTHERS"
+      }
+      ]
+  } 
+  callSendAPI(sender_psid, response);
+}
+// ************* EMP_MONTHS_2 ****************
+else if (payload == "EMP_MONTHS_2") {
+
+ con.query("SELECT months_employment FROM rfc_apply WHERE user_id = ?",
+  [sender_psid], 
+  (error, result) => {
+      con.query("UPDATE rfc_apply SET months_employment = ? WHERE user_id = ?",
+      [payload, sender_psid])       
+    }
+  ) 
+
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    text : "(10/15) What is the purpose of your loan?",
+     quick_replies:[
+       {
+        content_type : "text",
+        title : "Personal",
+        payload : "PERSONAL"
+      },
+      {
+        content_type : "text",
+        title : "Accommodation",
+        payload : "ACCOMMODATION"
+      },
+      {
+        content_type : "text",
+        title : "Gift",
+        payload : "GIFT"
+      },
+      {
+        content_type : "text",
+        title : "Commercial/Business",
+        payload : "COMMERCIAL_BUSINESS"
+      },
+      {
+        content_type : "text",
+        title : "Others",
+        payload : "OTHERS"
+      }
+      ]
+  } 
+  callSendAPI(sender_psid, response);
+}
+// ************* EMP_MONTHS_3 ****************
+else if (payload == "EMP_MONTHS_3") {
+
+ con.query("SELECT months_employment FROM rfc_apply WHERE user_id = ?",
+  [sender_psid], 
+  (error, result) => {
+      con.query("UPDATE rfc_apply SET months_employment = ? WHERE user_id = ?",
+      [payload, sender_psid])       
+    }
+  ) 
+
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    text : "(10/15) What is the purpose of your loan?",
+     quick_replies:[
+       {
+        content_type : "text",
+        title : "Personal",
+        payload : "PERSONAL"
+      },
+      {
+        content_type : "text",
+        title : "Accommodation",
+        payload : "ACCOMMODATION"
+      },
+      {
+        content_type : "text",
+        title : "Gift",
+        payload : "GIFT"
+      },
+      {
+        content_type : "text",
+        title : "Commercial/Business",
+        payload : "COMMERCIAL_BUSINESS"
+      },
+      {
+        content_type : "text",
+        title : "Others",
+        payload : "OTHERS"
+      }
+      ]
+  } 
+  callSendAPI(sender_psid, response);
+}
+// ************* EMP_MONTHS_4 ****************
+else if (payload == "EMP_MONTHS_4") {
+
+ con.query("SELECT months_employment FROM rfc_apply WHERE user_id = ?",
+  [sender_psid], 
+  (error, result) => {
+      con.query("UPDATE rfc_apply SET months_employment = ? WHERE user_id = ?",
+      [payload, sender_psid])       
+    }
+  ) 
+
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    text : "(10/15) What is the purpose of your loan?",
+     quick_replies:[
+       {
+        content_type : "text",
+        title : "Personal",
+        payload : "PERSONAL"
+      },
+      {
+        content_type : "text",
+        title : "Accommodation",
+        payload : "ACCOMMODATION"
+      },
+      {
+        content_type : "text",
+        title : "Gift",
+        payload : "GIFT"
+      },
+      {
+        content_type : "text",
+        title : "Commercial/Business",
+        payload : "COMMERCIAL_BUSINESS"
+      },
+      {
+        content_type : "text",
+        title : "Others",
+        payload : "OTHERS"
+      }
+      ]
+  } 
+  callSendAPI(sender_psid, response);
+}
+// ************* EMP_MONTHS_5 ****************
+else if (payload == "EMP_MONTHS_5") {
+
+ con.query("SELECT months_employment FROM rfc_apply WHERE user_id = ?",
+  [sender_psid], 
+  (error, result) => {
+      con.query("UPDATE rfc_apply SET months_employment = ? WHERE user_id = ?",
+      [payload, sender_psid])       
+    }
+  ) 
+
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    text : "(10/15) What is the purpose of your loan?",
+     quick_replies:[
+       {
+        content_type : "text",
+        title : "Personal",
+        payload : "PERSONAL"
+      },
+      {
+        content_type : "text",
+        title : "Accommodation",
+        payload : "ACCOMMODATION"
+      },
+      {
+        content_type : "text",
+        title : "Gift",
+        payload : "GIFT"
+      },
+      {
+        content_type : "text",
+        title : "Commercial/Business",
+        payload : "COMMERCIAL_BUSINESS"
+      },
+      {
+        content_type : "text",
+        title : "Others",
+        payload : "OTHERS"
+      }
+      ]
+  } 
+  callSendAPI(sender_psid, response);
+}
+// ************* EMP_MONTHS_6 ****************
+else if (payload == "EMP_MONTHS_6") {
+
+ con.query("SELECT months_employment FROM rfc_apply WHERE user_id = ?",
+  [sender_psid], 
+  (error, result) => {
+      con.query("UPDATE rfc_apply SET months_employment = ? WHERE user_id = ?",
+      [payload, sender_psid])       
+    }
+  ) 
+
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    text : "(10/15) What is the purpose of your loan?",
+     quick_replies:[
+       {
+        content_type : "text",
+        title : "Personal",
+        payload : "PERSONAL"
+      },
+      {
+        content_type : "text",
+        title : "Accommodation",
+        payload : "ACCOMMODATION"
+      },
+      {
+        content_type : "text",
+        title : "Gift",
+        payload : "GIFT"
+      },
+      {
+        content_type : "text",
+        title : "Commercial/Business",
+        payload : "COMMERCIAL_BUSINESS"
+      },
+      {
+        content_type : "text",
+        title : "Others",
+        payload : "OTHERS"
+      }
+      ]
+  } 
+  callSendAPI(sender_psid, response);
+}
+// ************* EMP_MONTHS_7 ****************
+else if (payload == "EMP_MONTHS_7") {
+
+ con.query("SELECT months_employment FROM rfc_apply WHERE user_id = ?",
+  [sender_psid], 
+  (error, result) => {
+      con.query("UPDATE rfc_apply SET months_employment = ? WHERE user_id = ?",
+      [payload, sender_psid])       
+    }
+  ) 
+
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    text : "(10/15) What is the purpose of your loan?",
+     quick_replies:[
+       {
+        content_type : "text",
+        title : "Personal",
+        payload : "PERSONAL"
+      },
+      {
+        content_type : "text",
+        title : "Accommodation",
+        payload : "ACCOMMODATION"
+      },
+      {
+        content_type : "text",
+        title : "Gift",
+        payload : "GIFT"
+      },
+      {
+        content_type : "text",
+        title : "Commercial/Business",
+        payload : "COMMERCIAL_BUSINESS"
+      },
+      {
+        content_type : "text",
+        title : "Others",
+        payload : "OTHERS"
+      }
+      ]
+  } 
+  callSendAPI(sender_psid, response);
+}
+// ************* EMP_MONTHS_8 ****************
+else if (payload == "EMP_MONTHS_8") {
+
+ con.query("SELECT months_employment FROM rfc_apply WHERE user_id = ?",
+  [sender_psid], 
+  (error, result) => {
+      con.query("UPDATE rfc_apply SET months_employment = ? WHERE user_id = ?",
+      [payload, sender_psid])       
+    }
+  ) 
+
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    text : "(10/15) What is the purpose of your loan?",
+     quick_replies:[
+       {
+        content_type : "text",
+        title : "Personal",
+        payload : "PERSONAL"
+      },
+      {
+        content_type : "text",
+        title : "Accommodation",
+        payload : "ACCOMMODATION"
+      },
+      {
+        content_type : "text",
+        title : "Gift",
+        payload : "GIFT"
+      },
+      {
+        content_type : "text",
+        title : "Commercial/Business",
+        payload : "COMMERCIAL_BUSINESS"
+      },
+      {
+        content_type : "text",
+        title : "Others",
+        payload : "OTHERS"
+      }
+      ]
+  } 
+  callSendAPI(sender_psid, response);
+}
+// ************* EMP_MONTHS_9 ****************
+else if (payload == "EMP_MONTHS_9") {
+
+ con.query("SELECT months_employment FROM rfc_apply WHERE user_id = ?",
+  [sender_psid], 
+  (error, result) => {
+      con.query("UPDATE rfc_apply SET months_employment = ? WHERE user_id = ?",
+      [payload, sender_psid])       
+    }
+  ) 
+
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    text : "(10/15) What is the purpose of your loan?",
+     quick_replies:[
+       {
+        content_type : "text",
+        title : "Personal",
+        payload : "PERSONAL"
+      },
+      {
+        content_type : "text",
+        title : "Accommodation",
+        payload : "ACCOMMODATION"
+      },
+      {
+        content_type : "text",
+        title : "Gift",
+        payload : "GIFT"
+      },
+      {
+        content_type : "text",
+        title : "Commercial/Business",
+        payload : "COMMERCIAL_BUSINESS"
+      },
+      {
+        content_type : "text",
+        title : "Others",
+        payload : "OTHERS"
+      }
+      ]
+  } 
+  callSendAPI(sender_psid, response);
+}
+// ************* EMP_MONTHS_10 ****************
+else if (payload == "EMP_MONTHS_10") {
+
+  con.query("SELECT months_employment FROM rfc_apply WHERE user_id = ?",
+  [sender_psid], 
+  (error, result) => {
+      con.query("UPDATE rfc_apply SET months_employment = ? WHERE user_id = ?",
+      [payload, sender_psid])       
+    }
+  ) 
+  
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    text : "(10/15) What is the purpose of your loan?",
+     quick_replies:[
+       {
+        content_type : "text",
+        title : "Personal",
+        payload : "PERSONAL"
+      },
+      {
+        content_type : "text",
+        title : "Accommodation",
+        payload : "ACCOMMODATION"
+      },
+      {
+        content_type : "text",
+        title : "Gift",
+        payload : "GIFT"
+      },
+      {
+        content_type : "text",
+        title : "Commercial/Business",
+        payload : "COMMERCIAL_BUSINESS"
+      },
+      {
+        content_type : "text",
+        title : "Others",
+        payload : "OTHERS"
+      }
+      ]
+  } 
+  callSendAPI(sender_psid, response);
+}
+// ************* EMP_MONTHS_11 ****************
+else if (payload == "EMP_MONTHS_11") {
+
+  con.query("SELECT months_employment FROM rfc_apply WHERE user_id = ?",
+  [sender_psid], 
+  (error, result) => {
+      con.query("UPDATE rfc_apply SET months_employment = ? WHERE user_id = ?",
+      [payload, sender_psid])       
+    }
+  ) 
+
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    text : "(10/15) What is the purpose of your loan?",
+     quick_replies:[
+       {
+        content_type : "text",
+        title : "Personal",
+        payload : "PERSONAL"
+      },
+      {
+        content_type : "text",
+        title : "Accommodation",
+        payload : "ACCOMMODATION"
+      },
+      {
+        content_type : "text",
+        title : "Gift",
+        payload : "GIFT"
+      },
+      {
+        content_type : "text",
+        title : "Commercial/Business",
+        payload : "COMMERCIAL_BUSINESS"
+      },
+      {
+        content_type : "text",
+        title : "Others",
+        payload : "OTHERS"
+      }
+      ]
+  } 
+  callSendAPI(sender_psid, response);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     quick_replies:[
+       {
+        content_type : "text",
+        title : "Personal",
+        payload : "PERSONAL"
+      },
+      {
+        content_type : "text",
+        title : "Accommodation",
+        payload : "ACCOMMODATION"
+      },
+      {
+        content_type : "text",
+        title : "Gift",
+        payload : "GIFT"
+      },
+      {
+        content_type : "text",
+        title : "Commercial/Business",
+        payload : "COMMERCIAL_BUSINESS"
+      },
+      {
+        content_type : "text",
+        title : "Others",
+        payload : "OTHERS"
+      }
+      ]
+
+
+
+Medical Assistance
+Educational Assistance
+Home Improvement
+Emergency Fund
+Travel / Vacation Fund
+Gadget / Application Fund
+
+
+2. Business Loan   >	
+    Working Capital
+	Business Expansion
+	Equipment Acquisition
+	Franchising 
+
+
+
+Groovebox
+Fl studio mobile
+
+
+
+
+
+
+
+
+
+// ************* PERSONAL ****************
+else if (payload == "PERSONAL") {
+
+  con.query("SELECT loan_purpose FROM rfc_apply WHERE user_id = ?",
+  [sender_psid], 
+  (error, result) => {
+      con.query("UPDATE rfc_apply SET loan_purpose = ? WHERE user_id = ?",
+      [payload, sender_psid])       
+    }
+  ) 
+
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    text : "(12/15) How about your collateral type?",
+     quick_replies:[
+       {
+        content_type : "text",
+        title : "Motorcycle",
+        payload : "MOTORCYCLE"
+      },
+      {
+        content_type : "text",
+        title : "Vehicle",
+        payload : "VEHICLE"
+      },
+      {
+        content_type : "text",
+        title : "Farm Equipment",
+        payload : "FARM_EQUIPMENT"
+      },
+      {
+        content_type : "text",
+        title : "Heavy Equipment",
+        payload : "HEAVY_EQUIPMENT"
+      },
+      {
+        content_type : "text",
+        title : "Machineries",
+        payload : "MACHINERIES"
+      },
+      {
+        content_type : "text",
+        title : "REM (Real Estate Mortgage)",
+        payload : "REM"
+      },
+      {
+        content_type : "text",
+        title : "Appliances",
+        payload : "APPLIANCES"
+      },
+      {
+        content_type : "text",
+        title : "Receivable",
+        payload : "RECEIVABLE"
+      },
+      {
+        content_type : "text",
+        title : "No Collateral",
+        payload : "NO_COLLATERAL"
+      }
+      ]
+  } 
+  callSendAPI(sender_psid, response);
+}
+// ************* ACCOMMODATION ****************
+else if (payload == "ACCOMMODATION") {
+
+  con.query("SELECT loan_purpose FROM rfc_apply WHERE user_id = ?",
+  [sender_psid], 
+  (error, result) => {
+      con.query("UPDATE rfc_apply SET loan_purpose = ? WHERE user_id = ?",
+      [payload, sender_psid])       
+    }
+  ) 
+
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    text : "(12/15) How about your collateral type?",
+     quick_replies:[
+       {
+        content_type : "text",
+        title : "Motorcycle",
+        payload : "MOTORCYCLE"
+      },
+      {
+        content_type : "text",
+        title : "Vehicle",
+        payload : "VEHICLE"
+      },
+      {
+        content_type : "text",
+        title : "Farm Equipment",
+        payload : "FARM_EQUIPMENT"
+      },
+      {
+        content_type : "text",
+        title : "Heavy Equipment",
+        payload : "HEAVY_EQUIPMENT"
+      },
+      {
+        content_type : "text",
+        title : "Machineries",
+        payload : "MACHINERIES"
+      },
+      {
+        content_type : "text",
+        title : "REM (Real Estate Mortgage)",
+        payload : "REM"
+      },
+      {
+        content_type : "text",
+        title : "Appliances",
+        payload : "APPLIANCES"
+      },
+      {
+        content_type : "text",
+        title : "Receivable",
+        payload : "RECEIVABLE"
+      },
+      {
+        content_type : "text",
+        title : "No Collateral",
+        payload : "NO_COLLATERAL"
+      }
+      ]
+  } 
+  callSendAPI(sender_psid, response);
+}
+// ************* GIFT ****************
+else if (payload == "GIFT") {
+
+  con.query("SELECT loan_purpose FROM rfc_apply WHERE user_id = ?",
+  [sender_psid], 
+  (error, result) => {
+      con.query("UPDATE rfc_apply SET loan_purpose = ? WHERE user_id = ?",
+      [payload, sender_psid])       
+    }
+  ) 
+
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    text : "(12/15) How about your collateral type?",
+     quick_replies:[
+       {
+        content_type : "text",
+        title : "Motorcycle",
+        payload : "MOTORCYCLE"
+      },
+      {
+        content_type : "text",
+        title : "Vehicle",
+        payload : "VEHICLE"
+      },
+      {
+        content_type : "text",
+        title : "Farm Equipment",
+        payload : "FARM_EQUIPMENT"
+      },
+      {
+        content_type : "text",
+        title : "Heavy Equipment",
+        payload : "HEAVY_EQUIPMENT"
+      },
+      {
+        content_type : "text",
+        title : "Machineries",
+        payload : "MACHINERIES"
+      },
+      {
+        content_type : "text",
+        title : "REM (Real Estate Mortgage)",
+        payload : "REM"
+      },
+      {
+        content_type : "text",
+        title : "Appliances",
+        payload : "APPLIANCES"
+      },
+      {
+        content_type : "text",
+        title : "Receivable",
+        payload : "RECEIVABLE"
+      },
+      {
+        content_type : "text",
+        title : "No Collateral",
+        payload : "NO_COLLATERAL"
+      }
+      ]
+  } 
+  callSendAPI(sender_psid, response);
+}
+// ************* COMMERCIAL_BUSINESS ****************
+else if (payload == "COMMERCIAL_BUSINESS") {
+
+  con.query("SELECT loan_purpose FROM rfc_apply WHERE user_id = ?",
+  [sender_psid], 
+  (error, result) => {
+      con.query("UPDATE rfc_apply SET loan_purpose = ? WHERE user_id = ?",
+      [payload, sender_psid])       
+    }
+  ) 
+
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    text : "(12/15) How about your collateral type?",
+     quick_replies:[
+       {
+        content_type : "text",
+        title : "Motorcycle",
+        payload : "MOTORCYCLE"
+      },
+      {
+        content_type : "text",
+        title : "Vehicle",
+        payload : "VEHICLE"
+      },
+      {
+        content_type : "text",
+        title : "Farm Equipment",
+        payload : "FARM_EQUIPMENT"
+      },
+      {
+        content_type : "text",
+        title : "Heavy Equipment",
+        payload : "HEAVY_EQUIPMENT"
+      },
+      {
+        content_type : "text",
+        title : "Machineries",
+        payload : "MACHINERIES"
+      },
+      {
+        content_type : "text",
+        title : "REM (Real Estate Mortgage)",
+        payload : "REM"
+      },
+      {
+        content_type : "text",
+        title : "Appliances",
+        payload : "APPLIANCES"
+      },
+      {
+        content_type : "text",
+        title : "Receivable",
+        payload : "RECEIVABLE"
+      },
+      {
+        content_type : "text",
+        title : "No Collateral",
+        payload : "NO_COLLATERAL"
+      }
+      ]
+  } 
+  callSendAPI(sender_psid, response);
+}
+// ************* OTHERS ****************
+else if (payload == "OTHERS") {
+
+  con.query("SELECT loan_purpose FROM rfc_apply WHERE user_id = ?",
+  [sender_psid], 
+  (error, result) => {
+      con.query("UPDATE rfc_apply SET loan_purpose = ? WHERE user_id = ?",
+      [payload, sender_psid])       
+    }
+  ) 
+
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    text : "(12/15) How about your collateral type?",
+     quick_replies:[
+       {
+        content_type : "text",
+        title : "Motorcycle",
+        payload : "MOTORCYCLE"
+      },
+      {
+        content_type : "text",
+        title : "Vehicle",
+        payload : "VEHICLE"
+      },
+      {
+        content_type : "text",
+        title : "Farm Equipment",
+        payload : "FARM_EQUIPMENT"
+      },
+      {
+        content_type : "text",
+        title : "Heavy Equipment",
+        payload : "HEAVY_EQUIPMENT"
+      },
+      {
+        content_type : "text",
+        title : "Machineries",
+        payload : "MACHINERIES"
+      },
+      {
+        content_type : "text",
+        title : "REM (Real Estate Mortgage)",
+        payload : "REM"
+      },
+      {
+        content_type : "text",
+        title : "Appliances",
+        payload : "APPLIANCES"
+      },
+      {
+        content_type : "text",
+        title : "Receivable",
+        payload : "RECEIVABLE"
+      },
+      {
+        content_type : "text",
+        title : "No Collateral",
+        payload : "NO_COLLATERAL"
+      }
+      ]
+  } 
+  callSendAPI(sender_psid, response);
+}
+
+
+
+
+
+
+MEDICAL_ASSISTANCE
+EDUCATIONAL_ASSISTANCE
+HOME_IMPROVEMENT
+EMERGENCY_FUND
+TRAVEL_VACATION_FUND
+GADGET_APPLICATION_FUND
+
+
+WORKING_CAPITAL
+BUSINESS_EXPANSION
+EQUIPMENT_ACQUISITION
+FRANCHISING
