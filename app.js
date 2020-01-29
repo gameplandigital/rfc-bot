@@ -3033,29 +3033,19 @@ else if (payload == "SELF_AGRICULTURAL_RELATED_SERVICES") {
          },
          {
            content_type : "text",
-           title : "11 - 20",
-           payload : "EMP_11_20"
+           title : "3-5",
+           payload : "3-5yrs."
          }, 
          {
            content_type : "text",
-           title : "21 - 30",
-           payload : "EMP_21_30"
+           title : "6-9",
+           payload : "6-9yrs."
          },
          {
            content_type : "text",
-           title : "31 - 40",
-           payload : "EMP_31_40"
-         },
-         {
-           content_type : "text",
-           title : "41 - 50",
-           payload : "EMP_41_50"
-         },
-         {
-           content_type : "text",
-           title : "51 - 60",
-           payload : "EMP_51_60"
-         },
+           title : "10 above",
+           payload : "10_above"
+         }
       ] 
     } 
     callSendAPI(sender_psid, response);
@@ -3082,29 +3072,19 @@ else if (payload == "SELF_BUSINESS_SERVICES") {
          },
          {
            content_type : "text",
-           title : "11 - 20",
-           payload : "EMP_11_20"
+           title : "3-5",
+           payload : "3-5yrs."
          }, 
          {
            content_type : "text",
-           title : "21 - 30",
-           payload : "EMP_21_30"
+           title : "6-9",
+           payload : "6-9yrs."
          },
          {
            content_type : "text",
-           title : "31 - 40",
-           payload : "EMP_31_40"
-         },
-         {
-           content_type : "text",
-           title : "41 - 50",
-           payload : "EMP_41_50"
-         },
-         {
-           content_type : "text",
-           title : "51 - 60",
-           payload : "EMP_51_60"
-         },
+           title : "10 above",
+           payload : "10_above"
+         }
       ] 
     } 
     callSendAPI(sender_psid, response);
@@ -3131,29 +3111,19 @@ else if (payload == "SELF_COMPUTER_HARDWARE_ELECTRONIC") {
          },
          {
            content_type : "text",
-           title : "11 - 20",
-           payload : "EMP_11_20"
+           title : "3-5",
+           payload : "3-5yrs."
          }, 
          {
            content_type : "text",
-           title : "21 - 30",
-           payload : "EMP_21_30"
+           title : "6-9",
+           payload : "6-9yrs."
          },
          {
            content_type : "text",
-           title : "31 - 40",
-           payload : "EMP_31_40"
-         },
-         {
-           content_type : "text",
-           title : "41 - 50",
-           payload : "EMP_41_50"
-         },
-         {
-           content_type : "text",
-           title : "51 - 60",
-           payload : "EMP_51_60"
-         },
+           title : "10 above",
+           payload : "10_above"
+         }
       ] 
     } 
     callSendAPI(sender_psid, response);
@@ -3180,29 +3150,19 @@ else if (payload == "SELF_COMPUTER_SOFTWARE") {
          },
          {
            content_type : "text",
-           title : "11 - 20",
-           payload : "EMP_11_20"
+           title : "3-5",
+           payload : "3-5yrs."
          }, 
          {
            content_type : "text",
-           title : "21 - 30",
-           payload : "EMP_21_30"
+           title : "6-9",
+           payload : "6-9yrs."
          },
          {
            content_type : "text",
-           title : "31 - 40",
-           payload : "EMP_31_40"
-         },
-         {
-           content_type : "text",
-           title : "41 - 50",
-           payload : "EMP_41_50"
-         },
-         {
-           content_type : "text",
-           title : "51 - 60",
-           payload : "EMP_51_60"
-         },
+           title : "10 above",
+           payload : "10_above"
+         }
       ] 
     } 
     callSendAPI(sender_psid, response);
@@ -3229,29 +3189,19 @@ else if (payload == "SELF_EDUCATION") {
          },
          {
            content_type : "text",
-           title : "11 - 20",
-           payload : "EMP_11_20"
+           title : "3-5",
+           payload : "3-5yrs."
          }, 
          {
            content_type : "text",
-           title : "21 - 30",
-           payload : "EMP_21_30"
+           title : "6-9",
+           payload : "6-9yrs."
          },
          {
            content_type : "text",
-           title : "31 - 40",
-           payload : "EMP_31_40"
-         },
-         {
-           content_type : "text",
-           title : "41 - 50",
-           payload : "EMP_41_50"
-         },
-         {
-           content_type : "text",
-           title : "51 - 60",
-           payload : "EMP_51_60"
-         },
+           title : "10 above",
+           payload : "10_above"
+         }
       ] 
     } 
     callSendAPI(sender_psid, response);
@@ -3278,29 +3228,19 @@ else if (payload == "SELF_ENERGY_AND_UTILITIES") {
          },
          {
            content_type : "text",
-           title : "11 - 20",
-           payload : "EMP_11_20"
+           title : "3-5",
+           payload : "3-5yrs."
          }, 
          {
            content_type : "text",
-           title : "21 - 30",
-           payload : "EMP_21_30"
+           title : "6-9",
+           payload : "6-9yrs."
          },
          {
            content_type : "text",
-           title : "31 - 40",
-           payload : "EMP_31_40"
-         },
-         {
-           content_type : "text",
-           title : "41 - 50",
-           payload : "EMP_41_50"
-         },
-         {
-           content_type : "text",
-           title : "51 - 60",
-           payload : "EMP_51_60"
-         },
+           title : "10 above",
+           payload : "10_above"
+         }
       ] 
     } 
     callSendAPI(sender_psid, response);
@@ -3327,29 +3267,19 @@ else if (payload == "SELF_EXPORT_INDUSTRY") {
          },
          {
            content_type : "text",
-           title : "11 - 20",
-           payload : "EMP_11_20"
+           title : "3-5",
+           payload : "3-5yrs."
          }, 
          {
            content_type : "text",
-           title : "21 - 30",
-           payload : "EMP_21_30"
+           title : "6-9",
+           payload : "6-9yrs."
          },
          {
            content_type : "text",
-           title : "31 - 40",
-           payload : "EMP_31_40"
-         },
-         {
-           content_type : "text",
-           title : "41 - 50",
-           payload : "EMP_41_50"
-         },
-         {
-           content_type : "text",
-           title : "51 - 60",
-           payload : "EMP_51_60"
-         },
+           title : "10 above",
+           payload : "10_above"
+         }
       ] 
     } 
     callSendAPI(sender_psid, response);
@@ -3376,29 +3306,19 @@ else if (payload == "SELF_FINANCIAL_SERVICES") {
          },
          {
            content_type : "text",
-           title : "11 - 20",
-           payload : "EMP_11_20"
+           title : "3-5",
+           payload : "3-5yrs."
          }, 
          {
            content_type : "text",
-           title : "21 - 30",
-           payload : "EMP_21_30"
+           title : "6-9",
+           payload : "6-9yrs."
          },
          {
            content_type : "text",
-           title : "31 - 40",
-           payload : "EMP_31_40"
-         },
-         {
-           content_type : "text",
-           title : "41 - 50",
-           payload : "EMP_41_50"
-         },
-         {
-           content_type : "text",
-           title : "51 - 60",
-           payload : "EMP_51_60"
-         },
+           title : "10 above",
+           payload : "10_above"
+         }
       ] 
     } 
     callSendAPI(sender_psid, response);
@@ -3425,29 +3345,19 @@ else if (payload == "SELF_FISHERY") {
          },
          {
            content_type : "text",
-           title : "11 - 20",
-           payload : "EMP_11_20"
+           title : "3-5",
+           payload : "3-5yrs."
          }, 
          {
            content_type : "text",
-           title : "21 - 30",
-           payload : "EMP_21_30"
+           title : "6-9",
+           payload : "6-9yrs."
          },
          {
            content_type : "text",
-           title : "31 - 40",
-           payload : "EMP_31_40"
-         },
-         {
-           content_type : "text",
-           title : "41 - 50",
-           payload : "EMP_41_50"
-         },
-         {
-           content_type : "text",
-           title : "51 - 60",
-           payload : "EMP_51_60"
-         },
+           title : "10 above",
+           payload : "10_above"
+         }
       ] 
     } 
     callSendAPI(sender_psid, response);
@@ -3474,29 +3384,19 @@ else if (payload == "SELF_FORESTRY") {
          },
          {
            content_type : "text",
-           title : "11 - 20",
-           payload : "EMP_11_20"
+           title : "3-5",
+           payload : "3-5yrs."
          }, 
          {
            content_type : "text",
-           title : "21 - 30",
-           payload : "EMP_21_30"
+           title : "6-9",
+           payload : "6-9yrs."
          },
          {
            content_type : "text",
-           title : "31 - 40",
-           payload : "EMP_31_40"
-         },
-         {
-           content_type : "text",
-           title : "41 - 50",
-           payload : "EMP_41_50"
-         },
-         {
-           content_type : "text",
-           title : "51 - 60",
-           payload : "EMP_51_60"
-         },
+           title : "10 above",
+           payload : "10_above"
+         }
       ] 
     } 
     callSendAPI(sender_psid, response);
@@ -3523,29 +3423,19 @@ else if (payload == "SELF_HEALTH_PHARMA_MFG") {
          },
          {
            content_type : "text",
-           title : "11 - 20",
-           payload : "EMP_11_20"
+           title : "3-5",
+           payload : "3-5yrs."
          }, 
          {
            content_type : "text",
-           title : "21 - 30",
-           payload : "EMP_21_30"
+           title : "6-9",
+           payload : "6-9yrs."
          },
          {
            content_type : "text",
-           title : "31 - 40",
-           payload : "EMP_31_40"
-         },
-         {
-           content_type : "text",
-           title : "41 - 50",
-           payload : "EMP_41_50"
-         },
-         {
-           content_type : "text",
-           title : "51 - 60",
-           payload : "EMP_51_60"
-         },
+           title : "10 above",
+           payload : "10_above"
+         }
       ] 
     } 
     callSendAPI(sender_psid, response);
@@ -3572,29 +3462,19 @@ else if (payload == "SELF_LIVESTOCK_POULTRY") {
          },
          {
            content_type : "text",
-           title : "11 - 20",
-           payload : "EMP_11_20"
+           title : "3-5",
+           payload : "3-5yrs."
          }, 
          {
            content_type : "text",
-           title : "21 - 30",
-           payload : "EMP_21_30"
+           title : "6-9",
+           payload : "6-9yrs."
          },
          {
            content_type : "text",
-           title : "31 - 40",
-           payload : "EMP_31_40"
-         },
-         {
-           content_type : "text",
-           title : "41 - 50",
-           payload : "EMP_41_50"
-         },
-         {
-           content_type : "text",
-           title : "51 - 60",
-           payload : "EMP_51_60"
-         },
+           title : "10 above",
+           payload : "10_above"
+         }
       ] 
     } 
     callSendAPI(sender_psid, response);
@@ -3621,29 +3501,19 @@ else if (payload == "SELF_MANUFACTURING_BUSINESS") {
          },
          {
            content_type : "text",
-           title : "11 - 20",
-           payload : "EMP_11_20"
+           title : "3-5",
+           payload : "3-5yrs."
          }, 
          {
            content_type : "text",
-           title : "21 - 30",
-           payload : "EMP_21_30"
+           title : "6-9",
+           payload : "6-9yrs."
          },
          {
            content_type : "text",
-           title : "31 - 40",
-           payload : "EMP_31_40"
-         },
-         {
-           content_type : "text",
-           title : "41 - 50",
-           payload : "EMP_41_50"
-         },
-         {
-           content_type : "text",
-           title : "51 - 60",
-           payload : "EMP_51_60"
-         },
+           title : "10 above",
+           payload : "10_above"
+         }
       ] 
     } 
     callSendAPI(sender_psid, response);
@@ -3670,29 +3540,19 @@ else if (payload == "SELF_MEDIA_AND_ENTERTAINMENT") {
          },
          {
            content_type : "text",
-           title : "11 - 20",
-           payload : "EMP_11_20"
+           title : "3-5",
+           payload : "3-5yrs."
          }, 
          {
            content_type : "text",
-           title : "21 - 30",
-           payload : "EMP_21_30"
+           title : "6-9",
+           payload : "6-9yrs."
          },
          {
            content_type : "text",
-           title : "31 - 40",
-           payload : "EMP_31_40"
-         },
-         {
-           content_type : "text",
-           title : "41 - 50",
-           payload : "EMP_41_50"
-         },
-         {
-           content_type : "text",
-           title : "51 - 60",
-           payload : "EMP_51_60"
-         },
+           title : "10 above",
+           payload : "10_above"
+         }
       ] 
     } 
     callSendAPI(sender_psid, response);
@@ -3719,29 +3579,19 @@ else if (payload == "SELF_MINING_QUARRYING") {
          },
          {
            content_type : "text",
-           title : "11 - 20",
-           payload : "EMP_11_20"
+           title : "3-5",
+           payload : "3-5yrs."
          }, 
          {
            content_type : "text",
-           title : "21 - 30",
-           payload : "EMP_21_30"
+           title : "6-9",
+           payload : "6-9yrs."
          },
          {
            content_type : "text",
-           title : "31 - 40",
-           payload : "EMP_31_40"
-         },
-         {
-           content_type : "text",
-           title : "41 - 50",
-           payload : "EMP_41_50"
-         },
-         {
-           content_type : "text",
-           title : "51 - 60",
-           payload : "EMP_51_60"
-         },
+           title : "10 above",
+           payload : "10_above"
+         }
       ] 
     } 
     callSendAPI(sender_psid, response);
@@ -3768,29 +3618,19 @@ else if (payload == "SELF_REAL_ESTATE_AND_CONSTRUCTION") {
          },
          {
            content_type : "text",
-           title : "11 - 20",
-           payload : "EMP_11_20"
+           title : "3-5",
+           payload : "3-5yrs."
          }, 
          {
            content_type : "text",
-           title : "21 - 30",
-           payload : "EMP_21_30"
+           title : "6-9",
+           payload : "6-9yrs."
          },
          {
            content_type : "text",
-           title : "31 - 40",
-           payload : "EMP_31_40"
-         },
-         {
-           content_type : "text",
-           title : "41 - 50",
-           payload : "EMP_41_50"
-         },
-         {
-           content_type : "text",
-           title : "51 - 60",
-           payload : "EMP_51_60"
-         },
+           title : "10 above",
+           payload : "10_above"
+         }
       ] 
     } 
     callSendAPI(sender_psid, response);
@@ -3817,29 +3657,19 @@ else if (payload == "SELF_RECREATIONAL_AMUSEMENT") {
          },
          {
            content_type : "text",
-           title : "11 - 20",
-           payload : "EMP_11_20"
+           title : "3-5",
+           payload : "3-5yrs."
          }, 
          {
            content_type : "text",
-           title : "21 - 30",
-           payload : "EMP_21_30"
+           title : "6-9",
+           payload : "6-9yrs."
          },
          {
            content_type : "text",
-           title : "31 - 40",
-           payload : "EMP_31_40"
-         },
-         {
-           content_type : "text",
-           title : "41 - 50",
-           payload : "EMP_41_50"
-         },
-         {
-           content_type : "text",
-           title : "51 - 60",
-           payload : "EMP_51_60"
-         },
+           title : "10 above",
+           payload : "10_above"
+         }
       ] 
     } 
     callSendAPI(sender_psid, response);
@@ -3866,29 +3696,19 @@ else if (payload == "SELF_RESTAURANT_AND_CATERING") {
          },
          {
            content_type : "text",
-           title : "11 - 20",
-           payload : "EMP_11_20"
+           title : "3-5",
+           payload : "3-5yrs."
          }, 
          {
            content_type : "text",
-           title : "21 - 30",
-           payload : "EMP_21_30"
+           title : "6-9",
+           payload : "6-9yrs."
          },
          {
            content_type : "text",
-           title : "31 - 40",
-           payload : "EMP_31_40"
-         },
-         {
-           content_type : "text",
-           title : "41 - 50",
-           payload : "EMP_41_50"
-         },
-         {
-           content_type : "text",
-           title : "51 - 60",
-           payload : "EMP_51_60"
-         },
+           title : "10 above",
+           payload : "10_above"
+         }
       ] 
     } 
     callSendAPI(sender_psid, response);
@@ -3916,29 +3736,19 @@ else if (payload == "SELF_RETAIL_TRADE") {
          },
          {
            content_type : "text",
-           title : "11 - 20",
-           payload : "EMP_11_20"
+           title : "3-5",
+           payload : "3-5yrs."
          }, 
          {
            content_type : "text",
-           title : "21 - 30",
-           payload : "EMP_21_30"
+           title : "6-9",
+           payload : "6-9yrs."
          },
          {
            content_type : "text",
-           title : "31 - 40",
-           payload : "EMP_31_40"
-         },
-         {
-           content_type : "text",
-           title : "41 - 50",
-           payload : "EMP_41_50"
-         },
-         {
-           content_type : "text",
-           title : "51 - 60",
-           payload : "EMP_51_60"
-         },
+           title : "10 above",
+           payload : "10_above"
+         }
       ] 
     } 
     callSendAPI(sender_psid, response);
@@ -3966,29 +3776,19 @@ else if (payload == "SELF_TELECOMMUNICATIONS") {
          },
          {
            content_type : "text",
-           title : "11 - 20",
-           payload : "EMP_11_20"
+           title : "3-5",
+           payload : "3-5yrs."
          }, 
          {
            content_type : "text",
-           title : "21 - 30",
-           payload : "EMP_21_30"
+           title : "6-9",
+           payload : "6-9yrs."
          },
          {
            content_type : "text",
-           title : "31 - 40",
-           payload : "EMP_31_40"
-         },
-         {
-           content_type : "text",
-           title : "41 - 50",
-           payload : "EMP_41_50"
-         },
-         {
-           content_type : "text",
-           title : "51 - 60",
-           payload : "EMP_51_60"
-         },
+           title : "10 above",
+           payload : "10_above"
+         }
       ] 
     } 
     callSendAPI(sender_psid, response);
@@ -4016,29 +3816,19 @@ else if (payload == "SELF_TRANSPORT_BUSINESS") {
          },
          {
            content_type : "text",
-           title : "11 - 20",
-           payload : "EMP_11_20"
+           title : "3-5",
+           payload : "3-5yrs."
          }, 
          {
            content_type : "text",
-           title : "21 - 30",
-           payload : "EMP_21_30"
+           title : "6-9",
+           payload : "6-9yrs."
          },
          {
            content_type : "text",
-           title : "31 - 40",
-           payload : "EMP_31_40"
-         },
-         {
-           content_type : "text",
-           title : "41 - 50",
-           payload : "EMP_41_50"
-         },
-         {
-           content_type : "text",
-           title : "51 - 60",
-           payload : "EMP_51_60"
-         },
+           title : "10 above",
+           payload : "10_above"
+         }
       ] 
     } 
     callSendAPI(sender_psid, response);
@@ -4066,29 +3856,19 @@ else if (payload == "SELF_WHOLESALE_TRADE") {
          },
          {
            content_type : "text",
-           title : "11 - 20",
-           payload : "EMP_11_20"
+           title : "3-5",
+           payload : "3-5yrs."
          }, 
          {
            content_type : "text",
-           title : "21 - 30",
-           payload : "EMP_21_30"
+           title : "6-9",
+           payload : "6-9yrs."
          },
          {
            content_type : "text",
-           title : "31 - 40",
-           payload : "EMP_31_40"
-         },
-         {
-           content_type : "text",
-           title : "41 - 50",
-           payload : "EMP_41_50"
-         },
-         {
-           content_type : "text",
-           title : "51 - 60",
-           payload : "EMP_51_60"
-         },
+           title : "10 above",
+           payload : "10_above"
+         }
       ] 
     } 
     callSendAPI(sender_psid, response);
@@ -4122,29 +3902,19 @@ else if (payload == "STAFF") {
         },
         {
           content_type : "text",
-          title : "11 - 20",
-          payload : "EMP_11_20"
+          title : "3-5",
+          payload : "3-5yrs."
         }, 
         {
           content_type : "text",
-          title : "21 - 30",
-          payload : "EMP_21_30"
+          title : "6-9",
+          payload : "6-9yrs."
         },
         {
           content_type : "text",
-          title : "31 - 40",
-          payload : "EMP_31_40"
-        },
-        {
-          content_type : "text",
-          title : "41 - 50",
-          payload : "EMP_41_50"
-        },
-        {
-          content_type : "text",
-          title : "51 - 60",
-          payload : "EMP_51_60"
-        },
+          title : "10 above",
+          payload : "10_above"
+        }
      ] 
    } 
    callSendAPI(sender_psid, response);
@@ -4171,29 +3941,19 @@ else if (payload == "OFFICE_MANAGER") {
         },
         {
           content_type : "text",
-          title : "11 - 20",
-          payload : "EMP_11_20"
+          title : "3-5",
+          payload : "3-5yrs."
         }, 
         {
           content_type : "text",
-          title : "21 - 30",
-          payload : "EMP_21_30"
+          title : "6-9",
+          payload : "6-9yrs."
         },
         {
           content_type : "text",
-          title : "31 - 40",
-          payload : "EMP_31_40"
-        },
-        {
-          content_type : "text",
-          title : "41 - 50",
-          payload : "EMP_41_50"
-        },
-        {
-          content_type : "text",
-          title : "51 - 60",
-          payload : "EMP_51_60"
-        },
+          title : "10 above",
+          payload : "10_above"
+        }
      ] 
    } 
    callSendAPI(sender_psid, response);
@@ -4220,29 +3980,19 @@ else if (payload == "EXECUTIVE") {
         },
         {
           content_type : "text",
-          title : "11 - 20",
-          payload : "EMP_11_20"
+          title : "3-5",
+          payload : "3-5yrs."
         }, 
         {
           content_type : "text",
-          title : "21 - 30",
-          payload : "EMP_21_30"
+          title : "6-9",
+          payload : "6-9yrs."
         },
         {
           content_type : "text",
-          title : "31 - 40",
-          payload : "EMP_31_40"
-        },
-        {
-          content_type : "text",
-          title : "41 - 50",
-          payload : "EMP_41_50"
-        },
-        {
-          content_type : "text",
-          title : "51 - 60",
-          payload : "EMP_51_60"
-        },
+          title : "10 above",
+          payload : "10_above"
+        }
      ] 
    } 
    callSendAPI(sender_psid, response);
@@ -4269,29 +4019,19 @@ else if (payload == "PROFESSIONAL") {
         },
         {
           content_type : "text",
-          title : "11 - 20",
-          payload : "EMP_11_20"
+          title : "3-5",
+          payload : "3-5yrs."
         }, 
         {
           content_type : "text",
-          title : "21 - 30",
-          payload : "EMP_21_30"
+          title : "6-9",
+          payload : "6-9yrs."
         },
         {
           content_type : "text",
-          title : "31 - 40",
-          payload : "EMP_31_40"
-        },
-        {
-          content_type : "text",
-          title : "41 - 50",
-          payload : "EMP_41_50"
-        },
-        {
-          content_type : "text",
-          title : "51 - 60",
-          payload : "EMP_51_60"
-        },
+          title : "10 above",
+          payload : "10_above"
+        }
      ] 
    } 
    callSendAPI(sender_psid, response);
@@ -4318,29 +4058,19 @@ else if (payload == "OCW_OFW") {
         },
         {
           content_type : "text",
-          title : "11 - 20",
-          payload : "EMP_11_20"
+          title : "3-5",
+          payload : "3-5yrs."
         }, 
         {
           content_type : "text",
-          title : "21 - 30",
-          payload : "EMP_21_30"
+          title : "6-9",
+          payload : "6-9yrs."
         },
         {
           content_type : "text",
-          title : "31 - 40",
-          payload : "EMP_31_40"
-        },
-        {
-          content_type : "text",
-          title : "41 - 50",
-          payload : "EMP_41_50"
-        },
-        {
-          content_type : "text",
-          title : "51 - 60",
-          payload : "EMP_51_60"
-        },
+          title : "10 above",
+          payload : "10_above"
+        }
      ] 
    } 
    callSendAPI(sender_psid, response);
@@ -4373,182 +4103,72 @@ else if (payload == "0-2yrs.") {
    } 
    callSendAPI(sender_psid, response);
  }  
-// ************* EMP_11_20 ****************
-else if (payload == "EMP_11_20") {
+// ************* 3-5yrs. ****************
+else if (payload == "3-5yrs.") {
   senderAction(sender_psid, "typing_on");
    response = {   
      text : "Please specify 📌",
       quick_replies:[
         {
           content_type : "text",
-          title : "11",
-          payload : "EMP_11"
+          title : "3mos.",
+          payload : "EMP_3"
         },
         {
           content_type : "text",
-          title : "12",
-          payload : "EMP_12"
+          title : "4",
+          payload : "EMP_4"
         },
         {
           content_type : "text",
-          title : "13",
-          payload : "EMP_13"
-        },
-        {
-          content_type : "text",
-          title : "14",
-          payload : "EMP_14"
-        },
-        {
-          content_type : "text",
-          title : "15",
-          payload : "EMP_15"
-        },
-        {
-          content_type : "text",
-          title : "16",
-          payload : "EMP_16"
-        },
-        {
-          content_type : "text",
-          title : "17",
-          payload : "EMP_17"
-        },
-        {
-          content_type : "text",
-          title : "18",
-          payload : "EMP_18"
-        },
-        {
-          content_type : "text",
-          title : "19",
-          payload : "EMP_19"
-        },
-        {
-          content_type : "text",
-          title : "20",
-          payload : "EMP_20"
-        } 
+          title : "5",
+          payload : "EMP_5"
+        }
      ] 
    } 
    callSendAPI(sender_psid, response);
  }  
-// ************* EMP_21_30 ****************
-else if (payload == "EMP_21_30") {
+// ************* 6-9yrs. ****************
+else if (payload == "6-9yrs.") {
   senderAction(sender_psid, "typing_on");
    response = {   
      text : "Please specify 📌",
       quick_replies:[
         {
           content_type : "text",
-          title : "21",
-          payload : "EMP_21"
+          title : "6mos.",
+          payload : "EMP_6"
         },
         {
           content_type : "text",
-          title : "22",
-          payload : "EMP_22"
+          title : "7",
+          payload : "EMP_7"
         },
         {
           content_type : "text",
-          title : "23",
-          payload : "EMP_23"
+          title : "8",
+          payload : "EMP_8"
         },
         {
           content_type : "text",
-          title : "24",
-          payload : "EMP_24"
-        },
-        {
-          content_type : "text",
-          title : "25",
-          payload : "EMP_25"
-        },
-        {
-          content_type : "text",
-          title : "26",
-          payload : "EMP_26"
-        },
-        {
-          content_type : "text",
-          title : "27",
-          payload : "EMP_27"
-        },
-        {
-          content_type : "text",
-          title : "28",
-          payload : "EMP_28"
-        },
-        {
-          content_type : "text",
-          title : "29",
-          payload : "EMP_29"
-        },
-        {
-          content_type : "text",
-          title : "30",
-          payload : "EMP_30"
-        } 
-     ] 
-   } 
+          title : "9mos.",
+          payload : "EMP_9"
+        }
+      ]
+    } 
    callSendAPI(sender_psid, response);
  }  
-// ************* EMP_31_40 ****************
-else if (payload == "EMP_31_40") {
+// ************* 10_above ****************
+else if (payload == "10_above") {
   senderAction(sender_psid, "typing_on");
    response = {   
      text : "Please specify 📌",
       quick_replies:[
         {
           content_type : "text",
-          title : "31",
-          payload : "EMP_31"
-        },
-        {
-          content_type : "text",
-          title : "32",
-          payload : "EMP_32"
-        },
-        {
-          content_type : "text",
-          title : "33",
-          payload : "EMP_33"
-        },
-        {
-          content_type : "text",
-          title : "34",
-          payload : "EMP_34"
-        },
-        {
-          content_type : "text",
-          title : "35",
-          payload : "EMP_35"
-        },
-        {
-          content_type : "text",
-          title : "36",
-          payload : "EMP_36"
-        },
-        {
-          content_type : "text",
-          title : "37",
-          payload : "EMP_37"
-        },
-        {
-          content_type : "text",
-          title : "38",
-          payload : "EMP_38"
-        },
-        {
-          content_type : "text",
-          title : "39",
-          payload : "EMP_39"
-        },
-        {
-          content_type : "text",
-          title : "40",
-          payload : "EMP_40"
-        } 
+          title : "10",
+          payload : "EMP_10"
+        }
      ] 
    } 
    callSendAPI(sender_psid, response);
