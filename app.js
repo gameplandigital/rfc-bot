@@ -441,6 +441,15 @@ else if (payload === "MENU_MAIN_MENU") {
     }
   // ----------- END MAIN MENU --------------
 
+   // ************* CONTACT_RFC ****************
+ else if (payload == "CONTACT_RFC") {
+  senderAction(sender_psid, "typing_on");
+  response = {   
+    text: "You can send an email to easyrfc@rfc.com.ph\n\nYou may also contact the following numbers so one of our representatives can assist you.\nMobile numbers: 0961-136-1660 | 0995-307-9062"
+  }
+  callSendAPI(sender_psid, response);
+}  
+
   
  // ---------------------------- APPLY_NOW ---------------------------------
 else if (payload === "APPLY_NOW") {
@@ -1126,17 +1135,6 @@ var handleQuickReply = (sender_psid, received_postback, received_message, callba
 }
 
 
- // ************* CONTACT_RFC ****************
- else if (payload == "CONTACT_RFC") {
-
-   setTimeout(function(){
-    senderAction(sender_psid, "typing_on");
-    response = {   
-      text: "You can send an email to easyrfc@rfc.com.ph\n\nYou may also contact the following numbers so one of our representatives can assist you.\nMobile numbers: 0961-136-1660 | 0995-307-9062"
-    }
-    callSendAPI(sender_psid, response);
-}, 2000);
- }  
 
 
  // ************* APPLY_NOW ****************
