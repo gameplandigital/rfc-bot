@@ -335,8 +335,8 @@ function handleAddress(sender_psid, received_message){
               [
                 {
                   type: "postback",
-                  title: "Where are you located?",
-                  payload: "LOCATION",                                  
+                  title: "Get Contact info.",
+                  payload: "CONTACT_RFC",                                  
                 }
               ],
             },
@@ -416,8 +416,8 @@ else if (payload === "MENU_MAIN_MENU") {
               [
                 {
                   type: "postback",
-                  title: "Where are you located?",
-                  payload: "LOCATION",                                  
+                  title: "Get Contact info.",
+                  payload: "CONTACT_RFC",                                  
                 }
               ],
             },
@@ -476,14 +476,14 @@ else if (payload === "APPLY_NOW") {
   }
 
 
-// ************* LOCATION ****************
-else if (payload == "LOCATION") {
+// ************* CONTACT_RFC ****************
+else if (payload == "CONTACT_RFC") {
   senderAction(sender_psid, "typing_on");
   response = {
-    text: "Click Where are you located? to recommend the nearest RFC Branch\n(Please make sure to turn on your GPS Location for better results)",
+    text: "Click Get Contact info. to recommend the nearest RFC Branch\n(Please make sure to turn on your GPS CONTACT_RFC for better results)",
     quick_replies: [
       {
-        content_type:"location"
+        content_type:"CONTACT_RFC"
       }
     ]
   }
@@ -659,15 +659,8 @@ else if (payload == "FAQ_Fees") {
               title: "LEARN MORE",
               payload: "Detls_11"                                  
             }],
-          },{
-          title: "DO I GET A DISCOUNT IF I PAY OFF MY LOAN BEFORE THE MATURITY DATE?",              
-          image_url: SERVER_URL + "/assets/DoIgetadiscount.jpg",
-          buttons: [{
-              type: "postback",
-              title: "LEARN MORE",
-              payload: "Detls_13"                                  
-            }],                    
-        }]
+          }
+      ]
       }
     }
 }
@@ -1059,8 +1052,8 @@ var handleQuickReply = (sender_psid, received_postback, received_message, callba
               [
                 {
                   type: "postback",
-                  title: "Where are you located?",
-                  payload: "LOCATION",                                  
+                  title: "Get Contact info.",
+                  payload: "CONTACT_RFC",                                  
                 }
               ],
             },
@@ -1123,8 +1116,8 @@ var handleQuickReply = (sender_psid, received_postback, received_message, callba
             [
               {
                 type: "postback",
-                title: "Where are you located?",
-                payload: "LOCATION",                                  
+                title: "Get Contact info.",
+                payload: "CONTACT_RFC",                                  
               }
             ],
           },
@@ -1146,6 +1139,20 @@ var handleQuickReply = (sender_psid, received_postback, received_message, callba
   };
     callSendAPI(sender_psid, response);
 }
+
+
+ // ************* CONTACT_RFC ****************
+ else if (payload == "CONTACT_RFC") {
+
+   setTimeout(function(){
+    senderAction(sender_psid, "typing_on");
+    response = {   
+      text: "You can send an email to easyrfc@rfc.com.ph\n\nYou may also contact the following numbers so one of our representatives can assist you.\nMobile numbers: 0961-136-1660 | 0995-307-9062"
+    }
+    callSendAPI(sender_psid, response);
+}, 2000);
+ }  
+
 
  // ************* APPLY_NOW ****************
  else if (payload == "APPLY_NOW") {
@@ -6931,7 +6938,7 @@ else if (payload == "MEDICAL_ASSISTANCE") {
       },
       {
         content_type : "text",
-        title : "12",
+        title : "12mos.",
         payload : "12mos."
       }
       ]
@@ -10938,7 +10945,7 @@ else if (payload == "WEBSITE") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
+      text : "Great! Before continuing, kindly prepare the following:\n(2) VALID I.Ds\nLATEST BILLING\nLATEST PAYSLIP." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -10984,7 +10991,7 @@ else if (payload == "RELATIVES") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
+      text : "Great! Before continuing, kindly prepare the following:\n(2) VALID I.Ds\nLATEST BILLING\nLATEST PAYSLIP." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -11030,7 +11037,7 @@ else if (payload == "RADIOAD") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
+      text : "Great! Before continuing, kindly prepare the following:\n(2) VALID I.Ds\nLATEST BILLING\nLATEST PAYSLIP." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -11076,7 +11083,7 @@ else if (payload == "REFERRAL") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
+      text : "Great! Before continuing, kindly prepare the following:\n(2) VALID I.Ds\nLATEST BILLING\nLATEST PAYSLIP." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -11122,7 +11129,7 @@ else if (payload == "REPEAT_CUSTOMER") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
+      text : "Great! Before continuing, kindly prepare the following:\n(2) VALID I.Ds\nLATEST BILLING\nLATEST PAYSLIP." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -11168,7 +11175,7 @@ else if (payload == "TARPAULINS") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
+      text : "Great! Before continuing, kindly prepare the following:\n(2) VALID I.Ds\nLATEST BILLING\nLATEST PAYSLIP." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -11214,7 +11221,7 @@ else if (payload == "NEWSPAPER") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
+      text : "Great! Before continuing, kindly prepare the following:\n(2) VALID I.Ds\nLATEST BILLING\nLATEST PAYSLIP." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -11260,7 +11267,7 @@ else if (payload == "WALKINS") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
+      text : "Great! Before continuing, kindly prepare the following:\n(2) VALID I.Ds\nLATEST BILLING\nLATEST PAYSLIP." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -11306,7 +11313,7 @@ else if (payload == "PHONE_DIRECTORY") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
+      text : "Great! Before continuing, kindly prepare the following:\n(2) VALID I.Ds\nLATEST BILLING\nLATEST PAYSLIP." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -11352,7 +11359,7 @@ else if (payload == "RADIO_AD") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
+      text : "Great! Before continuing, kindly prepare the following:\n(2) VALID I.Ds\nLATEST BILLING\nLATEST PAYSLIP." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -11398,7 +11405,7 @@ else if (payload == "RELATIVES") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
+      text : "Great! Before continuing, kindly prepare the following:\n(2) VALID I.Ds\nLATEST BILLING\nLATEST PAYSLIP." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -11444,7 +11451,7 @@ else if (payload == "REFERRAL") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
+      text : "Great! Before continuing, kindly prepare the following:\n(2) VALID I.Ds\nLATEST BILLING\nLATEST PAYSLIP." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -11490,7 +11497,7 @@ else if (payload == "RELATIVE_OF_RFC_EMPLOYEE") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
+      text : "Great! Before continuing, kindly prepare the following:\n(2) VALID I.Ds\nLATEST BILLING\nLATEST PAYSLIP." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -11536,7 +11543,7 @@ else if (payload == "REPEAT_CUSTOMER") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
+      text : "Great! Before continuing, kindly prepare the following:\n(2) VALID I.Ds\nLATEST BILLING\nLATEST PAYSLIP." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -11582,7 +11589,7 @@ else if (payload == "RFC_ON_WHEELS") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
+      text : "Great! Before continuing, kindly prepare the following:\n(2) VALID I.Ds\nLATEST BILLING\nLATEST PAYSLIP." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -11628,7 +11635,7 @@ else if (payload == "NEWSPAPER") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
+      text : "Great! Before continuing, kindly prepare the following:\n(2) VALID I.Ds\nLATEST BILLING\nLATEST PAYSLIP." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -11674,7 +11681,7 @@ else if (payload == "TARPAULINS") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
+      text : "Great! Before continuing, kindly prepare the following:\n(2) VALID I.Ds\nLATEST BILLING\nLATEST PAYSLIP." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -11720,7 +11727,7 @@ else if (payload == "WALK_INS") {
   
   senderAction(sender_psid, "typing_on");
    response = {   
-      text : "Before continuing, kindly prepare the following strictly on a pdf format with 5MB file size only:\n(2) VALID I.D\nLATEST BILLING\nLATEST PAYSLIP\nYou will be needing this files later.\nThanks." 
+      text : "Great! Before continuing, kindly prepare the following:\n(2) VALID I.Ds\nLATEST BILLING\nLATEST PAYSLIP." 
    } 
    callSendAPI(sender_psid, response);
 
@@ -11764,12 +11771,12 @@ else if (payload == "WALK_INS") {
 };
 
 
-// --------------  TO Where are you located? -------------------------------
+// --------------  TO Get Contact info. -------------------------------
 var handleAttachments = (sender_psid, received_postback) => {
   let response;
   const type = received_postback[0].type;
 
-  if (type === "location") {
+  if (type === "CONTACT_RFC") {
     const latitude = received_postback[0].payload.coordinates.lat,
       longitude = received_postback[0].payload.coordinates.long;
 
