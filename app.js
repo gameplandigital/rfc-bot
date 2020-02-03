@@ -476,21 +476,6 @@ else if (payload === "APPLY_NOW") {
   }
 
 
-// ************* CONTACT_RFC ****************
-else if (payload == "CONTACT_RFC") {
-  senderAction(sender_psid, "typing_on");
-  response = {
-    text: "Click Get Contact info. to recommend the nearest RFC Branch\n(Please make sure to turn on your GPS CONTACT_RFC for better results)",
-    quick_replies: [
-      {
-        content_type:"CONTACT_RFC"
-      }
-    ]
-  }
-    callSendAPI(sender_psid, response);
-  }
-
-
 
 // ************* MORE_INFORMATION ****************
 else if (payload == "MORE_INFORMATION") {
@@ -11776,46 +11761,6 @@ var handleAttachments = (sender_psid, received_postback) => {
   let response;
   const type = received_postback[0].type;
 
-  if (type === "CONTACT_RFC") {
-    const latitude = received_postback[0].payload.coordinates.lat,
-      longitude = received_postback[0].payload.coordinates.long;
-
-          user.getBranches(latitude, longitude, result => {
-            // response = {
-            //   text:
-            //     "Nearest Branch: " +
-            //     result[0].name +
-            //     "\nAddress: " +
-            //     result[0].address +
-            //     "\nDistance: " +
-            //     result[0].distance.toFixed(1) +
-            //     " km",
-            //   quick_replies: [
-            //     {
-            //       content_type: "text",
-            //       title: "Back to Main Menu",
-            //       payload: "MENU_MAIN_MENU"
-            //     }
-            //   ]
-            // };
-            response = {
-              text:
-                result[0].name +
-                result[0].address +
-                "\n: " +
-                result[0].Sched,
-              quick_replies: [
-                {
-                  content_type: "text",
-                  title: "Back to Main Menu",
-                  payload: "MENU_MAIN_MENU"
-                }
-              ]
-            };
-            callSendAPI(sender_psid, response);
-          }
-        );
-      }
 };
 // CREATE THE PERSISTENT MENU
 var persistentMenu = () => {
