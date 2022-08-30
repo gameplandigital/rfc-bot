@@ -13,7 +13,7 @@
     "ejs": "^2.6.2",
     "express": "^4.17.1",
     "express-fileupload": "^1.1.5",
-    "moment-timezone": "^0.5.25",
+    "moment-timezone": "^0.5.35",
     "mysql": "^2.17.1",
     "request": "^2.88.0",
     "require": "^2.4.20",
